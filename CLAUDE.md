@@ -11,7 +11,7 @@ Maps best-practice cybersecurity frameworks (NIST CSF 2.0 as the primary spine) 
 ```
 frameworks/
   nist-csf/           ← NIST CSF 2.0 function overviews (govern.md, identify.md, etc.)
-  vendor-architectures/ ← One YAML per vendor reference architecture
+  vendor-architectures/ ← One YAML per vendor reference architecture (10 vendors)
 
 technologies/
   _schema.md          ← YAML schema documentation
@@ -24,6 +24,17 @@ technologies/
     respond/          ← SOAR, case management, DFIR
     recover/          ← Backup & recovery, BCP/DR
     emerging/         ← AI/LLM security, supply chain security
+  vendors/            ← Vendor profile markdowns (17 vendors: 10 platform + 7 specialist)
+
+architectures/        ← Vendor reference architecture deep-dive markdowns (10 files)
+
+cross-references/     ← Framework integration files from other GRC repos
+  iec62443-nist-mapping.md       ← IEC 62443-3-3 → NIST CSF (51 SRs; from OT-Security repo)
+  ai-governance-security-mapping.md  ← AI governance controls → security technology (from AI-Governance repo)
+  grc-portfolio-mapping.md       ← CSA CCM, RMIT, PDPA, NACSA → technology categories
+
+TECH-STACK.md         ← Master mapping: all categories, 9-vendor matrix, ASM landscape, M&A tracker
+CATEGORY-ANALYSIS.md  ← Per-category deep dive: purpose, modules, vendors, spend, maturity, trends
 ```
 
 ## Schema

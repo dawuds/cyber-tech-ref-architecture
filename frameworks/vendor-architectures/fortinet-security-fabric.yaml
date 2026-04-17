@@ -1,0 +1,106 @@
+id: fortinet_security_fabric
+name: Fortinet Security Fabric
+version: "2024"
+source: https://www.fortinet.com/solutions/enterprise-midsize-business/security-fabric
+description: >
+  Fortinet Security Fabric is a broad, integrated, automated platform built around FortiGate
+  NGFW as the anchor. It connects security elements across network, endpoint, cloud, and
+  operations via a common operating system (FortiOS), management plane (FortiManager/FortiAnalyzer),
+  and AI/ML threat intelligence (FortiGuard). Strong in OT/ICS security and mid-market NGFW.
+
+pillars:
+  - id: network-security
+    name: Network Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - FortiGate NGFW (PA/VM/CN series, all form factors)
+      - FortiSwitch (network access control at the edge)
+      - FortiAP (secure wireless LAN)
+      - FortiExtender (secure LTE/5G WAN)
+
+  - id: sase-zero-trust
+    name: SASE & Zero Trust Access
+    nist_mapping: [Protect, Identify]
+    products:
+      - FortiSASE (cloud-delivered SASE — SSE + SD-WAN)
+      - FortiClient (ZTNA agent + endpoint protection)
+      - FortiNAC (network access control)
+      - FortiAuthenticator (MFA, certificate management)
+      - FortiToken (hardware/software OTP)
+
+  - id: security-operations
+    name: Security Operations
+    nist_mapping: [Detect, Respond]
+    products:
+      - FortiSIEM (SIEM + UEBA)
+      - FortiSOAR (security orchestration, automation, response)
+      - FortiAnalyzer (log aggregation, analytics, reporting)
+      - FortiDeceptor (deception technology)
+      - FortiNDR (network detection and response)
+
+  - id: cloud-security
+    name: Cloud & Application Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - FortiCWP (cloud workload protection, CSPM)
+      - FortiWeb (web application firewall)
+      - FortiADC (application delivery controller)
+      - FortiCASB (cloud access security broker)
+      - Lacework (CNAPP — acquired Aug 2024)
+
+  - id: endpoint-ot
+    name: Endpoint & OT/ICS Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - FortiEDR (endpoint detection and response)
+      - FortiEMS (endpoint management server)
+      - FortiGuard (threat intelligence subscription service)
+      - FortiIsolator (remote browser isolation)
+      - Operational Technology (OT) — FortiGate ruggedized + FortiNAC OT
+
+  - id: management-fabric
+    name: Fabric Management & Visibility
+    nist_mapping: [Govern, Identify]
+    products:
+      - FortiManager (centralized NGFW management)
+      - FortiCloud (SaaS management portal)
+      - FortiPortal (MSSP management)
+      - FortiMonitor (network performance monitoring)
+      - FortiTrust (identity-centric licensing model)
+
+platform_products:
+  - name: FortiGate NGFW
+    category: ngfw-ips
+  - name: FortiSASE
+    category: ztna-sse-sase
+  - name: FortiClient
+    category: endpoint-protection
+  - name: FortiEDR
+    category: xdr-edr
+  - name: FortiSIEM
+    category: siem
+  - name: FortiSOAR
+    category: soar
+  - name: FortiNDR
+    category: ndr
+  - name: FortiDeceptor
+    category: deception
+  - name: FortiWeb
+    category: waf-api-security
+  - name: Lacework
+    category: cnapp
+  - name: FortiCASB
+    category: casb
+  - name: FortiAuthenticator
+    category: iam-sso-mfa
+  - name: FortiNAC
+    category: endpoint-protection
+
+notes: >
+  Fortinet's breadth is matched only by Microsoft/Palo Alto in NGFW-anchored platforms.
+  Strongest in mid-market and OT/ICS environments where ruggedized hardware and
+  integrated SD-WAN matter. Lacework acquisition (Aug 2024, ~$200M, significant markdown
+  from $8.9B peak valuation) adds CNAPP capability. FortiSIEM and FortiSOAR lag best-in-class
+  SIEM/SOAR by enterprise SOC depth. Security Fabric advantage: single FortiOS, single
+  management pane, tight telemetry integration across all products.
+  Weak in: cloud-native workloads, enterprise IAM/PAM, DFIR services.

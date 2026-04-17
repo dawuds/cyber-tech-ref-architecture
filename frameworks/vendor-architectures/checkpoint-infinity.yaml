@@ -1,0 +1,90 @@
+id: checkpoint_infinity
+name: Check Point Infinity Architecture
+version: "2024"
+source: https://www.checkpoint.com/infinity/
+description: >
+  Check Point Infinity is a consolidated cybersecurity architecture spanning network,
+  cloud, endpoint, mobile, and IoT. Built on a unified Threat Prevention platform with
+  ThreatCloud AI (50B+ events/day) as the intelligence backbone. Three portfolio lines:
+  Quantum (network), CloudGuard (cloud), Harmony (user/endpoint/mobile), and Infinity
+  Portal (management). Strong prevention-first philosophy vs. detection/response peers.
+
+pillars:
+  - id: quantum-network
+    name: Quantum — Network Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - Quantum Security Gateways (NGFW, all form factors — 1500 to 64000 series)
+      - Quantum Spark (SMB appliances)
+      - Quantum SD-WAN
+      - Quantum Network Security Management (SmartConsole / SmartEvent)
+      - Quantum IoT Protect (embedded IoT firmware security)
+
+  - id: cloudguard
+    name: CloudGuard — Cloud Security
+    nist_mapping: [Protect, Detect, Identify]
+    products:
+      - CloudGuard CNAPP (CSPM + workload protection)
+      - CloudGuard Network Security (cloud NGFW — AWS, Azure, GCP)
+      - CloudGuard AppSec (AI-based WAF, API security)
+      - CloudGuard Intelligence (threat intelligence + log analytics)
+      - CloudGuard Posture Management (CSPM)
+
+  - id: harmony
+    name: Harmony — User & Endpoint Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - Harmony Endpoint (EDR/EPP)
+      - Harmony Mobile (MTD — mobile threat defense)
+      - Harmony Email & Collaboration (email security, anti-phishing)
+      - Harmony Connect (SASE/ZTNA for remote users)
+      - Harmony Browse (secure web gateway, browser isolation)
+
+  - id: infinity-platform
+    name: Infinity Platform — Management & AI
+    nist_mapping: [Govern, Detect, Respond]
+    products:
+      - Infinity Portal (unified cloud management console)
+      - Infinity AI Copilot (generative AI security assistant)
+      - ThreatCloud AI (real-time shared threat intelligence)
+      - Infinity SOC (SOC-as-a-service, AI-powered triage)
+      - Horizon XDR/XPR (extended detection and prevention response)
+      - Horizon Events (SIEM/event management)
+      - Horizon Playbooks (SOAR)
+
+  - id: taas-services
+    name: Infinity on Demand (TaaS/MDR)
+    nist_mapping: [Respond, Detect]
+    products:
+      - Infinity Managed Detection & Response
+      - Incident Response retainer services
+      - Threat Hunting (Infinity Threat Prevention)
+
+platform_products:
+  - name: Quantum NGFW
+    category: ngfw-ips
+  - name: CloudGuard CNAPP
+    category: cnapp
+  - name: CloudGuard AppSec
+    category: waf-api-security
+  - name: Harmony Endpoint
+    category: endpoint-protection
+  - name: Harmony Connect
+    category: ztna-sse-sase
+  - name: Harmony Email
+    category: email-security
+  - name: Horizon XDR
+    category: xdr-edr
+  - name: Horizon Events
+    category: siem
+  - name: Horizon Playbooks
+    category: soar
+
+notes: >
+  Check Point's Infinity architecture is prevention-first: ThreatCloud AI claims industry-leading
+  block rates before execution. Strong in NGFW (historically #1 enterprise gateway market share
+  alongside Palo Alto/Fortinet). CloudGuard provides credible CNAPP but lags Wiz and Prisma Cloud
+  in CSPM depth. Harmony suite competitive in email and mobile. Weaknesses: perception of slower
+  innovation vs. CrowdStrike/SentinelOne in EDR, complex licensing, and limited native SOAR/DFIR.
+  Infinity platform unification still maturing — full XDR/SIEM integration arrived late vs. peers.
+  Revenue: ~$2.4B (2024). Pure-play security company (not a platform vendor with security add-ons).
