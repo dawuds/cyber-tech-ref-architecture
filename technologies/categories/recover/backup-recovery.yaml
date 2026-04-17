@@ -1,0 +1,78 @@
+id: backup-recovery
+name: Backup & Recovery
+full_name: Data Backup, Recovery & Ransomware Protection
+nist_primary: Recover
+nist_secondary: [Protect]
+description: >
+  Protects data availability through backup, replication, and recovery capabilities.
+  Modern platforms add ransomware-specific features: immutable backups, anomaly
+  detection (detecting rapid encryption), clean room recovery, and cyber vaulting.
+  The last line of defense when prevention and detection fail.
+related_categories: [bcp-dr, cnapp]
+market_notes: >
+  Traditional backup (Veeam, Commvault) vendors adding ransomware-specific features.
+  Rubrik and Cohesity repositioned as "data security" platforms, not just backup.
+  Rubrik IPO'd (April 2024). All major hyperscalers offer native backup services.
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: Incident Response (AWS Backup)
+  cisco_security: null
+
+products:
+  - name: Veeam Data Platform
+    vendor: Veeam
+    type: on-prem|SaaS
+    notes: Market leader for VM/cloud backup; immutable backups; Veeam ONE for monitoring; strong ransomware recovery
+
+  - name: Rubrik Security Cloud
+    vendor: Rubrik
+    type: SaaS|on-prem
+    notes: Repositioned as data security + backup; ransomware investigation + recovery; IPO'd April 2024
+
+  - name: Cohesity DataProtect
+    vendor: Cohesity
+    type: on-prem|SaaS
+    notes: Converged backup + data management; FortKnox cyber vault; anomaly detection; merged with Veritas (2024)
+
+  - name: Commvault
+    vendor: Commvault
+    type: on-prem|SaaS
+    notes: Enterprise data protection with Metallic SaaS; acquired TrapX (deception) 2022; cyber resilience focus
+
+  - name: Zerto
+    vendor: Zerto (HPE, acquired 2021)
+    type: on-prem|SaaS
+    notes: Continuous data protection (CDP) with journal-based recovery; near-zero RPO for critical workloads
+
+  - name: AWS Backup
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: Centralized backup for AWS services (EC2, RDS, S3, EFS); cross-account and cross-region policies
+
+  - name: Azure Backup
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Native Azure backup service; soft-delete protection against ransomware; Recovery Services Vault
+
+  - name: Google Cloud Backup and DR
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Managed backup for GCP VMs, databases, and applications; acquired Actifio technology
+
+  - name: Druva
+    vendor: Druva
+    type: SaaS
+    notes: Cloud-native SaaS backup for M365, Google Workspace, endpoints, and cloud workloads; no infrastructure
+
+  - name: Acronis Cyber Protect
+    vendor: Acronis
+    type: SaaS|on-prem
+    notes: Backup + endpoint security integration; strong SMB/MSP market; anti-ransomware built into backup agent

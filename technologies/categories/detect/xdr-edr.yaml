@@ -1,0 +1,82 @@
+id: xdr-edr
+name: XDR / EDR
+full_name: Extended Detection & Response / Endpoint Detection & Response
+nist_primary: Detect
+nist_secondary: [Respond, Protect]
+description: >
+  EDR provides deep endpoint telemetry for threat detection, investigation, and
+  response — behavioral monitoring, process trees, and forensic data collection.
+  XDR extends this across multiple telemetry sources (endpoint, email, identity,
+  network, cloud) for unified detection and automated response. XDR is the
+  evolution that addresses alert fatigue and siloed security tools.
+related_categories: [endpoint-protection, siem, soar, ndr]
+market_notes: >
+  CrowdStrike, Microsoft, and SentinelOne dominate. Palo Alto Cortex XDR is strong
+  but third in market share. Trellix (McAfee+FireEye) and Broadcom/Symantec are
+  declining. Google/Mandiant and Cisco XDR are growing challengers.
+  IBM QRadar SaaS → Palo Alto (Aug 2024) will strengthen Cortex XDR data lake.
+vendor_framework_coverage:
+  microsoft_mcra: Security Operations (Defender XDR)
+  palo_alto_zta: Devices & Applications (Cortex XDR)
+  zscaler_zte: null
+  google_csa: Security Operations (Chronicle + Mandiant)
+  crowdstrike_falcon: Endpoint & Identity (Falcon Insight XDR)
+  cisa_ztmm: Devices (pillar) + Visibility & Analytics
+  aws_sra: null
+  cisco_security: Security Operations (Cisco XDR)
+
+products:
+  - name: CrowdStrike Falcon Insight XDR
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: Market leader; single lightweight agent; Threat Graph correlates 10+ trillion events weekly; strong threat hunting
+
+  - name: Microsoft Defender XDR
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Unified XDR across M365 Defender products (Endpoint, Office, Identity, Cloud Apps); deep Windows telemetry
+
+  - name: SentinelOne Singularity XDR
+    vendor: SentinelOne
+    type: SaaS
+    notes: AI-driven autonomous EDR/XDR; Storyline technology for automated attack correlation; strong ActiveEDR
+
+  - name: Palo Alto Cortex XDR
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: XDR with Cortex Data Lake; strong analytics; absorbing QRadar SaaS telemetry (2024 acquisition)
+
+  - name: Google Chronicle + Mandiant
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Chronicle as the detection layer + Mandiant investigations; strong for organizations needing IR expertise
+
+  - name: Cisco XDR
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: SecureX successor; correlates Cisco + third-party security telemetry; Talos threat intel integration
+
+  - name: Trellix XDR
+    vendor: Trellix (Symphony Technology Group)
+    type: SaaS
+    notes: McAfee Enterprise + FireEye combined; large install base; XDR strategy in progress; declining growth
+
+  - name: Broadcom/Symantec Endpoint Security Complete
+    vendor: Broadcom (Symantec)
+    type: on-prem|SaaS
+    notes: EDR capabilities in Symantec ESC; large financial services install base; Broadcom acquisition impacting roadmap
+
+  - name: ESET Inspect
+    vendor: ESET
+    type: on-prem|SaaS
+    notes: EDR module for ESET Endpoint Security; strong mid-market; low resource footprint
+
+  - name: Cybereason MDR
+    vendor: Cybereason
+    type: SaaS
+    notes: MalOp-based detection; strong APAC presence; financial difficulties in 2024-2025; uncertain roadmap

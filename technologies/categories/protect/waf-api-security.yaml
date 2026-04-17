@@ -1,0 +1,85 @@
+id: waf-api-security
+name: WAF / API Security
+full_name: Web Application Firewall & API Security
+nist_primary: Protect
+nist_secondary: [Detect]
+description: >
+  WAF protects web applications from OWASP Top 10 attacks (SQLi, XSS, CSRF) and
+  DDoS at the application layer. API security extends this to REST/GraphQL/gRPC APIs —
+  discovering shadow APIs, detecting abuse, and enforcing schema validation.
+  CDN-integrated WAFs (Cloudflare, Akamai) increasingly combine both.
+related_categories: [ngfw-ips, application-security, ztna-sse-sase]
+vendor_framework_coverage:
+  microsoft_mcra: Cloud & Infrastructure (Azure WAF)
+  palo_alto_zta: Applications (Prisma Cloud WAF)
+  zscaler_zte: null
+  google_csa: Infrastructure Security (Cloud Armor)
+  crowdstrike_falcon: null
+  cisa_ztmm: Applications & Workloads (pillar)
+  aws_sra: Infrastructure Protection (AWS WAF)
+  cisco_security: null
+
+products:
+  - name: Cloudflare WAF & API Shield
+    vendor: Cloudflare
+    type: SaaS
+    notes: Global CDN-integrated WAF with API discovery and schema validation; strong bot management
+
+  - name: AWS WAF
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: Managed WAF for CloudFront, ALB, API Gateway; Managed Rules marketplace; tight AWS integration
+
+  - name: Azure WAF
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: WAF on Azure Application Gateway and Azure Front Door; OWASP CRS rule sets
+
+  - name: Google Cloud Armor
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: DDoS protection + WAF for GCP workloads; Adaptive Protection with ML-based rate limiting
+
+  - name: F5 Advanced WAF (NGINX App Protect)
+    vendor: F5
+    type: on-prem|SaaS
+    notes: Comprehensive WAF with behavioral DoS; NGINX App Protect for modern app architectures
+
+  - name: Imperva WAF
+    vendor: Imperva
+    type: SaaS|on-prem
+    notes: Veteran WAF with strong database security integration; Cloud WAF and on-prem options
+
+  - name: Akamai App & API Protector
+    vendor: Akamai
+    type: SaaS
+    notes: CDN-integrated WAF with Adaptive Security Engine; strong for high-traffic e-commerce
+
+  - name: Salt Security
+    vendor: Salt Security
+    type: SaaS
+    notes: Dedicated API security platform; behavioral AI to detect API abuse and shadow APIs
+
+  - name: Noname Security
+    vendor: Noname Security (acquired by Akamai 2024)
+    type: SaaS
+    notes: API security posture management and runtime protection; now part of Akamai
+
+  - name: Traceable AI
+    vendor: Traceable AI
+    type: SaaS
+    notes: API security with distributed tracing foundation; strong application context for API risk
+
+  - name: Wallarm
+    vendor: Wallarm
+    type: SaaS|on-prem
+    notes: Next-gen WAF with API protection and attack payload analysis; cloud and on-prem deployment
+
+  - name: Palo Alto Prisma Cloud (WAAS)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Web Application and API Security module within Prisma Cloud CNAPP

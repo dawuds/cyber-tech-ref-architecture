@@ -1,0 +1,65 @@
+id: cisco_security
+name: Cisco Security Reference Architecture
+version: "2024 (Hypershield era)"
+source: https://www.cisco.com/site/us/en/products/security/cisco-security-reference-architecture/index.html
+description: >
+  Network-heritage security architecture evolving toward AI-native, cloud-delivered
+  security. Hypershield (announced RSA 2024) is the new AI-driven distributed security
+  fabric. Cisco Security Cloud is the unified platform umbrella across portfolio.
+  Strong in network security, email, and identity (via Duo acquisition).
+
+domains:
+  - id: network-security
+    name: Network Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - Cisco Secure Firewall (Firepower)
+      - Cisco Hypershield (AI-native distributed security, 2024)
+      - Cisco Secure Network Analytics (Stealthwatch)
+      - Cisco Umbrella (DNS/SWG)
+      - Cisco ISE (network access control)
+
+  - id: cloud-security
+    name: Cloud & Application Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - Cisco Panoptica (CNAPP)
+      - Cisco Multicloud Defense
+      - Cisco Secure Workload (microsegmentation)
+
+  - id: identity-access
+    name: Identity & Zero Trust
+    nist_mapping: [Protect, Govern]
+    products:
+      - Cisco Duo (MFA/SSO)
+      - Cisco ISE (network access / NAC)
+      - Cisco Zero Trust (Duo + ISE combined)
+
+  - id: soc-operations
+    name: Security Operations
+    nist_mapping: [Detect, Respond]
+    products:
+      - Cisco XDR (Cisco SecureX successor)
+      - Cisco Threat Intelligence Director
+      - Cisco Talos (threat intelligence)
+
+  - id: email-web
+    name: Email & Web Security
+    nist_mapping: [Protect, Detect]
+    products:
+      - Cisco Secure Email Gateway (IronPort successor)
+      - Cisco Umbrella (SWG/DNS)
+
+  - id: sase
+    name: SASE / SSE
+    nist_mapping: [Protect, Detect]
+    products:
+      - Cisco Umbrella (SWG/CASB/ZTNA)
+      - Cisco Meraki SD-WAN
+      - Cisco+ Secure Connect (SASE)
+
+notes: >
+  Cisco's strength is network-layer security with Hypershield as the 2024 innovation.
+  Talos threat intelligence is one of the largest commercial TI teams globally.
+  Duo is a leading MFA product. Weak in GRC, backup/recovery, and pure endpoint EDR.
+  Competes with Palo Alto and Fortinet for network-centric enterprise accounts.

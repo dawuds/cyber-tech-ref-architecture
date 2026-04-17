@@ -1,0 +1,61 @@
+id: google_csa
+name: Google Cloud Security Architecture / Google Security Operations
+version: "2025"
+source: https://cloud.google.com/security
+description: >
+  Google's security architecture spans two distinct but integrated layers:
+  Google Security Operations (formerly Chronicle - SIEM/SOAR/TI) for the SOC,
+  and Google Cloud Security for cloud infrastructure protection. Mandiant provides
+  threat intelligence and incident response services.
+
+domains:
+  - id: security-operations
+    name: Security Operations (SecOps)
+    nist_mapping: [Detect, Respond]
+    products:
+      - Google Chronicle SIEM
+      - Google Chronicle SOAR (formerly Siemplify, acquired 2022)
+      - Mandiant Threat Intelligence
+      - Google Mandiant Attack Surface Management
+      - Google Security Command Center (SCC)
+
+  - id: infrastructure-security
+    name: Cloud Infrastructure Security
+    nist_mapping: [Protect, Identify]
+    products:
+      - Google Cloud Armor (WAF/DDoS)
+      - Google VPC Service Controls
+      - Google Binary Authorization
+      - Google Cloud IDS
+      - Google Security Command Center (CSPM)
+
+  - id: identity-access
+    name: Identity & Access
+    nist_mapping: [Protect, Identify]
+    products:
+      - Google Cloud IAM
+      - Google Cloud Identity
+      - Google BeyondCorp Enterprise (ZTNA)
+      - Google Workspace (identity)
+
+  - id: data-security
+    name: Data Security
+    nist_mapping: [Protect, Govern]
+    products:
+      - Google Cloud DLP (Sensitive Data Protection)
+      - Google Cloud Key Management Service
+      - Google Workspace DLP
+
+  - id: threat-intelligence
+    name: Threat Intelligence & IR
+    nist_mapping: [Identify, Respond]
+    products:
+      - Mandiant Threat Intelligence
+      - Google VirusTotal
+      - Mandiant Incident Response Services
+
+notes: >
+  Google Chronicle SIEM is a 2025 Gartner MQ SIEM leader. Siemplify acquired 2022,
+  now Chronicle SOAR. Mandiant acquisition (2022, $5.4B) added TI and IR services.
+  Limited coverage of Govern (GRC), PAM, email security (Workspace covers basic),
+  and Recover. Cloud-native bias; on-prem coverage minimal.

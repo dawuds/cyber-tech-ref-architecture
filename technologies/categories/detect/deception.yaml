@@ -1,0 +1,68 @@
+id: deception
+name: Deception Technology
+full_name: Deception Technology & Honeypots
+nist_primary: Detect
+nist_secondary: [Respond]
+description: >
+  Plants fake assets — honeypots, honeytokens, decoy credentials, and breadcrumbs —
+  throughout the environment to detect adversaries during lateral movement, before
+  they reach real assets. Provides high-fidelity, low-false-positive alerts because
+  no legitimate user should interact with decoy assets. Particularly effective for
+  detecting identity-based attacks and credential misuse.
+related_categories: [xdr-edr, ndr, siem]
+market_notes: >
+  Niche but high-value category. Attivo Networks (SentinelOne acquisition 2022) is
+  now Singularity Ranger Deception. Illusive Networks acquired by Proofpoint (2021).
+  Zscaler added deception to its platform. Category evolving toward identity
+  deception (fake credentials/tokens) rather than just network honeypots.
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: Deception (standalone feature)
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: SentinelOne Singularity Ranger Deception
+    vendor: SentinelOne (acquired Attivo Networks May 2022, $616M)
+    type: SaaS
+    notes: Identity and endpoint deception; decoy AD accounts, credentials, and network shares; high-fidelity lateral movement detection
+
+  - name: Illusive Networks (Proofpoint)
+    vendor: Proofpoint (acquired Illusive 2021)
+    type: SaaS
+    notes: Now part of Proofpoint Threat Protection; identity deception with fake credentials and AD objects
+
+  - name: Zscaler Deception
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: Decoy cloud resources and network assets; integrated with ZPA for in-network deception
+
+  - name: Acalvio ShadowPlex
+    vendor: Acalvio Technologies
+    type: SaaS|on-prem
+    notes: Dynamic deception with fluid honeytoken and honeypot placement; strong OT/ICS deception
+
+  - name: Commvault TrapX (Metallic)
+    vendor: Commvault (acquired TrapX)
+    type: SaaS
+    notes: DeceptionGrid now part of Commvault; integrated deception + backup to detect and recover from attacks
+
+  - name: Smokescreen Technologies
+    vendor: Smokescreen Technologies (India)
+    type: on-prem|SaaS
+    notes: Distributed deception with realistic decoy services; strong in financial sector; APAC presence
+
+  - name: Honeyd
+    vendor: Open-source
+    type: open-source
+    notes: Classic open-source honeypot framework; requires significant configuration; used in research and labs
+
+  - name: Thinkst Canary
+    vendor: Thinkst Applied Research
+    type: SaaS|hardware
+    notes: Simple to deploy honeytoken and honeypot platform; physical canary tokens and cloud canaries; minimal management overhead

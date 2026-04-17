@@ -1,0 +1,70 @@
+id: tprm
+name: TPRM
+full_name: Third-Party Risk Management
+nist_primary: Govern
+nist_secondary: [Identify]
+description: >
+  Platforms for assessing, monitoring, and managing cybersecurity risk posed by
+  vendors, suppliers, and partners. Combines questionnaire-based assessments with
+  continuous outside-in security ratings and threat intelligence feeds.
+related_categories: [grc, attack-surface-management]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: BitSight
+    vendor: BitSight
+    type: SaaS
+    notes: Pioneer in security ratings; continuous outside-in scoring of vendor security posture
+
+  - name: SecurityScorecard
+    vendor: SecurityScorecard
+    type: SaaS
+    notes: Security ratings platform with A-F grading; integrates with GRC workflows
+
+  - name: ProcessUnity
+    vendor: ProcessUnity
+    type: SaaS
+    notes: Acquired CyberGRX (2023); combined questionnaire + exchange model for third-party risk
+
+  - name: Prevalent
+    vendor: Prevalent
+    type: SaaS
+    notes: End-to-end TPRM lifecycle management with threat intelligence enrichment
+
+  - name: RiskRecon
+    vendor: Mastercard (RiskRecon)
+    type: SaaS
+    notes: Continuous vendor monitoring with detailed findings; acquired by Mastercard 2020
+
+  - name: UpGuard
+    vendor: UpGuard
+    type: SaaS
+    notes: Vendor risk and breach detection platform; strong data leak detection
+
+  - name: Panorays
+    vendor: Panorays
+    type: SaaS
+    notes: Combines automated questionnaires with continuous monitoring; AI-driven risk scoring
+
+  - name: Aravo
+    vendor: Aravo
+    type: SaaS
+    notes: Supplier risk and performance management; strong in procurement-driven TPRM
+
+  - name: Venminder
+    vendor: Venminder
+    type: SaaS
+    notes: Managed service + software for vendor due diligence; strong financial services focus
+
+  - name: OneTrust Vendor Risk
+    vendor: OneTrust
+    type: SaaS
+    notes: TPRM module within OneTrust platform; integrates with privacy and GRC workflows

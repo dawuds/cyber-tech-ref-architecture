@@ -1,0 +1,85 @@
+id: grc
+name: GRC
+full_name: Governance, Risk & Compliance
+nist_primary: Govern
+nist_secondary: [Identify]
+description: >
+  Integrated platforms managing security policy, risk registers, compliance programs,
+  audit workflows, and regulatory reporting. Central to operationalizing the NIST
+  Govern function — translating risk strategy into documented controls and evidence.
+related_categories: [tprm, policy-management, bcp-dr]
+vendor_framework_coverage:
+  microsoft_mcra: Information Protection & Governance (Purview Compliance)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Governance (cross-cutting capability)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Archer
+    vendor: RSA Security
+    type: on-prem|SaaS
+    notes: Mature, highly configurable enterprise GRC; widely deployed in financial services and regulated industries
+
+  - name: ServiceNow GRC
+    vendor: ServiceNow
+    type: SaaS
+    notes: Tightly integrated with ServiceNow ITSM/SecOps; strong workflow and CMDB integration
+
+  - name: MetricStream
+    vendor: MetricStream
+    type: SaaS|on-prem
+    notes: Broad GRC suite with strong audit management and regulatory library
+
+  - name: OneTrust GRC
+    vendor: OneTrust
+    type: SaaS
+    notes: Privacy-first GRC with strong data governance; acquired Tugboat Logic (compliance automation)
+
+  - name: LogicGate Risk Cloud
+    vendor: LogicGate
+    type: SaaS
+    notes: Flexible no-code workflow builder; strong for mid-market
+
+  - name: IBM OpenPages
+    vendor: IBM
+    type: SaaS|on-prem
+    notes: Enterprise GRC with Watson AI for risk insights; strong in banking and insurance
+
+  - name: SAP GRC
+    vendor: SAP
+    type: on-prem|SaaS
+    notes: Deep SAP ecosystem integration; strong access risk analysis for ERP environments
+
+  - name: Diligent HighBond
+    vendor: Diligent (formerly Galvanize)
+    type: SaaS
+    notes: Audit-centric GRC; strong board governance and internal audit features
+
+  - name: AuditBoard
+    vendor: AuditBoard
+    type: SaaS
+    notes: Modern UI audit and compliance management; rapidly growing in mid-enterprise
+
+  - name: Hyperproof
+    vendor: Hyperproof
+    type: SaaS
+    notes: Compliance operations platform with strong evidence collection automation
+
+  - name: Vanta
+    vendor: Vanta
+    type: SaaS
+    notes: Automated compliance for SOC 2, ISO 27001, HIPAA; popular with cloud-native companies
+
+  - name: Drata
+    vendor: Drata
+    type: SaaS
+    notes: Continuous compliance monitoring with 200+ integrations; fast-growing SaaS alternative
+
+  - name: Secureframe
+    vendor: Secureframe
+    type: SaaS
+    notes: Compliance automation platform targeting startups and SMBs

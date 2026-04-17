@@ -1,0 +1,80 @@
+id: ndr
+name: NDR
+full_name: Network Detection & Response
+nist_primary: Detect
+nist_secondary: [Respond, Identify]
+description: >
+  Monitors network traffic for threats that bypass perimeter controls — lateral
+  movement, encrypted C2, insider threats, and anomalous data flows. Uses ML/AI
+  behavioral baselines and protocol analysis (including deep packet inspection and
+  metadata analysis). Complements EDR by providing east-west traffic visibility
+  that endpoint agents cannot see.
+related_categories: [siem, xdr-edr, ngfw-ips, ot-ics-iot]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: Networks (network analytics)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Networks (pillar) + Visibility & Analytics
+  aws_sra: Detective Controls (GuardDuty VPC Flow Logs)
+  cisco_security: Network Security (Secure Network Analytics)
+
+products:
+  - name: ExtraHop Reveal(x)
+    vendor: ExtraHop (acquired by Bain Capital 2021)
+    type: on-prem|SaaS
+    notes: Deep wire-data NDR; strong encrypted traffic analysis; cloud and on-prem sensors
+
+  - name: Darktrace
+    vendor: Darktrace
+    type: SaaS|on-prem
+    notes: AI-native NDR with self-learning models; Cyber AI Analyst for autonomous investigation; active response capabilities
+
+  - name: Vectra AI
+    vendor: Vectra AI
+    type: SaaS|on-prem
+    notes: AI-driven NDR + ITDR; Signal Clarity to reduce alert noise; strong hybrid cloud coverage
+
+  - name: Corelight
+    vendor: Corelight
+    type: on-prem|SaaS
+    notes: Network evidence platform built on Zeek (open-source); rich protocol logs for SIEM/XDR enrichment
+
+  - name: Cisco Secure Network Analytics
+    vendor: Cisco (formerly Stealthwatch)
+    platform: cisco-security
+    type: on-prem|SaaS
+    notes: Network behavior analysis using NetFlow/IPFIX; strong in Cisco network-centric environments
+
+  - name: Palo Alto Cortex NDR
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: ML-based network analytics integrated with Cortex Data Lake; East-West traffic analysis
+
+  - name: Gigamon Deep Observability
+    vendor: Gigamon
+    type: on-prem|SaaS
+    notes: Network visibility fabric feeding NDR tools; metadata extraction across encrypted traffic
+
+  - name: Awake Security (Arista Networks)
+    vendor: Arista Networks (acquired Awake Security 2021)
+    type: SaaS
+    notes: AI-driven NDR with device profiling; integrated with Arista network infrastructure
+
+  - name: IronNet Collective Defense
+    vendor: IronNet
+    type: SaaS
+    notes: NDR with collective defense / threat sharing across peer organizations
+
+  - name: Amazon GuardDuty (Network)
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: VPC Flow Log and DNS query analysis for AWS environments; native threat detection
+
+  - name: Zeek (Bro)
+    vendor: Zeek Project (open-source)
+    type: open-source
+    notes: Open-source network analysis framework; generates rich protocol-level logs; foundation for Corelight

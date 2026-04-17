@@ -1,0 +1,65 @@
+id: security-awareness
+name: Security Awareness Training
+full_name: Security Awareness & Human Risk Management
+nist_primary: Govern
+nist_secondary: [Protect]
+description: >
+  Platforms delivering phishing simulations, security training content, and behavioral
+  analytics to reduce human-layer risk. Increasingly framed as "human risk management"
+  — quantifying and tracking individual risk scores rather than just completion rates.
+related_categories: [grc, policy-management]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: KnowBe4
+    vendor: KnowBe4
+    type: SaaS
+    notes: Market leader; largest phishing simulation and training content library; AI-driven risk scoring
+
+  - name: Proofpoint Security Awareness Training
+    vendor: Proofpoint
+    type: SaaS
+    notes: Tightly integrated with Proofpoint email security; threat-informed training based on actual attack data
+
+  - name: SANS Security Awareness
+    vendor: SANS Institute
+    type: SaaS
+    notes: Content-heavy approach with strong compliance mapping; well-regarded in regulated industries
+
+  - name: Cofense PhishMe
+    vendor: Cofense
+    type: SaaS
+    notes: Phishing simulation and reporter button; strong incident response integration via Cofense Triage
+
+  - name: Mimecast Awareness Training
+    vendor: Mimecast
+    type: SaaS
+    notes: Short-form video content; integrated with Mimecast email security
+
+  - name: Hoxhunt
+    vendor: Hoxhunt
+    type: SaaS
+    notes: Gamified micro-training with adaptive phishing; strong European presence
+
+  - name: Terranova Security
+    vendor: Terranova Security (Fortra)
+    type: SaaS
+    notes: Multilingual content library; strong in financial and healthcare sectors
+
+  - name: Ninjio
+    vendor: Ninjio
+    type: SaaS
+    notes: Short animated episode-based training; strong engagement metrics
+
+  - name: Curricula
+    vendor: Curricula (now part of Palo Alto via Proofpoint ecosystem)
+    type: SaaS
+    notes: Story-based security training acquired by Arctic Wolf; narrative-driven approach

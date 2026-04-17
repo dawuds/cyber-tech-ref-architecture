@@ -1,0 +1,67 @@
+id: cisa_ztmm
+name: CISA Zero Trust Maturity Model v2.0
+version: "v2.0, April 2023"
+source: https://www.cisa.gov/zero-trust-maturity-model
+description: >
+  US government framework for federal agencies implementing Zero Trust.
+  Defines five technology pillars with four maturity levels (Traditional → Initial →
+  Advanced → Optimal). Three cross-cutting capabilities apply across all pillars.
+  Vendor-neutral; maps to technology categories rather than specific products.
+
+pillars:
+  - id: identity
+    name: Identity
+    nist_mapping: [Protect, Identify]
+    description: User and entity authentication, authorization, and lifecycle management
+    technology_categories: [iam-sso-mfa, pam, identity-governance]
+
+  - id: devices
+    name: Devices
+    nist_mapping: [Protect, Identify]
+    description: Hardware, software, firmware inventory and security posture
+    technology_categories: [mdm-emm, endpoint-protection, xdr-edr, asset-management]
+
+  - id: networks
+    name: Networks
+    nist_mapping: [Protect, Detect]
+    description: All network communications including internal, cloud, and remote
+    technology_categories: [ngfw-ips, ztna-sse-sase, ndr, ot-ics-iot]
+
+  - id: applications-workloads
+    name: Applications & Workloads
+    nist_mapping: [Protect, Detect]
+    description: On-premises, cloud-hosted, and mobile applications
+    technology_categories: [cnapp, waf-api-security, application-security, casb]
+
+  - id: data
+    name: Data
+    nist_mapping: [Protect, Identify, Govern]
+    description: Data inventory, classification, and protection across the enterprise
+    technology_categories: [dlp, ciem, identity-governance]
+
+cross_cutting_capabilities:
+  - id: visibility-analytics
+    name: Visibility & Analytics
+    nist_mapping: [Detect, Identify]
+    technology_categories: [siem, xdr-edr, ndr, ueba]
+
+  - id: automation-orchestration
+    name: Automation & Orchestration
+    nist_mapping: [Respond, Protect]
+    technology_categories: [soar, case-management]
+
+  - id: governance
+    name: Governance
+    nist_mapping: [Govern]
+    technology_categories: [grc, policy-management]
+
+maturity_levels:
+  - Traditional
+  - Initial
+  - Advanced
+  - Optimal
+
+notes: >
+  Vendor-neutral maturity model rather than a product architecture. Best used to
+  assess organizational Zero Trust posture and map technology investments to maturity.
+  Primary audience: US federal agencies, but widely adopted commercially.

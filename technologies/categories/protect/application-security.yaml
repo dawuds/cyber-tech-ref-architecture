@@ -1,0 +1,83 @@
+id: application-security
+name: Application Security
+full_name: Application Security Testing (SAST / DAST / SCA / IAST)
+nist_primary: Protect
+nist_secondary: [Identify]
+description: >
+  Tools testing application code and dependencies for security vulnerabilities throughout
+  the software development lifecycle. SAST (static) analyzes source code; DAST (dynamic)
+  tests running applications; SCA (composition) scans open-source dependencies; IAST
+  (interactive) instruments running apps. Increasingly integrated into CI/CD pipelines
+  as DevSecOps matures.
+related_categories: [supply-chain-security, cnapp, waf-api-security]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: Applications (Prisma Cloud code security)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Applications & Workloads (pillar)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Veracode
+    vendor: Veracode
+    type: SaaS
+    notes: Comprehensive SAST + DAST + SCA; strong compliance reporting; policy-as-code enforcement
+
+  - name: Checkmarx One
+    vendor: Checkmarx
+    type: SaaS
+    notes: Unified SAST + SCA + IaC + API security; AppSec platform consolidation play
+
+  - name: Snyk
+    vendor: Snyk
+    type: SaaS
+    notes: Developer-first SCA + SAST + container + IaC security; deep IDE and CI/CD integration
+
+  - name: GitHub Advanced Security
+    vendor: Microsoft (GitHub)
+    type: SaaS
+    notes: CodeQL SAST + Dependabot SCA + secret scanning; native GitHub integration; strong in open-source projects
+
+  - name: GitLab Security
+    vendor: GitLab
+    type: SaaS|on-prem
+    notes: Built-in SAST + DAST + SCA + secret detection in GitLab CI/CD pipelines
+
+  - name: Semgrep
+    vendor: Semgrep
+    type: SaaS|open-source
+    notes: Fast, customizable SAST; developer-friendly; large public rule library; OSS core
+
+  - name: SonarQube
+    vendor: Sonarsource
+    type: SaaS|on-prem|open-source
+    notes: Code quality + security scanning; widely deployed in CI/CD; Community edition is open-source
+
+  - name: Black Duck (Synopsys)
+    vendor: Synopsys
+    type: SaaS|on-prem
+    notes: Leading SCA for open-source license compliance + vulnerability detection; strong in IP-sensitive industries
+
+  - name: Invicti (formerly Netsparker)
+    vendor: Invicti Security
+    type: SaaS
+    notes: DAST with proof-based scanning to eliminate false positives; strong web application coverage
+
+  - name: Contrast Security
+    vendor: Contrast Security
+    type: SaaS
+    notes: IAST via instrumentation; detects vulnerabilities in production-like runtime; low false positive rate
+
+  - name: Palo Alto Prisma Cloud (Code Security)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: IaC scanning (Checkov) + SCA + secret detection; part of Prisma Cloud CNAPP
+
+  - name: Apiiro
+    vendor: Apiiro
+    type: SaaS
+    notes: Risk-based application security posture management (ASPM); code risk graph across SDLC

@@ -1,0 +1,75 @@
+id: dfir
+name: DFIR
+full_name: Digital Forensics & Incident Response
+nist_primary: Respond
+nist_secondary: [Recover, Identify]
+description: >
+  Tools and services for investigating security incidents — collecting evidence,
+  analyzing malware, reconstructing attack timelines, and supporting legal/regulatory
+  proceedings. Encompasses disk forensics, memory forensics, network forensics,
+  mobile forensics, and cloud forensics. Often delivered as a managed service (IR retainer)
+  by specialist firms.
+related_categories: [soar, case-management, threat-intelligence, backup-recovery]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Threat Intelligence & IR (Mandiant)
+  crowdstrike_falcon: Security Operations (Falcon OverWatch / Complete)
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Google Mandiant (IR Services)
+    vendor: Google (Mandiant, acquired 2022)
+    platform: google-csa
+    type: services
+    notes: Premier incident response firm; acquired by Google for $5.4B; frontline intelligence from active investigations
+
+  - name: CrowdStrike Services (Falcon OverWatch / Complete)
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: services|SaaS
+    notes: Managed threat hunting (OverWatch) and MDR (Complete); incident response from Falcon sensor telemetry
+
+  - name: Cado Security
+    vendor: Cado Security
+    type: SaaS
+    notes: Cloud-native DFIR platform; automated evidence collection from AWS, Azure, GCP; fast triage for cloud incidents
+
+  - name: Magnet Forensics
+    vendor: Magnet Forensics
+    type: on-prem|SaaS
+    notes: AXIOM and IGNITE platforms; disk/mobile/cloud forensics; widely used by law enforcement and enterprise IR teams
+
+  - name: Cellebrite
+    vendor: Cellebrite
+    type: on-prem|SaaS
+    notes: Leading mobile device forensics; UFED for physical extraction; broad device support including encrypted
+
+  - name: OpenText EnCase
+    vendor: OpenText (acquired Guidance Software)
+    type: on-prem
+    notes: Veteran enterprise forensics platform; strong legal chain-of-custody; disk and endpoint forensics
+
+  - name: Exterro FTK (Forensic Toolkit)
+    vendor: Exterro (acquired AccessData)
+    type: on-prem
+    notes: Comprehensive disk and memory forensics; legal hold integration; strong e-discovery workflow
+
+  - name: Velociraptor
+    vendor: Velociraptor Project (open-source)
+    type: open-source
+    notes: Open-source DFIR platform; VQL for endpoint queries; fast triage at scale; used by many IR firms
+
+  - name: KAPE (Kroll Artifact Parser and Extractor)
+    vendor: Kroll (open-source tool)
+    type: open-source
+    notes: Rapid forensic triage and artifact collection; widely used by IR practitioners
+
+  - name: Palo Alto Unit 42 (IR Services)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: services
+    notes: Threat intelligence + incident response services; Unit 42 analysts with Cortex platform integration

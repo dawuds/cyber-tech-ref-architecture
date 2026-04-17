@@ -1,0 +1,81 @@
+id: dlp
+name: DLP
+full_name: Data Loss Prevention
+nist_primary: Protect
+nist_secondary: [Detect, Govern]
+description: >
+  Detects and prevents unauthorized transfer or exfiltration of sensitive data —
+  PII, PCI, PHI, IP — across endpoints, network, email, and cloud channels.
+  Modern DLP is data-aware and context-sensitive, moving beyond regex patterns
+  to AI-driven content classification and user behavior context.
+related_categories: [casb, ztna-sse-sase, cnapp, email-security]
+market_notes: >
+  Traditional network DLP (Symantec, Forcepoint) declining as traffic shifts to
+  cloud and encrypted channels. Cloud-delivered DLP embedded in SSE platforms
+  (Netskope, Zscaler, Microsoft Purview) is the growth segment. Nightfall AI
+  represents new API-native approach for SaaS DLP.
+vendor_framework_coverage:
+  microsoft_mcra: Information Protection (Purview DLP)
+  palo_alto_zta: Data (pillar — Enterprise DLP)
+  zscaler_zte: Internet Access (ZIA DLP)
+  google_csa: Data Security (Cloud DLP / Workspace DLP)
+  crowdstrike_falcon: null
+  cisa_ztmm: Data (pillar)
+  aws_sra: Data Protection (Macie)
+  cisco_security: null
+
+products:
+  - name: Microsoft Purview DLP
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Unified DLP across M365, Teams, SharePoint, Exchange, and endpoint; deep sensitivity label integration
+
+  - name: Palo Alto Enterprise DLP
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Cloud-native DLP for all Palo Alto products; consistent policy across NGFW, Prisma Access, Prisma Cloud
+
+  - name: Forcepoint DLP
+    vendor: Forcepoint
+    type: on-prem|SaaS
+    notes: Comprehensive endpoint + network + cloud DLP; human-centric risk-adaptive policies
+
+  - name: Symantec DLP
+    vendor: Broadcom (Symantec)
+    type: on-prem
+    notes: Legacy market leader; deep on-prem capabilities; Broadcom ownership has slowed development
+
+  - name: Zscaler DLP
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: Inline cloud DLP for all traffic through ZIA; AI-powered exact data matching and fingerprinting
+
+  - name: Netskope DLP
+    vendor: Netskope
+    type: SaaS
+    notes: Best-in-class cloud DLP with granular SaaS/IaaS coverage; 3,000+ data identifiers
+
+  - name: Google Cloud DLP (Sensitive Data Protection)
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: API-based data discovery and de-identification for GCP, BigQuery, and GCS; strong for data pipelines
+
+  - name: Amazon Macie
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: ML-based sensitive data discovery in S3; PII and credential detection; native AWS integration
+
+  - name: Digital Guardian
+    vendor: Fortra (formerly HelpSystems)
+    type: on-prem|SaaS
+    notes: Strong endpoint DLP with behavioral analytics; acquired by Fortra; good for insider threat programs
+
+  - name: Nightfall AI
+    vendor: Nightfall AI
+    type: SaaS
+    notes: API-native DLP for SaaS apps (Slack, GitHub, Confluence, Jira); AI-driven data classification

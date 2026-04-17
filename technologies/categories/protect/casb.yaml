@@ -1,0 +1,66 @@
+id: casb
+name: CASB
+full_name: Cloud Access Security Broker
+nist_primary: Protect
+nist_secondary: [Detect, Identify]
+description: >
+  Visibility and control over cloud application usage — sanctioned and unsanctioned
+  (shadow IT). Core capabilities: discovery of cloud app usage, data loss prevention
+  for cloud, threat protection, and compliance enforcement for SaaS/IaaS.
+  CASB functionality is increasingly embedded within SSE/SASE platforms.
+related_categories: [ztna-sse-sase, dlp, siem]
+market_notes: >
+  Standalone CASB market largely absorbed into SSE/SASE platforms. Most organizations
+  get CASB capabilities from their SSE vendor (Zscaler, Netskope, Microsoft, Palo Alto)
+  rather than a dedicated CASB product. Gartner removed standalone CASB Magic Quadrant
+  and folded it into SSE MQ in 2022.
+vendor_framework_coverage:
+  microsoft_mcra: Cloud & Infrastructure (Defender for Cloud Apps)
+  palo_alto_zta: Applications (Prisma Access CASB)
+  zscaler_zte: Internet Access (ZIA CASB)
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Applications & Workloads (pillar)
+  aws_sra: null
+  cisco_security: SASE (Umbrella CASB)
+
+products:
+  - name: Microsoft Defender for Cloud Apps
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Formerly Microsoft Cloud App Security; 28,000+ app catalog; deep Microsoft 365 integration and session controls
+
+  - name: Netskope CASB
+    vendor: Netskope
+    platform: netskope-sase
+    type: SaaS
+    notes: Best-in-class granular CASB controls; real-time DLP; strong for regulated industries
+
+  - name: Zscaler CASB
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: Inline and API-based CASB integrated into ZIA platform; strong SaaS security posture management
+
+  - name: Palo Alto Prisma Access (CASB)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Inline CASB + SaaS security posture management (SSPM) within Prisma Access
+
+  - name: Symantec CloudSOC
+    vendor: Broadcom (Symantec)
+    type: SaaS
+    notes: Legacy CASB with deep analytics; now part of Broadcom portfolio; strong financial services install base
+
+  - name: Skyhigh Security CASB
+    vendor: Skyhigh Security (STG)
+    type: SaaS
+    notes: Former McAfee MVISION Cloud; strong SaaS and IaaS CASB capabilities
+
+  - name: Cisco Umbrella (CASB)
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: CASB functionality as part of Umbrella SSE; cloud app discovery and control

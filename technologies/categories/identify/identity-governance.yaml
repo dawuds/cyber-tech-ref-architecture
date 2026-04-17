@@ -1,0 +1,68 @@
+id: identity-governance
+name: Identity Governance
+full_name: Identity Governance & Administration (IGA)
+nist_primary: Identify
+nist_secondary: [Protect, Govern]
+description: >
+  Platforms managing the full identity lifecycle — provisioning, role management,
+  access certification, segregation of duties (SoD), and access request workflows.
+  Answers the question: who has access to what, and should they? Increasingly
+  AI-driven for role mining and anomalous access detection.
+related_categories: [iam-sso-mfa, pam, ciem]
+vendor_framework_coverage:
+  microsoft_mcra: Identity & Access (Entra ID Governance)
+  palo_alto_zta: Identity (pillar)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Identity (pillar)
+  aws_sra: IAM
+  cisco_security: null
+
+products:
+  - name: SailPoint Identity Security Cloud
+    vendor: SailPoint
+    type: SaaS
+    notes: Market leader in IGA; AI-driven role management and access recommendations; went private 2022, re-IPO 2024
+
+  - name: Saviynt Enterprise Identity Cloud
+    vendor: Saviynt
+    type: SaaS
+    notes: Cloud-native IGA with strong PAM and application access governance convergence
+
+  - name: Omada Identity Cloud
+    vendor: Omada
+    type: SaaS
+    notes: Strong European IGA player; role-based access and lifecycle management
+
+  - name: Microsoft Entra ID Governance
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Entitlement management, access reviews, and lifecycle workflows for Entra ID
+
+  - name: IBM Security Verify Governance
+    vendor: IBM
+    type: SaaS|on-prem
+    notes: Enterprise IGA with strong mainframe and legacy application connectors
+
+  - name: One Identity Manager
+    vendor: One Identity
+    type: on-prem|SaaS
+    notes: Comprehensive IGA with strong Active Directory integration; popular in European enterprises
+
+  - name: Radiant Logic
+    vendor: Radiant Logic
+    type: SaaS|on-prem
+    notes: Identity data fabric for unifying fragmented identity stores; strong identity analytics
+
+  - name: Zscaler ITDR (via Deception)
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: Identity threat detection integrated with ZPA; not a full IGA platform
+
+  - name: ConductorOne
+    vendor: ConductorOne
+    type: SaaS
+    notes: Modern access review and governance platform; strong developer and SaaS application focus

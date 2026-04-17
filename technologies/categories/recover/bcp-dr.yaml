@@ -1,0 +1,71 @@
+id: bcp-dr
+name: BCP / DR
+full_name: Business Continuity & Disaster Recovery Planning
+nist_primary: Recover
+nist_secondary: [Govern]
+description: >
+  Platforms for planning, testing, and executing business continuity and disaster
+  recovery — ensuring critical functions survive and recover from disruptions.
+  Encompasses BIA (business impact analysis), recovery plan documentation,
+  crisis communication, tabletop exercise management, and DR orchestration.
+related_categories: [backup-recovery, grc]
+market_notes: >
+  BCP/DR planning software overlaps heavily with enterprise GRC platforms. Dedicated
+  BC management platforms target regulated industries (financial, healthcare, critical
+  infrastructure). Operational resilience regulations (DORA in EU, FCA in UK) are
+  driving increased investment in this category.
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Fusion Risk Management
+    vendor: Fusion Risk Management
+    type: SaaS
+    notes: Operational resilience platform built on Salesforce; strong BIA and program management; popular in financial services
+
+  - name: Castellan Solutions
+    vendor: Castellan
+    type: SaaS
+    notes: Business continuity management software + consulting services; exercise management and plan testing
+
+  - name: Quantivate BCM
+    vendor: Quantivate
+    type: SaaS
+    notes: Business continuity + risk management; strong regulatory compliance features; mid-market focus
+
+  - name: OnSolve Crisis Management
+    vendor: OnSolve
+    type: SaaS
+    notes: Mass notification + crisis management; acquired MIR3 and Send Word Now; strong alerting capabilities
+
+  - name: Archer Business Resiliency
+    vendor: RSA (Archer)
+    type: on-prem|SaaS
+    notes: BCP/DR module within Archer GRC; tight integration with risk management and audit workflows
+
+  - name: IBM OpenPages BCM
+    vendor: IBM
+    type: SaaS|on-prem
+    notes: Business continuity module within OpenPages GRC; Watson AI-assisted impact analysis
+
+  - name: SAP GRC (Business Continuity)
+    vendor: SAP
+    type: on-prem|SaaS
+    notes: BCM capabilities within SAP GRC suite; strong for SAP-centric organizations
+
+  - name: Continuity Logic
+    vendor: Continuity Logic
+    type: SaaS
+    notes: Cloud-based BCM platform; plan authoring, BIA, and exercise management; strong US financial sector
+
+  - name: Everbridge Mass Notification
+    vendor: Everbridge
+    type: SaaS
+    notes: Critical event management and mass notification; multi-channel alerts for crisis communication

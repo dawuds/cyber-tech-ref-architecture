@@ -1,0 +1,96 @@
+id: ztna-sse-sase
+name: ZTNA / SSE / SASE
+full_name: Zero Trust Network Access / Security Service Edge / Secure Access Service Edge
+nist_primary: Protect
+nist_secondary: [Detect]
+description: >
+  Cloud-delivered converged security and networking. ZTNA replaces VPN with
+  identity-aware, least-privilege application access. SSE converges ZTNA + CASB +
+  SWG into a single cloud service. SASE adds SD-WAN to SSE for full networking+security
+  convergence. The most contested product space in enterprise security 2023-2025.
+related_categories: [casb, ngfw-ips, iam-sso-mfa, ndr]
+market_notes: >
+  Gartner coined SASE (2019) and SSE (2021). All major vendors have repositioned around these terms.
+  True SASE requires both SD-WAN and SSE in one vendor; most organizations buy SSE + separate SD-WAN.
+  Key differentiator: proxy-based (Zscaler, Netskope) vs. routing-based (Palo Alto, Cisco) architectures.
+vendor_framework_coverage:
+  microsoft_mcra: Identity & Access (Entra Private Access / Global Secure Access)
+  palo_alto_zta: Networks (Prisma Access)
+  zscaler_zte: Internet Access + Private Access (core architecture)
+  google_csa: Identity & Access (BeyondCorp Enterprise)
+  crowdstrike_falcon: null
+  cisa_ztmm: Networks (pillar)
+  aws_sra: null
+  cisco_security: SASE (Cisco+ Secure Connect / Umbrella)
+
+products:
+  - name: Zscaler Internet Access (ZIA)
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: Cloud-native SWG/CASB/DLP; proxy-based inspection of all user traffic; 150+ PoPs globally
+
+  - name: Zscaler Private Access (ZPA)
+    vendor: Zscaler
+    platform: zscaler-zte
+    type: SaaS
+    notes: ZTNA for private applications; app connectors make apps invisible to internet; no VPN
+
+  - name: Palo Alto Prisma Access
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: SASE platform delivering NGFW capabilities as cloud service; ADEM for digital experience monitoring
+
+  - name: Cloudflare One
+    vendor: Cloudflare
+    type: SaaS
+    notes: SSE/SASE built on Cloudflare's global network; strong performance; competitive pricing; Magic WAN for SD-WAN
+
+  - name: Netskope One
+    vendor: Netskope
+    type: SaaS
+    notes: Deep CASB + SASE integration; best-in-class data protection; strong for data-sensitive orgs
+
+  - name: Microsoft Entra Private Access
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: ZTNA for on-prem apps via Entra ID; part of Microsoft Global Secure Access (SSE portfolio)
+
+  - name: Microsoft Entra Internet Access
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: SWG for internet traffic; Microsoft 365-aware; part of Global Secure Access
+
+  - name: Google BeyondCorp Enterprise
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Context-aware access for web apps; built on Google's BeyondProd Zero Trust model; Chrome-native
+
+  - name: Cato Networks
+    vendor: Cato Networks
+    type: SaaS
+    notes: True single-vendor SASE (SD-WAN + SSE); managed backbone; strong for global enterprises
+
+  - name: Versa Networks
+    vendor: Versa Networks
+    type: SaaS|on-prem
+    notes: SASE with AI-powered SD-WAN; strong telco and MSP channel; on-prem option for compliance
+
+  - name: iboss Zero Trust
+    vendor: iboss
+    type: SaaS
+    notes: Cloud-native proxy SASE; strong in K-12 education and government
+
+  - name: Skyhigh Security (SSE)
+    vendor: Skyhigh Security (Symphony Technology Group)
+    type: SaaS
+    notes: Former McAfee enterprise security assets; strong CASB heritage; Trellix for endpoint
+
+  - name: Forcepoint ONE
+    vendor: Forcepoint
+    type: SaaS
+    notes: SSE with behavioral analytics and DLP; human-centric risk adaptive architecture

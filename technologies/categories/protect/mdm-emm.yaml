@@ -1,0 +1,63 @@
+id: mdm-emm
+name: MDM / EMM
+full_name: Mobile Device Management / Unified Endpoint Management (UEM)
+nist_primary: Protect
+nist_secondary: [Identify]
+description: >
+  Manages and enforces security policies on mobile and desktop endpoints —
+  enrollment, configuration profiles, app management, remote wipe, and compliance
+  enforcement. Modern UEM platforms extend to Windows, macOS, iOS, Android, and
+  ChromeOS from a single console. Integrates with ZTNA and conditional access.
+related_categories: [iam-sso-mfa, endpoint-protection, ztna-sse-sase]
+vendor_framework_coverage:
+  microsoft_mcra: Device Security (Microsoft Intune)
+  palo_alto_zta: Devices (pillar)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Devices (pillar)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Microsoft Intune
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Market leader for UEM in Microsoft shops; tight Entra ID conditional access integration; Windows-native
+
+  - name: Jamf Pro
+    vendor: Jamf
+    type: SaaS|on-prem
+    notes: Apple-first MDM; best-in-class for macOS and iOS management; Jamf Connect for zero-touch enrollment
+
+  - name: VMware Workspace ONE (Omnissa)
+    vendor: Omnissa (formerly VMware/Broadcom)
+    type: SaaS|on-prem
+    notes: Broadcom divested VMware EUC to Omnissa (2024); comprehensive UEM + digital workspace platform
+
+  - name: Google Endpoint Management
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Built into Google Workspace; Android Enterprise and ChromeOS management; basic iOS/Windows support
+
+  - name: Kandji
+    vendor: Kandji
+    type: SaaS
+    notes: Apple-focused MDM; automated device compliance blueprints; strong DevOps-friendly workflow
+
+  - name: Mosyle
+    vendor: Mosyle
+    type: SaaS
+    notes: Apple Business Essentials competitor; popular in education and SMB; strong security hardening
+
+  - name: Ivanti Neurons for UEM
+    vendor: Ivanti
+    type: SaaS|on-prem
+    notes: Comprehensive UEM from MobileIron + Ivanti merger; strong in regulated industries
+
+  - name: ManageEngine Mobile Device Manager Plus
+    vendor: ManageEngine (Zoho)
+    type: SaaS|on-prem
+    notes: Cost-effective UEM for SMB and mid-market; broad platform support

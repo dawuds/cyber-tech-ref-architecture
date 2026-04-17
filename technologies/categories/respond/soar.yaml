@@ -1,0 +1,79 @@
+id: soar
+name: SOAR
+full_name: Security Orchestration, Automation & Response
+nist_primary: Respond
+nist_secondary: [Detect, Recover]
+description: >
+  Automates security operations workflows — alert triage, enrichment, containment,
+  and remediation — via playbooks that orchestrate actions across security tools.
+  Reduces mean time to respond (MTTR) and analyst fatigue. Modern SOAR is largely
+  embedded within SIEM/XDR platforms rather than deployed as a standalone tool.
+related_categories: [siem, xdr-edr, case-management, threat-intelligence]
+market_notes: >
+  Standalone SOAR market consolidated 2018-2022: Phantom → Splunk SOAR, Demisto →
+  Palo Alto XSOAR, Siemplify → Google Chronicle SOAR, Resilient → IBM SOAR.
+  New entrant "low-code/no-code" SOAR (Tines, Torq) gaining traction for
+  developer-friendly automation without heavy playbook management overhead.
+vendor_framework_coverage:
+  microsoft_mcra: Security Operations (Sentinel SOAR / Logic Apps)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Security Operations (Chronicle SOAR)
+  crowdstrike_falcon: Security Operations (Falcon Fusion SOAR)
+  cisa_ztmm: Automation & Orchestration
+  aws_sra: Incident Response (EventBridge / Step Functions)
+  cisco_security: Security Operations (XDR automation)
+
+products:
+  - name: Microsoft Sentinel (SOAR)
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Built-in SOAR via Azure Logic Apps; 900+ playbook connectors; unified with SIEM in Sentinel
+
+  - name: Splunk SOAR (formerly Phantom)
+    vendor: Splunk (Cisco, acquired 2024)
+    type: on-prem|SaaS
+    notes: Acquired Phantom Cyber 2018; powerful playbook engine; 500+ apps; can run standalone or with Splunk SIEM
+
+  - name: Palo Alto Cortex XSOAR
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: on-prem|SaaS
+    notes: Acquired Demisto 2019; comprehensive SOAR + case management + TI; 1,000+ integrations
+
+  - name: Google Chronicle SOAR
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Acquired Siemplify 2022; unified with Chronicle SIEM; visual playbook designer; strong threat intelligence integration
+
+  - name: IBM Security SOAR (Resilient)
+    vendor: IBM
+    type: on-prem|SaaS
+    notes: Strong incident response case management; dynamic playbooks based on incident type and jurisdiction
+
+  - name: ServiceNow Security Operations
+    vendor: ServiceNow
+    type: SaaS
+    notes: SOAR embedded in ServiceNow platform; strong ITSM+SecOps integration; good for change management workflows
+
+  - name: Tines
+    vendor: Tines
+    type: SaaS
+    notes: No-code automation platform for security teams; story-based workflows; growing rapidly in SOC automation
+
+  - name: Torq
+    vendor: Torq
+    type: SaaS
+    notes: Hyperautomation for security; AI-generated workflows; no coding required; strong for security engineers
+
+  - name: Swimlane
+    vendor: Swimlane
+    type: SaaS|on-prem
+    notes: Turbine low-code SOAR platform; strong in OT/ICS environments; federal market presence
+
+  - name: D3 Security
+    vendor: D3 Security
+    type: SaaS|on-prem
+    notes: SOAR with MITRE ATT&CK playbooks; strong case management and metrics reporting

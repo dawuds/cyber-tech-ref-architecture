@@ -1,0 +1,78 @@
+id: endpoint-protection
+name: Endpoint Protection
+full_name: Endpoint Protection Platform (EPP / NGAV)
+nist_primary: Protect
+nist_secondary: [Detect]
+description: >
+  Prevents malware, ransomware, and exploitation on endpoints through signature-based
+  and AI/ML-behavioral prevention. Modern EPP (NGAV) has replaced signature-only AV.
+  EPP is the prevention layer; EDR (see xdr-edr) is the detection and response layer.
+  Most modern platforms bundle both in a single agent.
+related_categories: [xdr-edr, mdm-emm, ztna-sse-sase]
+market_notes: >
+  Standalone EPP/NGAV market almost fully converged with EDR. CrowdStrike, SentinelOne,
+  and Microsoft dominate. Legacy AV (Symantec, McAfee) largely displaced in enterprise.
+  Symantec now under Broadcom; McAfee enterprise became Trellix (STG/Symphony).
+vendor_framework_coverage:
+  microsoft_mcra: Device Security (Defender Antivirus / Defender for Endpoint)
+  palo_alto_zta: Devices (Cortex XDR prevention)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: Endpoint & Identity (Falcon Prevent)
+  cisa_ztmm: Devices (pillar)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: CrowdStrike Falcon Prevent (NGAV)
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: AI-driven prevention without signatures; bundled with Falcon Insight EDR; single lightweight agent
+
+  - name: Microsoft Defender Antivirus
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Built into Windows; ATP capabilities via Defender for Endpoint; free for Windows enterprise customers
+
+  - name: SentinelOne Singularity (EPP)
+    vendor: SentinelOne
+    type: SaaS
+    notes: AI-driven static + behavioral prevention; strong autonomous response; patented Storyline technology
+
+  - name: Palo Alto Cortex XDR (NGAV component)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Behavioral threat prevention as part of Cortex XDR; Wildfire sandbox integration
+
+  - name: Trellix Endpoint Security
+    vendor: Trellix (Symphony Technology Group)
+    type: on-prem|SaaS
+    notes: McAfee + FireEye combined; strong legacy install base; XDR strategy in progress
+
+  - name: Broadcom/Symantec Endpoint Security
+    vendor: Broadcom (Symantec)
+    type: on-prem|SaaS
+    notes: Large financial services install base; Broadcom acquisition (2019) has impacted development pace
+
+  - name: ESET Endpoint Security
+    vendor: ESET
+    type: on-prem|SaaS
+    notes: Strong in mid-market and Eastern Europe; low resource footprint; ESET Inspect for EDR
+
+  - name: Malwarebytes ThreatDown
+    vendor: Malwarebytes
+    type: SaaS
+    notes: Lightweight SMB-focused endpoint protection; strong remediation capabilities
+
+  - name: Sophos Intercept X
+    vendor: Sophos
+    type: SaaS
+    notes: Deep learning + Synchronized Security with Sophos firewall; strong mid-market
+
+  - name: Cybereason
+    vendor: Cybereason
+    type: SaaS
+    notes: MalOp (malicious operation) detection approach; strong in Asian markets; facing financial challenges 2024-2025

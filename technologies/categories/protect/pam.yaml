@@ -1,0 +1,68 @@
+id: pam
+name: PAM
+full_name: Privileged Access Management
+nist_primary: Protect
+nist_secondary: [Identify, Detect]
+description: >
+  Secures, controls, and monitors privileged accounts — admin credentials, service
+  accounts, SSH keys, and API tokens. Core capabilities: credential vaulting, just-in-time
+  (JIT) access, session recording, and least-privilege enforcement. Critical for
+  reducing blast radius from compromised accounts.
+related_categories: [iam-sso-mfa, secrets-management, identity-governance]
+vendor_framework_coverage:
+  microsoft_mcra: Identity & Access (Entra PIM)
+  palo_alto_zta: Identity (pillar)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: Endpoint & Identity (Falcon Privileged Access)
+  cisa_ztmm: Identity (pillar)
+  aws_sra: IAM
+  cisco_security: null
+
+products:
+  - name: CyberArk Privileged Access Manager
+    vendor: CyberArk
+    type: SaaS|on-prem
+    notes: Market leader; comprehensive credential vaulting, session isolation, and JIT; strong in regulated industries
+
+  - name: BeyondTrust Privileged Remote Access
+    vendor: BeyondTrust
+    type: SaaS|on-prem
+    notes: Strong vendor/contractor remote access PAM; acquired Bomgar; unified PAM suite
+
+  - name: Delinea Secret Server
+    vendor: Delinea (formerly Centrify + Thycotic)
+    type: SaaS|on-prem
+    notes: Merged Centrify and Thycotic brands; strong mid-market PAM; Secret Server is flagship vault
+
+  - name: Microsoft Entra PIM
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: JIT privileged access for Azure AD roles and Azure resources; time-bound activation with approval
+
+  - name: CrowdStrike Falcon Privileged Access
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: Identity threat detection + PAM integrated in Falcon platform; targets lateral movement detection
+
+  - name: HashiCorp Vault (PAM use cases)
+    vendor: HashiCorp (IBM)
+    type: SaaS|on-prem|open-source
+    notes: Secrets engine with dynamic credentials; popular PAM alternative for DevOps/cloud-native; acquired by IBM 2024
+
+  - name: Teleport
+    vendor: Gravitational
+    type: SaaS|open-source
+    notes: Open-source infrastructure access platform; certificate-based access to SSH, Kubernetes, databases
+
+  - name: ARCON PAM
+    vendor: ARCON
+    type: on-prem|SaaS
+    notes: Strong in APAC and Middle East; comprehensive session management and audit
+
+  - name: One Identity Safeguard
+    vendor: One Identity
+    type: on-prem|SaaS
+    notes: PAM with integrated IGA; session recording and privileged analytics

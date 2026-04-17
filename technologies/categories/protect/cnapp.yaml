@@ -1,0 +1,93 @@
+id: cnapp
+name: CNAPP
+full_name: Cloud-Native Application Protection Platform (CNAPP / CSPM / CWPP)
+nist_primary: Protect
+nist_secondary: [Identify, Detect]
+description: >
+  Unified cloud security platform consolidating Cloud Security Posture Management
+  (CSPM — misconfiguration), Cloud Workload Protection Platform (CWPP — runtime),
+  CIEM (entitlements), and IaC/code security. Addresses the full cloud attack surface
+  from developer code to running workloads. Agentless scanning plus optional runtime
+  agent is the dominant architecture.
+related_categories: [ciem, vulnerability-management, application-security, cnapp]
+market_notes: >
+  Fastest-growing segment in cybersecurity 2022-2025. Wiz disrupted incumbents with
+  agentless multi-cloud approach. Lacework acquired by Fortinet (Aug 2024).
+  Consolidation ongoing: Palo Alto (Prisma Cloud), CrowdStrike (Falcon Cloud),
+  Microsoft (Defender for Cloud), and Wiz all competing for CNAPP consolidation.
+vendor_framework_coverage:
+  microsoft_mcra: Cloud & Infrastructure (Defender for Cloud)
+  palo_alto_zta: Applications (Prisma Cloud)
+  zscaler_zte: Workload Protection (ZCP)
+  google_csa: Infrastructure Security (SCC)
+  crowdstrike_falcon: Cloud Security (Falcon Cloud Security)
+  cisa_ztmm: Applications & Workloads (pillar)
+  aws_sra: Detective Controls (Security Hub / Inspector)
+  cisco_security: Cloud (Panoptica)
+
+products:
+  - name: Wiz
+    vendor: Wiz
+    type: SaaS
+    notes: Market share leader; agentless multi-cloud CNAPP; graph-based toxic combination risk; acquired by Google (pending 2025, $32B)
+
+  - name: Palo Alto Prisma Cloud
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Comprehensive CNAPP with code-to-cloud coverage; RedLock (CSPM) + Twistlock (CWPP) heritage
+
+  - name: Microsoft Defender for Cloud
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Multi-cloud CNAPP (Azure, AWS, GCP); CSPM + CWPP + DevSecOps; MCSB as policy baseline
+
+  - name: Orca Security
+    vendor: Orca Security
+    type: SaaS
+    notes: SideScanning (agentless) across cloud estates; strong data security posture management
+
+  - name: Aqua Security
+    vendor: Aqua Security
+    type: SaaS|on-prem
+    notes: Strong container and Kubernetes runtime security; supply chain security integration
+
+  - name: Sysdig Secure
+    vendor: Sysdig
+    type: SaaS
+    notes: Runtime-first CNAPP using eBPF; Falco open-source at its core; real-time container threat detection
+
+  - name: Fortinet Lacework
+    vendor: Fortinet (acquired Lacework Aug 2024)
+    type: SaaS
+    notes: Behavioral anomaly-based CNAPP; 225+ cloud security patents; now integrated into Fortinet portfolio
+
+  - name: CrowdStrike Falcon Cloud Security
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: CNAPP integrated with Falcon platform; agentless CSPM + agent-based CWPP
+
+  - name: Google Security Command Center (SCC)
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: GCP-native CSPM + CWPP; integrates with Chronicle; limited to GCP workloads
+
+  - name: AWS Security Hub
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: Aggregates findings from AWS native services (GuardDuty, Inspector, Macie); CSPM via AWS Config rules
+
+  - name: Tenable Cloud Security
+    vendor: Tenable
+    type: SaaS
+    notes: CNAPP with strong CIEM (Ermetic acquisition); integrated into Tenable One exposure platform
+
+  - name: Cisco Panoptica
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: Cloud-native CNAPP; acquired Lightspin (2023); API and microservice security focus

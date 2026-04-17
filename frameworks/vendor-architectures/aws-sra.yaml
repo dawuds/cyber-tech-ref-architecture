@@ -1,0 +1,64 @@
+id: aws_sra
+name: AWS Security Reference Architecture
+version: "2025"
+source: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html
+description: >
+  AWS-native security architecture prescribing a multi-account Landing Zone structure
+  with dedicated security accounts (Log Archive, Security Tooling). Includes
+  CloudFormation and Terraform code. Cloud-native bias; does not address
+  on-premises or hybrid controls.
+
+domains:
+  - id: iam
+    name: Identity & Access Management
+    nist_mapping: [Protect, Govern]
+    products:
+      - AWS IAM
+      - AWS IAM Identity Center (SSO)
+      - AWS Organizations (SCPs)
+      - AWS Resource Access Manager
+
+  - id: detective-controls
+    name: Detective Controls
+    nist_mapping: [Detect, Identify]
+    products:
+      - Amazon GuardDuty (threat detection)
+      - AWS Security Hub (aggregation/compliance)
+      - Amazon Detective (investigation)
+      - AWS Config (configuration compliance)
+      - AWS CloudTrail (audit logging)
+      - Amazon Macie (data classification/DLP)
+
+  - id: infrastructure-security
+    name: Infrastructure Protection
+    nist_mapping: [Protect, Detect]
+    products:
+      - AWS Shield (DDoS)
+      - AWS WAF
+      - AWS Network Firewall
+      - Amazon VPC (segmentation)
+      - AWS PrivateLink
+
+  - id: data-protection
+    name: Data Protection
+    nist_mapping: [Protect, Govern]
+    products:
+      - AWS KMS (key management)
+      - AWS Secrets Manager
+      - AWS Certificate Manager
+      - Amazon Macie
+
+  - id: incident-response
+    name: Incident Response
+    nist_mapping: [Respond, Recover]
+    products:
+      - AWS Security Hub (orchestration)
+      - Amazon EventBridge (automation)
+      - AWS Step Functions (playbooks)
+      - AWS Backup
+
+notes: >
+  AWS SRA is optimized for AWS-native environments. Third-party security tools
+  (SIEM, EDR, GRC) are acknowledged as necessary integrations but not prescribed.
+  Strong Detective Controls coverage. Recover covered by AWS Backup but limited scope.
+  Updated August 2025 with Infrastructure Composer / IaC Generator guidance.

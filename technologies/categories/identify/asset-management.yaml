@@ -1,0 +1,73 @@
+id: asset-management
+name: Asset Management
+full_name: Cyber Asset Attack Surface Management / CMDB
+nist_primary: Identify
+nist_secondary: [Govern]
+description: >
+  Discovery and inventory of all IT assets — hardware, software, cloud workloads,
+  identities, and data — providing the foundation for risk assessment, vulnerability
+  management, and policy enforcement. Modern platforms go beyond CMDB to provide
+  continuous, agent-less discovery with relationship mapping.
+related_categories: [vulnerability-management, attack-surface-management, ciem]
+vendor_framework_coverage:
+  microsoft_mcra: Device Security (Defender for Endpoint asset inventory)
+  palo_alto_zta: Devices (pillar)
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: Risk & Vulnerability (Falcon Discover)
+  cisa_ztmm: Devices (pillar)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Axonius
+    vendor: Axonius
+    type: SaaS
+    notes: Agentless CAASM; aggregates from 800+ data sources; strong for heterogeneous environments
+
+  - name: JupiterOne
+    vendor: JupiterOne
+    type: SaaS
+    notes: Graph-based cyber asset management; query-driven relationships between assets and policies
+
+  - name: Noetic Cyber
+    vendor: Noetic Cyber
+    type: SaaS
+    notes: Continuous asset visibility with gap analysis against security controls
+
+  - name: runZero (formerly Rumble)
+    vendor: runZero
+    type: SaaS|on-prem
+    notes: Network discovery and asset inventory; no-agent approach; founded by HD Moore (Metasploit)
+
+  - name: ServiceNow CMDB
+    vendor: ServiceNow
+    type: SaaS
+    notes: Enterprise CMDB; strong ITSM integration; requires active population/maintenance
+
+  - name: Tanium
+    vendor: Tanium
+    type: on-prem|SaaS
+    notes: Real-time endpoint asset inventory at scale; strong in large government and enterprise
+
+  - name: Lansweeper
+    vendor: Lansweeper
+    type: SaaS|on-prem
+    notes: Broad IT asset discovery including OT/IoT; strong reporting for hybrid environments
+
+  - name: Microsoft Defender for Endpoint (Asset Inventory)
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Endpoint asset inventory built into Defender for Endpoint; limited to managed devices
+
+  - name: CrowdStrike Falcon Discover
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: IT hygiene and asset inventory from the Falcon sensor; unmanaged device discovery via Falcon Exposure Management
+
+  - name: Qualys CSAM
+    vendor: Qualys
+    type: SaaS
+    notes: Cyber Security Asset Management module integrated with Qualys VM platform

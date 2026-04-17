@@ -1,0 +1,79 @@
+id: email-security
+name: Email Security
+full_name: Email Security & Anti-Phishing
+nist_primary: Protect
+nist_secondary: [Detect]
+description: >
+  Defends email channels against phishing, business email compromise (BEC), malware,
+  and spam. Encompasses secure email gateways (SEG), integrated cloud email protection,
+  anti-phishing AI, and email authentication (DMARC/DKIM/SPF). Email remains the
+  primary initial access vector in most breaches.
+related_categories: [dlp, security-awareness, soar]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: Email & Web (Cisco Secure Email)
+
+products:
+  - name: Microsoft Defender for Office 365
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Native M365 email protection; anti-phishing, safe links/attachments, attack simulation; Plan 1/Plan 2
+
+  - name: Google Workspace (Advanced Protection)
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Built-in email protection for Gmail; AI-based spam/phishing filtering; Advanced Protection Program for high-risk users
+
+  - name: Proofpoint Email Security
+    vendor: Proofpoint
+    type: SaaS
+    notes: Market leader for gateway and API email protection; strong BEC and targeted attack detection
+
+  - name: Mimecast
+    vendor: Mimecast
+    type: SaaS
+    notes: Email security + continuity + archiving; strong resilience features; large European install base
+
+  - name: Abnormal Security
+    vendor: Abnormal Security
+    type: SaaS
+    notes: AI-native behavioral email security; API-based (no MX change needed); excellent BEC detection
+
+  - name: Cisco Secure Email Gateway
+    vendor: Cisco
+    platform: cisco-security
+    type: on-prem|SaaS
+    notes: IronPort successor; reputation-based filtering; strong in regulated industries
+
+  - name: Barracuda Email Security Gateway
+    vendor: Barracuda
+    type: SaaS|on-prem
+    notes: Strong SMB/mid-market; comprehensive email security + continuity + archiving
+
+  - name: Cofense
+    vendor: Cofense
+    type: SaaS
+    notes: Phishing detection and response; reporter button for user-reported phishing; Triage for SOC automation
+
+  - name: Agari (HelpSystems / Fortra)
+    vendor: Fortra (acquired Agari)
+    type: SaaS
+    notes: DMARC and email authentication enforcement; brand protection against impersonation
+
+  - name: Valimail
+    vendor: Valimail
+    type: SaaS
+    notes: Automated DMARC enforcement and email authentication; strong for domain protection
+
+  - name: Avanan (Check Point)
+    vendor: Check Point
+    type: SaaS
+    notes: API-based email security for M365 and Google Workspace; anti-phishing with AI

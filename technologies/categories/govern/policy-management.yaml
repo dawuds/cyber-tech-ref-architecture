@@ -1,0 +1,60 @@
+id: policy-management
+name: Policy & Compliance Management
+full_name: Security Policy & Compliance Automation
+nist_primary: Govern
+nist_secondary: [Identify, Protect]
+description: >
+  Tools for creating, publishing, versioning, and tracking compliance with security
+  policies. Modern platforms automate evidence collection, map controls to frameworks,
+  and provide continuous compliance monitoring rather than point-in-time audits.
+related_categories: [grc, security-awareness]
+market_notes: >
+  Overlaps significantly with GRC platforms. Standalone compliance automation tools
+  (Vanta, Drata, Secureframe) target cloud-native orgs; enterprise GRC platforms
+  (Archer, ServiceNow) include policy management as a module.
+vendor_framework_coverage:
+  microsoft_mcra: Information Protection & Governance (Purview Compliance Manager)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Governance (cross-cutting)
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Microsoft Purview Compliance Manager
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Continuous compliance scoring for 300+ regulations; deeply integrated with Microsoft 365 data
+
+  - name: ServiceNow Policy & Compliance Management
+    vendor: ServiceNow
+    type: SaaS
+    notes: GRC module with policy lifecycle, control testing, and exception management
+
+  - name: Tugboat Logic
+    vendor: OneTrust (acquired Tugboat Logic 2021)
+    type: SaaS
+    notes: Now part of OneTrust; strong security questionnaire and policy content library
+
+  - name: Sprinto
+    vendor: Sprinto
+    type: SaaS
+    notes: Automated compliance platform for cloud companies; fast SOC 2 / ISO 27001 readiness
+
+  - name: Strike Graph
+    vendor: Strike Graph
+    type: SaaS
+    notes: Risk-based compliance platform; flexible control mapping across frameworks
+
+  - name: Scrut Automation
+    vendor: Scrut
+    type: SaaS
+    notes: Multi-framework compliance automation with continuous control monitoring
+
+  - name: ISMS.online
+    vendor: ISMS.online
+    type: SaaS
+    notes: ISO 27001-focused policy and ISMS management; strong in UK/EU markets

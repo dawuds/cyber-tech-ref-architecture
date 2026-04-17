@@ -1,0 +1,74 @@
+id: attack-surface-management
+name: Attack Surface Management
+full_name: External Attack Surface Management (EASM)
+nist_primary: Identify
+nist_secondary: [Protect]
+description: >
+  Continuous discovery and monitoring of internet-facing assets — including unknown,
+  unmanaged, and shadow IT assets — from an attacker's perspective. Identifies exposed
+  services, certificates, domains, and vulnerabilities before attackers do.
+related_categories: [vulnerability-management, asset-management, threat-intelligence]
+vendor_framework_coverage:
+  microsoft_mcra: Cloud & Infrastructure (Defender EASM)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Threat Intelligence (Mandiant ASM)
+  crowdstrike_falcon: Threat Intelligence (Falcon Surface)
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Palo Alto Cortex Xpanse
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Market leader; real-time discovery of exposed assets with active risk scoring; acquired Expanse 2020
+
+  - name: Microsoft Defender EASM
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Azure-integrated EASM; part of Defender suite; strong for Microsoft-heavy organizations
+
+  - name: CrowdStrike Falcon Surface
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: EASM integrated into Falcon platform using Reposify technology (acquired 2021)
+
+  - name: Google Mandiant Attack Surface Management
+    vendor: Google (Mandiant)
+    platform: google-csa
+    type: SaaS
+    notes: Mandiant-grade intelligence-driven ASM; deep integration with Mandiant TI
+
+  - name: Tenable Attack Surface Management
+    vendor: Tenable
+    type: SaaS
+    notes: Lucidum-derived ASM capabilities integrated into Tenable One platform
+
+  - name: Censys
+    vendor: Censys
+    type: SaaS
+    notes: Internet-wide scan data with ASM platform; strong research and government use
+
+  - name: Cycognito
+    vendor: Cycognito
+    type: SaaS
+    notes: Automated EASM with subsidiary and supply chain asset discovery
+
+  - name: IBM Randori
+    vendor: IBM (acquired Randori 2022)
+    type: SaaS
+    notes: Attacker-perspective ASM; continuous red team validation of exposed assets
+
+  - name: NetSPI Attack Surface Management
+    vendor: NetSPI
+    type: SaaS
+    notes: Penetration testing firm with ASM platform; human-validated findings
+
+  - name: Searchlight Cyber
+    vendor: Searchlight Cyber
+    type: SaaS
+    notes: Dark web and external threat monitoring combined with ASM

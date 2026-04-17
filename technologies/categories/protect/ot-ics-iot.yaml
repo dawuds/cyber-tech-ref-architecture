@@ -1,0 +1,70 @@
+id: ot-ics-iot
+name: OT / ICS / IoT Security
+full_name: Operational Technology, Industrial Control Systems & IoT Security
+nist_primary: Protect
+nist_secondary: [Identify, Detect]
+description: >
+  Secures industrial control systems (ICS/SCADA), operational technology (OT) networks,
+  and IoT devices — environments where traditional IT security tools cannot be deployed
+  due to legacy protocols (Modbus, DNP3, BACnet), safety constraints, and uptime
+  requirements. Passive network monitoring is the dominant approach to avoid disrupting
+  operational systems.
+related_categories: [asset-management, ndr, ngfw-ips]
+vendor_framework_coverage:
+  microsoft_mcra: Cloud & Infrastructure (Defender for IoT)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Claroty
+    vendor: Claroty
+    type: SaaS|on-prem
+    notes: Leading OT/IoT security platform; passive discovery + risk management; strong in critical infrastructure
+
+  - name: Dragos
+    vendor: Dragos
+    type: on-prem|SaaS
+    notes: ICS/OT-focused threat detection; threat intelligence from ICS-specific adversary groups; incident response
+
+  - name: Nozomi Networks
+    vendor: Nozomi Networks
+    type: on-prem|SaaS
+    notes: OT + IoT visibility and security; strong in energy, manufacturing, and utilities
+
+  - name: Microsoft Defender for IoT
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS|on-prem
+    notes: Agentless OT/IoT security; Sentinel integration; formerly CyberX (acquired 2020)
+
+  - name: Tenable OT Security
+    vendor: Tenable
+    type: on-prem|SaaS
+    notes: Formerly Tenable.ot (acquired Indegy 2019); OT asset visibility and vulnerability management
+
+  - name: Armis
+    vendor: Armis
+    type: SaaS
+    notes: Agentless IoT/OT device security; strong in healthcare and manufacturing; acquired Honeywell Forge Cybersecurity (2024)
+
+  - name: Forescout
+    vendor: Forescout
+    type: on-prem|SaaS
+    notes: Network access control + OT/IoT visibility; eyeInspect for industrial networks
+
+  - name: Cisco Cyber Vision
+    vendor: Cisco
+    platform: cisco-security
+    type: on-prem
+    notes: OT visibility embedded in Cisco industrial network switches; protocol-aware discovery
+
+  - name: Palo Alto Networks Industrial OT Security
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS|on-prem
+    notes: NGFW-based OT security with App-ID for industrial protocols; Prisma Access for OT remote access

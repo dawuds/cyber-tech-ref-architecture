@@ -1,0 +1,52 @@
+id: palo_alto_zta
+name: Palo Alto Networks Zero Trust Architecture
+version: "2024"
+source: https://www.paloaltonetworks.com/zero-trust
+description: >
+  Zero Trust architecture organized around five pillars (Identity, Devices, Networks,
+  Applications, Data) with three user/app/infrastructure domains. Backed by Palo Alto
+  product portfolio spanning NGFW, Prisma (cloud/SASE), Cortex (XDR/XSOAR/Xpanse).
+
+pillars:
+  - id: identity
+    name: Identity
+    nist_mapping: [Protect, Identify]
+    products: [Prisma Access (identity-aware), Cortex XDR Identity, GlobalProtect]
+
+  - id: devices
+    name: Devices
+    nist_mapping: [Protect, Identify]
+    products: [Cortex XDR, Traps (NGAV), GlobalProtect]
+
+  - id: networks
+    name: Networks
+    nist_mapping: [Protect, Detect]
+    products: [Palo Alto NGFW (PA/VM/CN series), Prisma Access (SASE), Prisma SD-WAN]
+
+  - id: applications
+    name: Applications & Workloads
+    nist_mapping: [Protect, Detect]
+    products: [Prisma Cloud (CNAPP), Cortex XSOAR, App-ID (NGFW)]
+
+  - id: data
+    name: Data
+    nist_mapping: [Protect, Identify]
+    products: [Prisma Cloud DLP, Enterprise DLP, Strata DLP]
+
+platform_products:
+  - name: Cortex XDR
+    category: xdr-edr
+  - name: Cortex XSOAR
+    category: soar
+  - name: Cortex Xpanse
+    category: attack-surface-management
+  - name: Prisma Cloud
+    category: cnapp
+  - name: Prisma Access
+    category: ztna-sse-sase
+  - name: Palo Alto NGFW
+    category: ngfw-ips
+
+notes: >
+  Strong coverage of Protect and Detect. Limited native Govern/GRC and Recover capabilities.
+  QRadar SaaS assets acquired from IBM (Aug 2024) will be folded into Cortex platform.

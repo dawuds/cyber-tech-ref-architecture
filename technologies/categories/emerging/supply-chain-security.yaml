@@ -1,0 +1,83 @@
+id: supply-chain-security
+name: Supply Chain Security
+full_name: Software Supply Chain Security & SBOM Management
+nist_primary: Govern
+nist_secondary: [Identify, Protect]
+description: >
+  Secures the software development and distribution supply chain — from open-source
+  dependencies and build pipelines to software bills of materials (SBOM) and
+  package signing. Addresses attacks like SolarWinds, Log4Shell, and XZ Utils.
+  CISA and NIST guidance (SP 800-218 SSDF, EO 14028) are driving enterprise adoption.
+  Distinct from general SCA (see application-security) in focus on pipeline integrity
+  and provenance, not just vulnerability scanning.
+related_categories: [application-security, tprm, cnapp, grc]
+market_notes: >
+  Executive Order 14028 (2021) mandated SBOMs for US government software suppliers,
+  accelerating adoption. SBOM tooling is largely open-source (SPDX, CycloneDX
+  standards). Commercial vendors layer policy enforcement, automation, and continuous
+  monitoring on top of open standards.
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Snyk (Supply Chain)
+    vendor: Snyk
+    type: SaaS
+    notes: SCA + supply chain risk; Snyk Open Source for dependency analysis; provenance tracking for packages
+
+  - name: Black Duck (Synopsys)
+    vendor: Synopsys
+    type: SaaS|on-prem
+    notes: Leading SCA with comprehensive SBOM generation and open-source license compliance management
+
+  - name: Chainguard
+    vendor: Chainguard
+    type: SaaS
+    notes: Hardened base container images with SBOM and signed provenance; zero-CVE images at build time
+
+  - name: Socket Security
+    vendor: Socket
+    type: SaaS
+    notes: Deep package analysis for malicious behavior and supply chain attacks; real-time npm/PyPI monitoring
+
+  - name: Semgrep Supply Chain
+    vendor: Semgrep
+    type: SaaS
+    notes: Reachability analysis for vulnerable dependencies — prioritizes exploitable vs. theoretical CVEs
+
+  - name: GitHub Dependency Review
+    vendor: Microsoft (GitHub)
+    type: SaaS
+    notes: PR-level dependency review with vulnerability impact; integrated Dependabot for automated updates
+
+  - name: Anchore Enterprise
+    vendor: Anchore
+    type: on-prem|SaaS
+    notes: SBOM generation and policy-based compliance for container images; CycloneDX and SPDX support
+
+  - name: FOSSA
+    vendor: FOSSA
+    type: SaaS
+    notes: Open-source license compliance + vulnerability management; SBOM export; popular in legal-sensitive industries
+
+  - name: Sigstore
+    vendor: Linux Foundation (open-source)
+    type: open-source
+    notes: Keyless code signing and transparency logging for software artifacts; Cosign, Fulcio, Rekor components
+
+  - name: in-toto
+    vendor: CNCF (open-source)
+    type: open-source
+    notes: Software supply chain integrity framework; cryptographic attestation of build steps
+
+  - name: SBOM tools (SPDX / CycloneDX)
+    vendor: Linux Foundation / OWASP (open standards)
+    type: open-source
+    notes: Open SBOM standards; SPDX (Linux Foundation) and CycloneDX (OWASP) are the two dominant formats

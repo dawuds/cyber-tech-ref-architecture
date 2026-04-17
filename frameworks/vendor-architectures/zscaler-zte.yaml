@@ -1,0 +1,39 @@
+id: zscaler_zte
+name: Zscaler Zero Trust Exchange
+version: "2024"
+source: https://www.zscaler.com/products-and-solutions/zero-trust-exchange-zte
+description: >
+  Cloud-native proxy-based security platform delivered from 160+ global data centers.
+  Focused on SSE/SASE: secure internet access, private application access, and digital
+  experience monitoring. Strong on Protect; Detect is secondary to architecture enforcement.
+
+domains:
+  - id: internet-access
+    name: Secure Internet & SaaS Access (ZIA)
+    nist_mapping: [Protect, Detect]
+    products: [Zscaler Internet Access (ZIA), Zscaler CASB, Zscaler SWG, Zscaler DLP, Zscaler Sandbox]
+
+  - id: private-access
+    name: Secure Private App Access (ZPA)
+    nist_mapping: [Protect]
+    products: [Zscaler Private Access (ZPA), Zscaler Private Service Edge]
+
+  - id: digital-experience
+    name: Digital Experience Monitoring (ZDX)
+    nist_mapping: [Identify, Detect]
+    products: [Zscaler Digital Experience (ZDX)]
+
+  - id: workload-protection
+    name: Cloud & Workload Protection (ZCP)
+    nist_mapping: [Protect, Identify]
+    products: [Zscaler Workload Segmentation, Zscaler Posture Control (CSPM)]
+
+  - id: deception
+    name: Deception
+    nist_mapping: [Detect]
+    products: [Zscaler Deception]
+
+notes: >
+  Purpose-built for SSE/SASE and ZTNA. Does not cover GRC (Govern), endpoint EDR,
+  SIEM, SOAR, or backup/recovery. Strongest architecture for network and access control.
+  Competes directly with Palo Alto Prisma Access, Netskope, and Cloudflare One.

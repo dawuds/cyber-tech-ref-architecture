@@ -1,0 +1,58 @@
+id: crowdstrike_falcon
+name: CrowdStrike Falcon Platform
+version: "2025 (Agentic Defense Architecture)"
+source: https://www.crowdstrike.com/en-us/platform/
+description: >
+  Cloud-native unified security platform built on a single lightweight agent and
+  the Threat Graph (petabyte-scale graph database correlating telemetry). Organized
+  around five security domains. Architecture branded as "Agentic Defense" as of 2025,
+  with AI-driven autonomous response capabilities.
+
+domains:
+  - id: endpoint-identity
+    name: Endpoint & Identity Protection
+    nist_mapping: [Protect, Detect, Respond]
+    products:
+      - Falcon Prevent (NGAV)
+      - Falcon Insight XDR (EDR/XDR)
+      - Falcon Identity Protection (ITDR)
+      - Falcon Privileged Access
+
+  - id: cloud-security
+    name: Cloud Security
+    nist_mapping: [Protect, Identify, Detect]
+    products:
+      - Falcon Cloud Security (CNAPP/CSPM/CWPP)
+      - Falcon CIEM
+      - Falcon Kubernetes Protection
+
+  - id: threat-intelligence
+    name: Threat Intelligence
+    nist_mapping: [Identify, Detect]
+    products:
+      - Falcon Intelligence (CTI)
+      - Falcon Intelligence Recon (dark web)
+      - Falcon Surface (ASM)
+
+  - id: security-operations
+    name: Security Operations
+    nist_mapping: [Detect, Respond]
+    products:
+      - Falcon LogScale (SIEM/log management)
+      - Falcon Fusion SOAR
+      - Falcon OverWatch (managed threat hunting)
+      - Falcon Complete (MDR)
+
+  - id: risk-vulnerability
+    name: Risk & Vulnerability Management
+    nist_mapping: [Identify, Protect]
+    products:
+      - Falcon Spotlight (vulnerability management)
+      - Falcon Discover (asset management / IT hygiene)
+      - Falcon for IT
+
+notes: >
+  CrowdStrike covers Identify → Protect → Detect → Respond comprehensively.
+  Minimal Govern (no GRC platform) and Recover (no backup/DR).
+  Attivo Networks acquired May 2022 ($616M) — identity threat detection in XDR.
+  Strong in endpoint-first organizations; expanding into cloud and network.

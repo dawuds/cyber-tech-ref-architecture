@@ -1,0 +1,63 @@
+id: ueba
+name: UEBA
+full_name: User & Entity Behavior Analytics
+nist_primary: Detect
+nist_secondary: [Identify, Respond]
+description: >
+  Applies ML to establish behavioral baselines for users and entities (devices,
+  applications, service accounts) and detects anomalous deviations indicative of
+  insider threats, compromised accounts, or advanced persistent threats. Primarily
+  addresses threats that rule-based SIEM misses due to living-off-the-land techniques.
+related_categories: [siem, xdr-edr, ndr]
+market_notes: >
+  Standalone UEBA market has largely consolidated into SIEM and XDR platforms.
+  Exabeam (merged with LogRhythm 2024) is the primary remaining pure-play vendor.
+  Securonix maintains independent UEBA. Microsoft Sentinel, Splunk, and CrowdStrike
+  have embedded UEBA capabilities. Gartner no longer publishes a standalone UEBA MQ.
+vendor_framework_coverage:
+  microsoft_mcra: Security Operations (Sentinel UEBA)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Security Operations (Chronicle ML detection)
+  crowdstrike_falcon: null
+  cisa_ztmm: Visibility & Analytics
+  aws_sra: Detective Controls (GuardDuty anomaly detection)
+  cisco_security: null
+
+products:
+  - name: Exabeam Fusion SIEM (UEBA)
+    vendor: Exabeam
+    type: SaaS
+    notes: UEBA is core differentiator; Smart Timelines reconstruct user activity sequences; merged with LogRhythm July 2024
+
+  - name: Microsoft Sentinel UEBA
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Built-in UEBA for anomalous user behavior; entity pages aggregate risk across all Microsoft signals
+
+  - name: Securonix (UEBA)
+    vendor: Securonix
+    type: SaaS
+    notes: Pure-play UEBA heritage now in cloud SIEM platform; Spotter AI for natural language threat investigation
+
+  - name: Splunk UBA
+    vendor: Splunk (Cisco)
+    type: on-prem|SaaS
+    notes: Separate Splunk product for advanced UEBA; integrates with Splunk SIEM; based on Caspida acquisition
+
+  - name: Gurucul UEBA
+    vendor: Gurucul
+    type: SaaS|on-prem
+    notes: Standalone UEBA with cloud-native data lake; strong identity analytics and insider threat detection
+
+  - name: Palo Alto Cortex XDR (UEBA)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: UEBA capabilities embedded in Cortex XDR for user and identity behavioral analysis
+
+  - name: FortiInsight
+    vendor: Fortinet
+    type: SaaS
+    notes: User activity monitoring and insider threat detection; part of Fortinet security fabric

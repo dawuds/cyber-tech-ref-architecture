@@ -1,0 +1,82 @@
+id: ngfw-ips
+name: NGFW / IPS
+full_name: Next-Generation Firewall & Intrusion Prevention System
+nist_primary: Protect
+nist_secondary: [Detect]
+description: >
+  Network security enforcement point with stateful inspection, application-layer
+  (L7) visibility, IDS/IPS, SSL/TLS inspection, and threat prevention. NGFWs have
+  expanded beyond perimeter enforcement to include SD-WAN, cloud-delivered SASE,
+  and AI-driven threat prevention.
+related_categories: [ztna-sse-sase, ndr, waf-api-security]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: Networks (pillar — PA NGFW)
+  zscaler_zte: null
+  google_csa: Infrastructure Security (Cloud IDS)
+  crowdstrike_falcon: null
+  cisa_ztmm: Networks (pillar)
+  aws_sra: Infrastructure Protection (AWS Network Firewall)
+  cisco_security: Network Security (Secure Firewall)
+
+products:
+  - name: Palo Alto Networks NGFW (PA / VM / CN Series)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: on-prem|SaaS
+    notes: Industry-leading NGFW with App-ID, User-ID, and ML-powered threat prevention; physical, virtual, and container form factors
+
+  - name: Fortinet FortiGate
+    vendor: Fortinet
+    type: on-prem|SaaS
+    notes: High-throughput NGFW at competitive price; FortiOS with integrated SD-WAN; strong mid-market and OT
+
+  - name: Check Point Quantum
+    vendor: Check Point
+    type: on-prem|SaaS
+    notes: Long-standing enterprise NGFW; unified management (SmartConsole); strong in financial services
+
+  - name: Cisco Secure Firewall (Firepower)
+    vendor: Cisco
+    platform: cisco-security
+    type: on-prem|SaaS
+    notes: Sourcefire-derived IPS; Snort engine; integrated with Cisco security ecosystem
+
+  - name: Cisco Hypershield
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: AI-native distributed enforcement fabric announced RSA 2024; embeds security into network infrastructure
+
+  - name: Juniper SRX
+    vendor: Juniper Networks
+    type: on-prem
+    notes: Network-grade NGFW with advanced routing; strong in telco and large enterprise networks
+
+  - name: AWS Network Firewall
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: Managed NGFW for VPC traffic inspection; Suricata-based rule engine
+
+  - name: Azure Firewall Premium
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Cloud-native stateful NGFW for Azure; IDPS, TLS inspection, web categories
+
+  - name: Google Cloud IDS
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Cloud-native intrusion detection for GCP; powered by Palo Alto Networks threat intelligence
+
+  - name: Sophos XGS
+    vendor: Sophos
+    type: on-prem
+    notes: SMB/mid-market NGFW with strong endpoint integration via Sophos Synchronized Security
+
+  - name: Barracuda CloudGen Firewall
+    vendor: Barracuda
+    type: on-prem|SaaS
+    notes: SD-WAN integrated NGFW; strong for distributed enterprises and MSP channels

@@ -1,0 +1,79 @@
+id: iam-sso-mfa
+name: IAM / SSO / MFA
+full_name: Identity & Access Management, Single Sign-On, Multi-Factor Authentication
+nist_primary: Protect
+nist_secondary: [Identify]
+description: >
+  Core identity platform covering directory services, authentication (SSO, MFA,
+  passwordless), and authorization. The identity plane is the new perimeter in
+  Zero Trust architectures — every access decision flows through it. Includes
+  both workforce identity (employees) and CIAM (customer identity).
+related_categories: [pam, identity-governance, ciem, ztna-sse-sase]
+vendor_framework_coverage:
+  microsoft_mcra: Identity & Access
+  palo_alto_zta: Identity (pillar)
+  zscaler_zte: null
+  google_csa: Identity & Access
+  crowdstrike_falcon: Endpoint & Identity (Falcon Identity Protection)
+  cisa_ztmm: Identity (pillar)
+  aws_sra: IAM
+  cisco_security: Identity & Zero Trust (Duo)
+
+products:
+  - name: Microsoft Entra ID
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Dominant enterprise IdP; SSO, MFA, Conditional Access, B2B/B2C; formerly Azure Active Directory
+
+  - name: Okta Workforce Identity
+    vendor: Okta
+    type: SaaS
+    notes: Leading independent IdP; 7,000+ pre-built integrations; strong in non-Microsoft environments
+
+  - name: Okta Customer Identity (Auth0)
+    vendor: Okta (acquired Auth0 2021)
+    type: SaaS
+    notes: Developer-first CIAM platform; flexible for customer-facing app authentication
+
+  - name: Google Cloud Identity
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: IdP for Google Workspace and GCP; strong for Google-native organizations
+
+  - name: Ping Identity
+    vendor: Ping Identity (Thales)
+    type: SaaS|on-prem
+    notes: Acquired by Thales 2023; strong in hybrid environments and financial services
+
+  - name: ForgeRock
+    vendor: Ping Identity (acquired ForgeRock 2023)
+    type: SaaS|on-prem
+    notes: Now part of Ping Identity; open-source roots; strong CIAM and IoT identity
+
+  - name: Cisco Duo
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: Leading MFA platform; strong UX; acquired by Cisco 2018; broad application coverage
+
+  - name: JumpCloud
+    vendor: JumpCloud
+    type: SaaS
+    notes: Cloud-native directory as a service; popular for cross-platform (Mac/Windows/Linux) environments
+
+  - name: OneLogin
+    vendor: One Identity
+    type: SaaS
+    notes: SSO and MFA platform; part of One Identity suite with IGA
+
+  - name: Yubico YubiKey
+    vendor: Yubico
+    type: hardware
+    notes: Hardware security key for phishing-resistant MFA (FIDO2/WebAuthn); pairs with any IdP
+
+  - name: HYPR
+    vendor: HYPR
+    type: SaaS
+    notes: Passwordless MFA using FIDO2; strong for workforce high-assurance authentication

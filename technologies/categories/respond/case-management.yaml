@@ -1,0 +1,71 @@
+id: case-management
+name: IR Case Management
+full_name: Incident Response & Case Management
+nist_primary: Respond
+nist_secondary: [Recover]
+description: >
+  Tracks, coordinates, and documents security incidents through their full lifecycle —
+  detection, containment, eradication, and recovery. Manages evidence, timelines,
+  stakeholder communications, and lessons learned. Bridges the SOC (detection) and
+  broader organizational response (legal, comms, leadership).
+related_categories: [soar, dfir, grc]
+market_notes: >
+  Many organizations use general ITSM tools (ServiceNow, Jira) for IR case management.
+  Security-specific case management is often bundled with SOAR. TheHive and MISP are
+  the dominant open-source options for IR teams.
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: ServiceNow Security Incident Response
+    vendor: ServiceNow
+    type: SaaS
+    notes: ITSM-native incident management; strong for organizations already using ServiceNow; good SLA tracking
+
+  - name: Palo Alto Cortex XSOAR (Case Management)
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: Integrated case management within XSOAR; unified playbook execution and case tracking
+
+  - name: Jira Service Management
+    vendor: Atlassian
+    type: SaaS|on-prem
+    notes: Widely used ITSM adapted for IR; flexible but requires security-specific configuration
+
+  - name: TheHive
+    vendor: StrangeBee (open-source)
+    type: open-source|on-prem
+    notes: Open-source security incident response platform; integrates with MISP; widely used by CERTs
+
+  - name: IBM Security SOAR (Case Management)
+    vendor: IBM
+    type: on-prem|SaaS
+    notes: Strong structured IR with dynamic playbooks based on regulatory jurisdiction and incident type
+
+  - name: PagerDuty (Operations Cloud)
+    vendor: PagerDuty
+    type: SaaS
+    notes: On-call management and incident coordination; strong for DevOps/SRE-integrated security response
+
+  - name: D3 Security SOAR
+    vendor: D3 Security
+    type: SaaS|on-prem
+    notes: Integrated SOAR + case management; MITRE ATT&CK framework for structured investigation
+
+  - name: Exabeam Case Manager
+    vendor: Exabeam
+    type: SaaS
+    notes: Built-in case management within Exabeam SIEM; analyst-focused workflow
+
+  - name: Atlassian Opsgenie
+    vendor: Atlassian
+    type: SaaS
+    notes: Alert management and on-call scheduling; integrates with Jira for incident escalation

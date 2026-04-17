@@ -1,0 +1,69 @@
+id: ciem
+name: CIEM
+full_name: Cloud Infrastructure Entitlement Management
+nist_primary: Identify
+nist_secondary: [Protect]
+description: >
+  Discovers and right-sizes excessive permissions across cloud IAM — AWS IAM, Azure RBAC,
+  GCP IAM — identifying unused entitlements, overprivileged roles, and toxic permission
+  combinations. Increasingly folded into CNAPP platforms. Addresses the unique
+  identity sprawl problem in multi-cloud environments.
+related_categories: [identity-governance, cnapp, iam-sso-mfa]
+market_notes: >
+  Standalone CIEM market consolidating into CNAPP platforms. Sonrai, Ermetic (now
+  Tenable), and Microsoft Entra Permissions Management lead as dedicated tools;
+  Wiz, Palo Alto Prisma Cloud, and CrowdStrike have embedded CIEM within their CNAPPs.
+vendor_framework_coverage:
+  microsoft_mcra: Identity & Access (Entra Permissions Management)
+  palo_alto_zta: Data (pillar — data access entitlements)
+  zscaler_zte: null
+  google_csa: Identity & Access (Cloud IAM analysis)
+  crowdstrike_falcon: Cloud Security (Falcon CIEM)
+  cisa_ztmm: Identity (pillar)
+  aws_sra: IAM
+  cisco_security: null
+
+products:
+  - name: Microsoft Entra Permissions Management
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Multi-cloud CIEM (AWS/Azure/GCP); acquired from CloudKnox Security 2021; part of Entra suite
+
+  - name: Tenable Cloud Security
+    vendor: Tenable
+    type: SaaS
+    notes: Formerly Ermetic (acquired Oct 2023, $265M); CIEM + CSPM integrated; strong risk scoring
+
+  - name: Sonrai Security
+    vendor: Sonrai Security
+    type: SaaS
+    notes: Identity-centric cloud security; deep graph-based analysis of cloud entitlements
+
+  - name: Wiz CIEM
+    vendor: Wiz
+    platform: wiz-cnapp
+    type: SaaS
+    notes: CIEM embedded in Wiz CNAPP; graph-based toxic combination detection
+
+  - name: Palo Alto Prisma Cloud CIEM
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: CIEM module within Prisma Cloud CNAPP; multi-cloud entitlement analysis
+
+  - name: CrowdStrike Falcon CIEM
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: Entitlement discovery integrated with Falcon Cloud Security (CNAPP)
+
+  - name: Orca Security
+    vendor: Orca Security
+    type: SaaS
+    notes: SideScanning-based CNAPP with CIEM capabilities; agentless multi-cloud coverage
+
+  - name: Sysdig
+    vendor: Sysdig
+    type: SaaS
+    notes: Runtime-based CIEM for containers and cloud; detects active entitlement misuse in real time

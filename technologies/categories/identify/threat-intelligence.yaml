@@ -1,0 +1,96 @@
+id: threat-intelligence
+name: Threat Intelligence
+full_name: Cyber Threat Intelligence (CTI) Platforms
+nist_primary: Identify
+nist_secondary: [Detect, Respond]
+description: >
+  Platforms aggregating, analyzing, and operationalizing threat data — including
+  indicators of compromise (IOCs), threat actor TTPs (MITRE ATT&CK), dark web
+  monitoring, and strategic intelligence. Feeds into SIEM, SOAR, and EDR for
+  automated IOC matching and enrichment.
+related_categories: [siem, soar, attack-surface-management]
+vendor_framework_coverage:
+  microsoft_mcra: Security Operations (Defender TI)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Threat Intelligence (Mandiant TI)
+  crowdstrike_falcon: Threat Intelligence (Falcon Intelligence)
+  cisa_ztmm: Visibility & Analytics
+  aws_sra: null
+  cisco_security: Security Operations (Talos)
+
+products:
+  - name: Recorded Future
+    vendor: Recorded Future (Mastercard)
+    type: SaaS
+    notes: Market leader; AI-driven intelligence from open, dark web, and technical sources; acquired by Mastercard 2024
+
+  - name: Google Mandiant Threat Intelligence
+    vendor: Google (Mandiant)
+    platform: google-csa
+    type: SaaS
+    notes: Nation-state-grade CTI; frontline IR data from Mandiant investigations feeding intelligence
+
+  - name: CrowdStrike Falcon Intelligence
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: Automated malware analysis + human intelligence; tight integration with Falcon sensor telemetry
+
+  - name: CrowdStrike Falcon Intelligence Recon
+    vendor: CrowdStrike
+    platform: crowdstrike-falcon
+    type: SaaS
+    notes: Dark web monitoring for brand, credential, and data exposure
+
+  - name: Microsoft Defender Threat Intelligence
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Built on RiskIQ acquisition (2021); internet infrastructure intelligence and IOC enrichment
+
+  - name: Cisco Talos
+    vendor: Cisco
+    platform: cisco-security
+    type: SaaS
+    notes: One of the largest commercial threat research teams; feeds all Cisco security products
+
+  - name: MISP
+    vendor: MISP Project (open-source)
+    type: open-source
+    notes: Open-source threat intelligence sharing platform; widely used by CERTs and ISACs
+
+  - name: OpenCTI
+    vendor: Filigran (open-source)
+    type: open-source
+    notes: Open-source CTI platform with graph-based knowledge representation; STIX/TAXII native
+
+  - name: Anomali ThreatStream
+    vendor: Anomali
+    type: SaaS
+    notes: Threat intelligence management and operationalization; strong SIEM/SOAR integration
+
+  - name: EclecticIQ
+    vendor: EclecticIQ
+    type: SaaS|on-prem
+    notes: Enterprise CTI platform with strong analyst workflow; popular in European markets
+
+  - name: ThreatConnect
+    vendor: ThreatConnect
+    type: SaaS
+    notes: TI platform combined with SOAR capabilities; risk quantification features
+
+  - name: Intel 471
+    vendor: Intel 471
+    type: SaaS
+    notes: Human intelligence (HUMINT) on cybercriminal communities; underground forum monitoring
+
+  - name: Flashpoint
+    vendor: Flashpoint
+    type: SaaS
+    notes: Business risk intelligence from deep/dark web; strong fraud and physical security coverage
+
+  - name: VirusTotal
+    vendor: Google
+    type: SaaS
+    notes: Malware analysis and IOC lookup; free tier widely used; Enterprise for programmatic access

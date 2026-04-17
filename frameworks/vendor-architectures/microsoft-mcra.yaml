@@ -1,0 +1,43 @@
+id: microsoft_mcra
+name: Microsoft Cyber Reference Architecture
+version: "April 2025"
+source: https://learn.microsoft.com/en-us/security/adoption/mcra
+description: >
+  End-to-end security architecture covering Microsoft's full security portfolio.
+  Organized around security functions with strong emphasis on integrated XDR,
+  identity-centric Zero Trust, and cloud-native controls.
+
+domains:
+  - id: security-operations
+    name: Security Operations
+    nist_mapping: [Detect, Respond]
+    products: [Microsoft Sentinel, Microsoft Defender XDR, Microsoft Copilot for Security]
+
+  - id: identity-access
+    name: Identity & Access Management
+    nist_mapping: [Protect, Identify]
+    products: [Microsoft Entra ID, Microsoft Entra PIM, Microsoft Entra ID Governance, Microsoft Entra Permissions Management]
+
+  - id: information-protection
+    name: Information Protection & Governance
+    nist_mapping: [Protect, Govern]
+    products: [Microsoft Purview DLP, Microsoft Purview Information Protection, Microsoft Purview Compliance]
+
+  - id: device-security
+    name: Device Security
+    nist_mapping: [Protect, Identify]
+    products: [Microsoft Intune, Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management]
+
+  - id: cloud-infrastructure
+    name: Cloud & Infrastructure Security
+    nist_mapping: [Protect, Detect, Identify]
+    products: [Microsoft Defender for Cloud, Microsoft Defender for Cloud Apps, Microsoft Defender EASM, Microsoft Defender for IoT]
+
+  - id: ai-security
+    name: AI Security
+    nist_mapping: [Protect, Govern]
+    products: [Microsoft Azure AI Content Safety, Microsoft Purview AI Hub]
+
+notes: >
+  MCRA gaps vs. NIST CSF: Weak coverage of Recover (no backup/DR products),
+  limited GRC/TPRM for Govern beyond Purview Compliance. Strong Protect and Detect.

@@ -1,0 +1,86 @@
+id: ai-llm-security
+name: AI / LLM Security
+full_name: AI & Large Language Model Security
+nist_primary: Protect
+nist_secondary: [Detect, Govern]
+description: >
+  Emerging category addressing security risks specific to AI/ML systems and LLM
+  deployments — prompt injection, jailbreaks, data poisoning, model theft, and
+  sensitive data exposure via LLM outputs. Includes AI system security (securing
+  the models and pipelines) and AI-powered security tools misuse detection.
+  NIST AI RMF (2023) and OWASP LLM Top 10 are the primary governance frameworks.
+related_categories: [application-security, dlp, grc]
+market_notes: >
+  Category emerging rapidly in 2024-2025; 68% of enterprises with LLM deployments
+  reported security incidents (2024). Most vendors are early-stage. Major security
+  vendors (Microsoft, Palo Alto, Google) adding AI security features to existing
+  platforms. OWASP LLM Top 10 v2 released 2024.
+vendor_framework_coverage:
+  microsoft_mcra: AI Security (Azure AI Content Safety / Purview AI Hub)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: null
+  aws_sra: null
+  cisco_security: null
+
+products:
+  - name: Microsoft Azure AI Content Safety
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Content filtering for Azure OpenAI outputs; prompt shield for injection detection; groundedness detection
+
+  - name: Microsoft Purview AI Hub
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Governance and data security for Copilot for M365; discovers sensitive data in AI interactions
+
+  - name: Google Cloud Model Armor
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Prompt and response safety filters for Vertex AI; template-based guardrails for LLM applications
+
+  - name: Palo Alto AI Security
+    vendor: Palo Alto Networks
+    platform: palo-alto-zta
+    type: SaaS
+    notes: AI-SPM (AI Security Posture Management) within Prisma Cloud; discovers AI models and data risks
+
+  - name: Guardrails AI
+    vendor: Guardrails AI
+    type: open-source
+    notes: Open-source framework for LLM output validation and guardrailing; Python-native; extensive validator library
+
+  - name: NVIDIA NeMo Guardrails
+    vendor: NVIDIA
+    type: open-source
+    notes: Colang-based guardrailing for LLM applications; topical, safety, and security rails
+
+  - name: Lakera Guard (Gandalf)
+    vendor: Lakera
+    type: SaaS
+    notes: Real-time prompt injection detection API; used in LLM application middleware layers
+
+  - name: Protect AI
+    vendor: Protect AI
+    type: SaaS
+    notes: AI/ML model security; scans models for malicious code (ModelScan); MLflow artifact scanning
+
+  - name: HiddenLayer AISec Platform
+    vendor: HiddenLayer
+    type: SaaS
+    notes: Model scanning and adversarial ML attack detection; runtime protection for ML inference pipelines
+
+  - name: Robust Intelligence
+    vendor: Robust Intelligence
+    type: SaaS
+    notes: AI risk management; stress testing models against adversarial inputs; compliance reporting for AI
+
+  - name: Wiz AI Security Posture Management
+    vendor: Wiz
+    type: SaaS
+    notes: Discovers AI/ML datasets, models, and pipelines in cloud environments; data exposure risk scoring

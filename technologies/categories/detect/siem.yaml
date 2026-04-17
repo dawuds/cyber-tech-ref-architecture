@@ -1,0 +1,78 @@
+id: siem
+name: SIEM
+full_name: Security Information & Event Management
+nist_primary: Detect
+nist_secondary: [Respond, Govern]
+description: >
+  Aggregates, normalizes, and correlates security telemetry from across the environment
+  for threat detection, compliance reporting, and forensic investigation. Modern SIEMs
+  are cloud-native, AI-driven, and increasingly converged with SOAR and threat intelligence.
+  The primary "brain" of the SOC.
+related_categories: [soar, xdr-edr, ndr, ueba, threat-intelligence]
+market_notes: >
+  Gartner SIEM MQ 2025 leaders: Microsoft Sentinel and Google Chronicle.
+  Splunk remains strong post-Cisco acquisition (2024, $28B).
+  Exabeam + LogRhythm merged (July 2024) to form pure-play SecOps vendor.
+  IBM QRadar SaaS assets acquired by Palo Alto Networks (Aug 2024); on-prem continues under IBM.
+vendor_framework_coverage:
+  microsoft_mcra: Security Operations (Sentinel)
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: Security Operations (Chronicle SIEM)
+  crowdstrike_falcon: Security Operations (Falcon LogScale)
+  cisa_ztmm: Visibility & Analytics
+  aws_sra: Detective Controls (Security Hub)
+  cisco_security: Security Operations (XDR / SIEM integration)
+
+products:
+  - name: Microsoft Sentinel
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Cloud-native SIEM+SOAR; pay-per-use; deep Microsoft 365 Defender integration; 2025 Gartner MQ leader
+
+  - name: Google Chronicle SIEM
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: Petabyte-scale cloud SIEM; YARA-L detection; 12-month hot retention; 2025 Gartner MQ leader
+
+  - name: Splunk Enterprise Security
+    vendor: Splunk (Cisco, acquired 2024)
+    type: on-prem|SaaS
+    notes: Flexible log platform + security analytics; largest ecosystem of integrations; acquired by Cisco ($28B, 2024)
+
+  - name: Exabeam Fusion SIEM
+    vendor: Exabeam (merged with LogRhythm, July 2024)
+    type: SaaS
+    notes: Cloud-native SIEM + UEBA; TDIR (Threat Detection, Investigation & Response) platform; pure-play SecOps focus
+
+  - name: Elastic SIEM
+    vendor: Elastic
+    type: SaaS|open-source
+    notes: Open-source ELK stack foundation; flexible and cost-effective; Elastic Security for SIEM/EDR
+
+  - name: IBM QRadar SIEM
+    vendor: IBM (on-prem); Palo Alto Networks (SaaS assets acquired Aug 2024)
+    type: on-prem
+    notes: Long-standing enterprise SIEM; SaaS assets moved to Palo Alto; on-prem maintained by IBM for existing customers
+
+  - name: Securonix
+    vendor: Securonix
+    type: SaaS
+    notes: Cloud-native SIEM with built-in UEBA and Spotter AI for natural language threat investigation
+
+  - name: Sumo Logic
+    vendor: Sumo Logic
+    type: SaaS
+    notes: Cloud SIEM + observability platform; strong for cloud-native organizations; competitive pricing
+
+  - name: LogRhythm (legacy)
+    vendor: Exabeam (merged July 2024)
+    type: on-prem
+    notes: Merged into Exabeam; LogRhythm Axon (SaaS) being retired; existing on-prem customers maintained
+
+  - name: Fortinet FortiSIEM
+    vendor: Fortinet
+    type: on-prem|SaaS
+    notes: Tightly integrated with FortiGate; strong for Fortinet-centric environments; unified NOC+SOC approach
