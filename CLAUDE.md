@@ -27,14 +27,21 @@ technologies/
   vendors/            ← Vendor profile markdowns (17 vendors: 10 platform + 7 specialist)
 
 architectures/        ← Vendor reference architecture deep-dive markdowns (10 files)
+                      ← Also: zero-trust-blueprint.md, data-protection-blueprint.md, cloud-native-patterns.md
+
+frameworks/
+  mitre/              ← MITRE framework family (ATT&CK enterprise, D3FEND, ENGAGE, ATLAS)
+                         README.md + attack-enterprise.md + d3fend-overview.md
 
 cross-references/     ← Framework integration files from other GRC repos
   iec62443-nist-mapping.md       ← IEC 62443-3-3 → NIST CSF (51 SRs; from OT-Security repo)
   ai-governance-security-mapping.md  ← AI governance controls → security technology (from AI-Governance repo)
   grc-portfolio-mapping.md       ← CSA CCM, RMIT, PDPA, NACSA → technology categories
 
-TECH-STACK.md         ← Master mapping: all categories, 9-vendor matrix, ASM landscape, M&A tracker
-CATEGORY-ANALYSIS.md  ← Per-category deep dive: purpose, modules, vendors, spend, maturity, trends
+TECH-STACK.md           ← Master mapping: all categories, 9-vendor matrix, ASM landscape, M&A tracker
+CATEGORY-ANALYSIS.md    ← Per-category deep dive: purpose, modules, vendors, spend, maturity, trends
+CONSOLIDATION.md        ← Industry M&A analysis, platform convergence, PE portfolio, 2025-2027 outlook
+ROADMAP-CONVERGENCE.md  ← Vendor roadmap convergence → recommended stacks by org profile, decision trees
 ```
 
 ## Schema
