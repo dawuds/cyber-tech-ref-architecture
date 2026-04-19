@@ -5,6 +5,28 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — how cloud-native security differs from traditional
+- [Pattern 1: Multi-Account / Landing Zone](#pattern-1-multi-account--landing-zone-architecture) — AWS Organizations, Azure Management Groups, GCP Folder Hierarchy
+- [Pattern 2: Hub-Spoke Network Topology](#pattern-2-hub-spoke-network-topology) — centralised NGFW/NDR with spoke VPCs
+- [Pattern 3: Workload Identity](#pattern-3-workload-identity-no-credentials-in-code) — IRSA, Azure WIF, GCP Workload Identity
+- [Pattern 4: Secrets Management](#pattern-4-secrets-management-in-cloud-native-sidecarcsi) — Vault sidecar, ESO, CSI driver
+- [Pattern 5: Service Mesh Security](#pattern-5-service-mesh-security-mtls-zero-trust-for-east-west) — mTLS east-west, Istio/Linkerd/Consul
+- [Pattern 6: eBPF-Based Security Telemetry](#pattern-6-ebpf-based-security-telemetry) — Falco, Cilium, Tetragon
+- [Pattern 7: Immutable Infrastructure](#pattern-7-immutable-infrastructure) — golden image pipeline, IaC enforcement
+- [Pattern 8: Cloud Security Posture Guardrails](#pattern-8-cloud-security-posture-guardrails-preventive--detective) — shift-left IaC + continuous CSPM
+- [Pattern 9: GenAI / LLM Workload Security](#pattern-9-genai--llm-workload-security) — AI gateway, prompt injection, output filtering
+- [Pattern 10: Multi-Cloud SIEM Aggregation](#pattern-10-multi-cloud-siem-aggregation) — OCSF normalisation, per-SIEM connectors
+
+## At a Glance
+- **Pattern 1 is foundational** — multi-account/landing zone isolation is required before any other pattern is meaningful
+- **Workload identity** (IRSA / Azure WIF / GCP Workload Identity) eliminates static credentials entirely — the single highest-ROI cloud security change
+- **Service mesh mTLS** provides zero-trust east-west security between microservices without network architecture changes
+- **Immutable infrastructure** eliminates configuration drift and attacker persistence — all changes must flow through version-controlled IaC pipelines
+- **eBPF-based tools** (Falco, Cilium, Tetragon) provide kernel-level telemetry with near-zero overhead — the foundation of cloud-native runtime detection
+
+---
+
 ## Overview
 
 Cloud-native security differs from traditional security in three fundamental ways:

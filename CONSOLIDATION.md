@@ -1,7 +1,26 @@
 # Cybersecurity Industry Consolidation Analysis
 
 **Last Updated:** April 2025  
-**Scope:** Platform convergence, M&A activity 2022-2025, vendor ecosystem impact
+**Scope:** Platform convergence, M&A activity 2022–2025, vendor ecosystem impact
+
+---
+
+## On This Page
+- [Overview](#overview) — market context and key driver
+- [Category-Level Consolidation Map](#category-level-consolidation-map) — which categories are absorbed and which survive
+- [Private Equity Consolidation](#private-equity-consolidation) — Thoma Bravo, Francisco Partners, Vista portfolios
+- [Vendor Platform Strategies](#vendor-platform-strategies) — how each platform vendor is positioning
+- [Point Solution Displacement Risk](#point-solution-displacement-risk) — which tools face platform absorption
+- [Open-Source Disruption](#open-source-disruption) — where OSS is displacing commercial tools
+- [Where Consolidation Is Heading (2025–2027)](#where-consolidation-is-heading-2025-2027) — 6 predictions
+
+## At a Glance
+- **$96B** in disclosed M&A in 2025 — 270% year-on-year increase; the largest consolidation wave since 2010
+- **5 categories effectively absorbed**: standalone UEBA → XDR/SIEM, CASB → SSE, standalone SOAR → platform, Container Security → CNAPP, basic EASM → VM platforms
+- **AI SOC Platform** is the defining architectural convergence: every major vendor now bundles SIEM + XDR + SOAR + UEBA into a single platform
+- **Thoma Bravo** holds ~$45B in security assets — Proofpoint, Darktrace, SailPoint, Exabeam/LogRhythm
+- **Highest displacement risk**: standalone UEBA and CASB; **lowest**: PAM and specialist MDR
+- **2025–2027**: AI SOC Platform, Identity Security Platform, and CNAPP will drive the largest net-new platform decisions
 
 ---
 

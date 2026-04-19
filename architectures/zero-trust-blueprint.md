@@ -5,6 +5,25 @@
 
 ---
 
+## On This Page
+- [What Zero Trust Is (and Isn't)](#what-zero-trust-is-and-isnt) — definition, principles, what it replaces
+- [NIST SP 800-207 Logical Components](#nist-sp-800-207-logical-components) — Policy Engine, Policy Administrator, Policy Enforcement Point
+- [Five Zero Trust Pillars — Technology Blueprint](#five-zero-trust-pillars--technology-blueprint) — Identity, Device, Network, Application, Data
+- [Cross-Cutting Capabilities](#cross-cutting-capabilities) — Visibility & Analytics, Automation, Governance
+- [ZTA Implementation Patterns](#zta-implementation-patterns) — VPN replacement, cloud workload, third-party, OT/ICS
+- [ZTA Maturity Stages](#zta-maturity-stages) — 4-stage progression
+- [ZTA Technology Stack by Organization Size](#zta-technology-stack-by-organization-size) — SMB / Mid-Enterprise / Large Enterprise
+- [References](#references)
+
+## At a Glance
+- **Zero Trust is a strategy, not a product** — based on NIST SP 800-207's Policy Engine / Policy Administrator / Policy Enforcement Point model; every access request is evaluated against policy
+- **5 pillars with distinct enabling technology**: Identity (IAM/PAM/IGA), Device (EDR/MDM/posture), Network (ZTNA/NGFW/NDR), Application (CASB/WAF/CNAPP), Data (DSPM/DLP/DAM)
+- **CISA ZTMM** defines 4 maturity stages per pillar — most organisations are at Initial (stage 2); Advanced requires 2–3 years of focused investment
+- **Technology stack varies by org size**: SMB → Microsoft-centric; Mid-Enterprise → Okta + CrowdStrike + Zscaler; Large Enterprise → multi-vendor depth
+- **Highest-ROI starting point**: replace VPN with ZTNA + enforce MFA everywhere + deploy EDR — covers the three most common ZT gaps at reasonable cost
+
+---
+
 ## What Zero Trust Is (and Isn't)
 
 **Zero Trust is a strategy and architectural philosophy, not a product.** It rejects the assumption that anything inside a network perimeter is trustworthy. Every access request — from any user, device, application, or workload — must be verified explicitly, regardless of network location.

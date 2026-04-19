@@ -5,6 +5,23 @@
 
 ---
 
+## On This Page
+- [The Central Thesis](#the-central-thesis) — why convergence creates a solutioning opportunity
+- [Where Roadmaps Are Converging](#where-roadmaps-are-converging) — 5 convergence themes with vendor comparison tables
+- [Recommended Stacks by Organization Profile](#recommended-stacks-by-organization-profile) — SMB → Cloud-Native → OT/ICS
+- [Vendor Selection Decision Trees](#vendor-selection-decision-trees) — SIEM, Identity, CNAPP, SSE
+- [Where Roadmaps Diverge](#where-roadmaps-diverge-buyer-beware) — 4 structural gaps no platform covers
+- [3-Year Security Architecture Roadmap Template](#3-year-security-architecture-roadmap-template) — Year 1 Foundation → Year 3 Advanced
+
+## At a Glance
+- **7 platform vendors** (Microsoft, Palo Alto, CrowdStrike, Google, Cisco, Zscaler, SentinelOne) are converging on the same destination: Identity + Endpoint + Network + Cloud + SOC unified
+- **5 convergence themes**: AI SOC Platform, Identity Security Platform, CNAPP, SSE/SASE, Data Security Platform
+- **Stack choice depends on current investment**: M365-first → Microsoft; CrowdStrike EDR → LogScale SIEM; Azure-primary → Defender for Cloud CNAPP
+- **3 structural gaps** no platform covers: GRC/TPRM, Backup/Recovery, and deep PAM — require dedicated budget regardless of platform choice
+- **3-year roadmap**: Year 1 Foundation (IdP + ZTNA + EDR + SIEM), Year 2 Depth (CNAPP + IGA + DSPM + SOAR), Year 3 Advanced (AI SOC + CTEM + Zero Trust Data)
+
+---
+
 ## The Central Thesis
 
 Seven platform mega-vendors (Microsoft, Palo Alto, CrowdStrike, Google, Cisco, Zscaler, SentinelOne) are all converging on the same architectural destination: a **single platform covering Identity + Endpoint + Network + Cloud + SOC**. The path differs; the destination is identical.

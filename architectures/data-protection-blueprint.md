@@ -5,6 +5,25 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — what data protection is and the core principle
+- [Data Protection Technology Stack](#data-protection-technology-stack) — the 7-layer model
+- [Layer-by-Layer Technology Map](#layer-by-layer-technology-map) — Discovery, Classification, Governance, DLP/IRM/Encryption, DAM, DDR, Retention
+- [Privacy-Enhancing Technologies (PETs)](#privacy-enhancing-technologies-pets) — differential privacy, homomorphic encryption, federated learning
+- [Data Protection by Regulatory Framework](#data-protection-by-regulatory-framework) — GDPR, CCPA, HIPAA, PCI DSS, Malaysia PDPA, ISO 27001, SOC 2
+- [Data Protection Architecture Patterns](#data-protection-architecture-patterns) — Data-Centric, Zero Trust Data, Cloud Data Security
+- [Data Protection Tool Decision Matrix](#data-protection-tool-decision-matrix) — scenario-based vendor selection
+- [References](#references)
+
+## At a Glance
+- **7-layer stack**: Discover → Classify → Govern → Protect (DLP/IRM/Encryption) → Monitor (DAM/DSPM) → Respond (DDR) → Retain
+- **Core principle**: classify first, protect everywhere — a programme without data inventory cannot protect what it doesn't know about
+- **Three DLP modes**: Endpoint (Microsoft Purview/Forcepoint), Network/inline (Zscaler/Netskope), Cloud/SaaS (CASB DLP) — each covers different data flows
+- **DSPM** (Gartner 2023 category): continuous cloud data discovery and posture — key vendors: Wiz, Cyera, Varonis, BigID
+- **Regulatory shortcut**: GDPR → DSPM + DLP + BigID; PCI DSS → DAM + Tokenization + Imperva; HIPAA → IBM Guardium + Purview DLP
+
+---
+
 ## Overview
 
 Data protection is the discipline of ensuring sensitive data remains confidential, intact, and available only to authorized parties — from creation through destruction. Unlike perimeter or endpoint security (which protect the path to data), data protection controls attach to the data itself, remaining effective even after a perimeter breach.

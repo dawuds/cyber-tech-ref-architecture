@@ -4,6 +4,25 @@
 
 ---
 
+## On This Page
+- [Outcome Themes](#outcome-themes-the-why) — the 6 business reasons that justify every tool decision
+- [The Scoring Model](#the-scoring-model) — 6 dimensions, 1–5 scale each
+- [Scoring Matrix](#scoring-matrix) — how dimensions combine into a 0–25 priority score with band definitions
+- [Outcome Mapping](#outcome-mapping-tool-decision--business-outcome) — link each tool decision to a business outcome
+- [Coverage Heatmap](#coverage-heatmap-how-to-visualize-gaps) — NIST CSF × ZTA pillar visualisation
+- [ZTA Maturity Delta](#zta-maturity-delta) — before/after maturity by pillar
+- [Presenting to Stakeholders](#presenting-to-stakeholders) — CFO, CISO, CIO, Procurement framings
+- [Common Pitfalls](#common-pitfalls) — 6 mistakes to avoid
+
+## At a Glance
+- **6 scoring dimensions** produce a 0–25 priority score: Capability Uniqueness, Cost Efficiency, Platform Absorption Potential, ZT Alignment, Operational Overhead, Removal Risk
+- **4 priority bands**: Retire/Consolidate Now (20–25), Consolidate 6–12m (14–19), Evaluate at Renewal (8–13), Retain (0–7)
+- **Every recommendation must link to an outcome theme** — cost savings, ZT advancement, platform consolidation, operational efficiency, risk reduction, or compliance
+- **Present the same analysis four ways** depending on audience: CFO (savings waterfall), CISO (risk/maturity delta), CIO (operational efficiency), Procurement (contract leverage)
+- **Most common pitfall**: treating licence cost as total cost — opex (FTE time to operate a tool) can double the real cost
+
+---
+
 ## Outcome Themes (The "Why")
 
 Every tool decision must be justified against one or more outcome themes. These are the business reasons the exercise exists — not just "save money."

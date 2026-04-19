@@ -6,6 +6,22 @@
 
 ---
 
+## On This Page
+- [Purpose](#purpose) — what this mapping enables
+- [Tactic → Technology Mapping](#tactic--technology-mapping) — all 14 tactics with primary/supporting categories and key technique IDs
+- [Coverage Heat Map by Technology Category](#coverage-heat-map-by-technology-category) — which categories cover which tactics
+- [Detection Engineering: ATT&CK + CAR + Sigma](#detection-engineering-attck--car--sigma) — workflow from gap analysis to validated detection
+- [References](#references)
+
+## At a Glance
+- **All 14 ATT&CK Enterprise tactics** mapped to primary and supporting technology categories with specific technique IDs (T-numbers)
+- **Highest-coverage investments**: SIEM (12 tactics), EDR/XDR (8 tactics), Email Security (critical for Initial Access T1566), PAM (Credential Access T1003 + Privilege Escalation T1068)
+- **T1566 Phishing** and **T1078 Valid Accounts** are the two most exploited initial access vectors — Email Security + MFA + IAM are non-negotiable first investments
+- **T1486 Ransomware** and **T1562.001 Disable Security Tools** are the highest-impact techniques — Backup/Recovery and EDR tamper-protection address both
+- **Detection engineering flow**: ATT&CK Navigator gap analysis → CAR analytics library → Sigma rules → CALDERA automated emulation → tune
+
+---
+
 ## Purpose
 
 Maps all 14 ATT&CK Enterprise tactics to the security technology categories that defend against them. Enables:

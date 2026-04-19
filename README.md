@@ -4,6 +4,26 @@ A structured knowledge base mapping cybersecurity frameworks, technology categor
 
 ---
 
+## On This Page
+- [Purpose](#purpose) — what this repo is and who it's for
+- [Quick Navigation](#quick-navigation) — find the right file by use case
+- [Repository Structure](#repository-structure) — full directory map
+- [Core Frameworks](#core-frameworks) — NIST CSF 2.0, Zero Trust, MITRE
+- [Vendor Coverage](#vendor-coverage) — 10 reference architectures, 17 profiles
+- [Cross-Referenced Repositories](#cross-referenced-repositories) — OT, AI Governance, GRC
+- [M&A Tracker](#ma-tracker-20242025) — 2024–2025 acquisitions affecting product names
+- [Schema Reference](#schema-reference) — YAML structure for category files
+
+## At a Glance
+- **30+ technology categories** organised against NIST CSF 2.0 functions and Zero Trust pillars
+- **10 vendor reference architectures** (Microsoft, Palo Alto, CrowdStrike, Zscaler, Google, Cisco, AWS, Fortinet, Check Point, CISA ZTMM) + **17 vendor profiles**
+- **Full MITRE mapping**: ATT&CK Enterprise (14 tactics → tech categories) + D3FEND countermeasures
+- **Consolidation methodology**: inventory template, 6-dimension scoring model, worked example (22 tools), and 12-slide deck structure
+- **Cross-references**: IEC 62443 OT/ICS (51 SRs), AI governance controls, GRC frameworks (PDPA, BNM RMIT, NACSA)
+- **Living reference**: M&A tracker kept current; vendor notes flag acquisition status
+
+---
+
 ## Purpose
 
 This repository answers three questions for security architects and CISOs:

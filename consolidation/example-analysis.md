@@ -2,8 +2,28 @@
 
 **Profile:** 3,000 employees | Hybrid cloud (AWS primary + Azure M365) | Financial services (MAS TRM / PCI DSS regulated)  
 **Current tool count:** 22 security tools  
-**Current total annual spend:** $3.74M (license + opex)  
+**Current total annual spend:** $3.78M (licence + opex)  
 **Analysis date:** April 2025
+
+---
+
+## On This Page
+- [Current Tool Inventory](#current-tool-inventory) — all 22 tools with cost, ZT alignment, and redundancy flag
+- [Scoring Results](#scoring-results) — priority scores and recommendations for each tool
+- [Coverage Heatmap: Before Consolidation](#coverage-heatmap-before-consolidation) — gaps and over-coverage visualised
+- [Consolidation Scenarios](#consolidation-scenarios) — Scenario A (12m), B (24m), C (36m) with financial cases
+- [Executive Summary: Before vs. After](#executive-summary-before-vs-after) — tool count, spend, ZT maturity, coverage gaps across all scenarios
+- [ZTA Maturity Delta: Scenario B](#zta-maturity-delta-scenario-b) — pillar-by-pillar maturity improvement
+- [Sequencing: Contract-Driven Execution Plan](#sequencing-contract-driven-execution-plan) — quarterly exit plan aligned to contract end dates
+- [ATT&CK Coverage Delta](#appendix-attck-coverage-delta) — which tactics are better covered post-consolidation
+
+## At a Glance
+- **22 tools, $3.78M/year** — 18 vendors, 3 perimeter-era tools actively undermining Zero Trust
+- **6 tools are immediately redundant** — $750K quick-win saving available without any new investment
+- **3 perimeter-era tools to exit**: Cisco AnyConnect VPN, RSA SecurID, Forescout NAC
+- **Scenario B (24 months)**: 22 → 14 tools, $590K net saving, ZT maturity advances +1–2 stages across all 5 pillars
+- **Scenario C (36 months)**: 22 → 12 tools, **$1.43M annual saving**, full ZT Advanced maturity, all 6 coverage gaps closed
+- **All exits are contract-aligned** — no forced early termination penalties; sequenced to contract end dates from May 2025 onward
 
 ---
 

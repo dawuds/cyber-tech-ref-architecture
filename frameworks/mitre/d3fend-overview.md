@@ -6,6 +6,25 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — what D3FEND is and how it differs from NIST CSF and ATT&CK
+- [D3FEND Defensive Technique Categories](#d3fend-defensive-technique-categories) — Harden, Detect, Isolate, Deceive, Evict, Restore with technology mappings
+- [D3FEND ↔ ATT&CK ↔ Technology Triangle](#d3fend--attck--technology-category-triangle) — technique-to-countermeasure-to-product mapping
+- [D3FEND and Zero Trust Architecture](#d3fend-and-zero-trust-architecture) — how D3FEND categories map to ZTA principles
+- [Using D3FEND for Security Program Design](#using-d3fend-for-security-program-design) — 5-step gap-to-product workflow
+- [MITRE ENGAGE (Deception Framework)](#mitre-engage-deception-framework) — operationalising the Deceive category
+- [MITRE ATLAS (Adversarial ML)](#mitre-atlas-adversarial-ml) — AI/ML-specific attack taxonomy
+- [References](#references)
+
+## At a Glance
+- **D3FEND is technology-centric**: it describes what a defensive tool *does* to digital artifacts to prevent or detect an attack — the missing link between ATT&CK techniques and product selection
+- **6 defensive categories**: Harden, Detect, Isolate, Deceive, Evict, Restore — map directly to NIST CSF Protect / Detect / Respond / Recover functions
+- **5-step program design**: ATT&CK gap → D3FEND countermeasure → technology category → vendor selection → CALDERA validation
+- **D3FEND and Zero Trust**: Harden (Credential Hardening = MFA) + Isolate (Network Isolation = microsegmentation) map 1:1 to core ZT principles
+- **MITRE ATLAS** extends the framework to AI/ML attack surface: prompt injection → AI/LLM Security category; model poisoning → Supply Chain Security; training data exfiltration → DLP
+
+---
+
 ## Overview
 
 D3FEND (Detection, Denial, and Disruption Framework Empowering Network Defense) is a knowledge graph of cybersecurity countermeasures. Unlike NIST CSF (which is organizational) or ATT&CK (which is adversary-centric), D3FEND is **technology-centric** — it describes specific actions a defensive technology takes and links them to the attacks they counter.
