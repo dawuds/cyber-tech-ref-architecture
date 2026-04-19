@@ -20,6 +20,14 @@
 - **T1486 Ransomware** and **T1562.001 Disable Security Tools** are the highest-impact techniques — Backup/Recovery and EDR tamper-protection address both
 - **Detection engineering flow**: ATT&CK Navigator gap analysis → CAR analytics library → Sigma rules → CALDERA automated emulation → tune
 
+## Summary
+
+ATT&CK Enterprise is the most widely used adversary behaviour framework in the industry — a structured taxonomy of how real attackers operate, organised into 14 tactics (the strategic goal) and hundreds of specific techniques (the how). This document maps every tactic to the security technology categories that defend against it, making ATT&CK directly usable for technology selection, budget justification, and SOC gap analysis.
+
+The mapping works in both directions. Starting from an ATT&CK tactic, you can identify which technology categories you need to cover it. Starting from a technology category, you can identify which tactics it defends against — useful for demonstrating coverage breadth to auditors or justifying procurement decisions to a CFO. The coverage heat map consolidates both views into a single table.
+
+Two techniques deserve priority attention above all others: **T1566 Phishing** and **T1078 Valid Accounts** are the initial access vectors behind the majority of enterprise breaches. Any security programme that has not addressed these first is not correctly prioritised. On the impact side, **T1486** (ransomware) has a single reliable mitigation that no detection tool can replicate: immutable backup. These three technique investments — email security, MFA, and immutable backup — deliver more breach prevention per dollar than almost any other combination.
+
 ---
 
 ## Purpose

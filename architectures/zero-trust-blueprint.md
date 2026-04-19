@@ -22,6 +22,14 @@
 - **Technology stack varies by org size**: SMB → Microsoft-centric; Mid-Enterprise → Okta + CrowdStrike + Zscaler; Large Enterprise → multi-vendor depth
 - **Highest-ROI starting point**: replace VPN with ZTNA + enforce MFA everywhere + deploy EDR — covers the three most common ZT gaps at reasonable cost
 
+## Summary
+
+Zero Trust is the most overloaded term in cybersecurity — applied to everything from a marketing claim to a regulatory mandate to a specific product feature. This blueprint cuts through that noise. It grounds Zero Trust in NIST SP 800-207 (the authoritative US federal standard), defines what it actually requires architecturally, and maps the five ZTA pillars to the specific technology categories and products that implement them.
+
+The architectural foundation is NIST SP 800-207's three logical components: a Policy Engine (the decision point), a Policy Administrator (the enforcement orchestrator), and a Policy Enforcement Point (the access gate). Every access request — from any user, device, or workload — flows through this model. Understanding this model is essential because it clarifies what vendors mean when they claim to deliver Zero Trust: a product that only operates at one of these three logical layers is not a complete ZTA, it is a component of one.
+
+The five pillars (Identity, Device, Network, Application, Data) each have distinct enabling technology, a clear maturity progression, and different organisational owners. Most enterprises achieve Initial maturity in 12 months by focusing on Identity (MFA, conditional access) and Network (ZTNA replacing VPN). Reaching Advanced maturity across all pillars typically requires a 2–3 year programme. The technology stack by org size at the end of this document provides a concrete, vendor-specific implementation path for each maturity stage.
+
 ---
 
 ## What Zero Trust Is (and Isn't)

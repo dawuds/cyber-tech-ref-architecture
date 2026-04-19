@@ -21,6 +21,14 @@
 - **Present the same analysis four ways** depending on audience: CFO (savings waterfall), CISO (risk/maturity delta), CIO (operational efficiency), Procurement (contract leverage)
 - **Most common pitfall**: treating licence cost as total cost — opex (FTE time to operate a tool) can double the real cost
 
+## Summary
+
+Most tool consolidation exercises fail because they are cost-cutting exercises in disguise. They produce a list of tools to cut, receive pushback from tool owners citing unique capabilities, and end with modest savings and no strategic change. This methodology is designed to prevent that failure mode by anchoring every decision to a business outcome — not a line item.
+
+The core mechanism is a 6-dimension scoring model that evaluates each tool against: how unique its capability is in the current estate, how cost-efficient it is relative to what it delivers, how readily a platform you already licence can absorb it, how well it advances Zero Trust maturity, how much operational overhead it creates, and how risky it would be to remove. The resulting 0–25 priority score is objective enough to be defensible and nuanced enough to reflect real-world constraints like contract lock-in and compliance dependencies.
+
+The outcome themes section at the start is the most important section to read first — it defines the business language for every recommendation that follows. Cost optimisation, Zero Trust advancement, platform consolidation, operational efficiency, risk reduction, and compliance alignment are the six reasons a board or executive team approves consolidation action. Every tool recommendation in the analysis must link back to at least one of these themes, or it will not survive stakeholder review.
+
 ---
 
 ## Outcome Themes (The "Why")

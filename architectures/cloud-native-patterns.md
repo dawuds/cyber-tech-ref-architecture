@@ -25,6 +25,14 @@
 - **Immutable infrastructure** eliminates configuration drift and attacker persistence — all changes must flow through version-controlled IaC pipelines
 - **eBPF-based tools** (Falco, Cilium, Tetragon) provide kernel-level telemetry with near-zero overhead — the foundation of cloud-native runtime detection
 
+## Summary
+
+Securing cloud-native infrastructure requires a different mental model from traditional IT security. The network perimeter dissolves; infrastructure is ephemeral and changes continuously; workload identity replaces network location as the primary trust signal. Applying traditional security controls to cloud-native environments either fails entirely or creates friction that slows delivery without improving security. This document captures ten architectural patterns — proven design decisions that address the specific security challenges of cloud environments across AWS, Azure, and GCP.
+
+The patterns are sequenced deliberately. Pattern 1 (Multi-Account/Landing Zone) is the prerequisite for everything else: without account-level blast-radius isolation, every subsequent control is weaker. Patterns 3 (Workload Identity) and 7 (Immutable Infrastructure) deliver the highest security ROI per implementation effort — eliminating static credentials and configuration drift respectively address two of the most common root causes of cloud security incidents. The later patterns (service mesh mTLS, eBPF telemetry, GenAI security) are advanced controls for organisations that have already addressed the foundational patterns.
+
+Each pattern includes cloud-provider-specific implementation examples — YAML manifests, SCP policy JSON, architecture diagrams — and cross-references to the relevant technology category YAML. This is not a theoretical framework; it is a set of concrete architectural decisions with specific implementation paths. Use it as a design checklist when building new cloud environments or as an audit checklist when reviewing existing ones.
+
 ---
 
 ## Overview

@@ -25,6 +25,14 @@
 - **Scenario C (36 months)**: 22 → 12 tools, **$1.43M annual saving**, full ZT Advanced maturity, all 6 coverage gaps closed
 - **All exits are contract-aligned** — no forced early termination penalties; sequenced to contract end dates from May 2025 onward
 
+## Summary
+
+This is a fully worked consolidation analysis for a hypothetical 3,000-person financial services organisation (Acme Financial Corp) running 22 security tools at $3.78M/year across 18 vendors. It applies the complete methodology from [scoring-methodology.md](scoring-methodology.md) end-to-end: inventory capture, 6-dimension scoring, coverage heatmap, three consolidation scenarios with financial cases, and a contract-sequenced execution plan.
+
+The analysis surfaces a pattern common across mid-enterprise environments: roughly a quarter of the tool estate is immediately redundant — covered by tools already deployed, with no migration required. Another quarter consists of perimeter-era tools actively working against Zero Trust maturity. Only half of the tools are genuinely strategic and non-redundant. This split is consistent across organisations of similar size and complexity; your numbers will differ but the shape of the problem is usually the same.
+
+Use this as both a template and a calibration tool. The scoring table and scenario structure can be adapted directly to your own inventory — replace Acme's tools with yours and re-run the scoring. The financial case structure (gross savings, new investment, net saving, payback period) is the format that CFOs and boards respond to most clearly. The contract-sequenced execution plan demonstrates that consolidation does not require breaking contracts — it requires sequencing decisions around natural renewal points.
+
 ---
 
 ## Current Tool Inventory

@@ -23,6 +23,14 @@ Deep-dive per category: purpose, core functions, vendor landscape, spend estimat
 - **Most resistant to consolidation**: PAM (deep regulatory compliance requirement), GRC (enterprise governance discipline), email archiving (compliance + eDiscovery), backup/recovery (board-level requirement)
 - **Direction →** Platform bundling is compressing margins and eliminating standalone viability in commoditising categories (basic SWG, CASB, standalone UEBA); categories with mandatory depth requirements (PAM for PCI/SOX, DAM for HIPAA, GRC for MAS/DORA) are structurally protected from displacement
 
+## Summary
+
+This is the companion to [TECH-STACK.md](TECH-STACK.md). Where TECH-STACK.md shows the matrix (which vendor covers which category), this document explains why each category exists — its purpose, the specific capabilities it delivers, the leading vendors, estimated annual spend for a ~5,000-employee enterprise, a market maturity rating, and where the category is heading.
+
+Three structural themes run across all categories. The **Protect function dominates security spend** — IAM, PAM, NGFW, and endpoint protection collectively represent roughly half of total enterprise security budget, reflecting decades of perimeter-first investment. **Platform consolidation is actively eliminating standalone viability** in several categories: UEBA is being absorbed into SIEM/XDR, CASB into SSE, basic container security into CNAPP — any new standalone purchase in these categories should be scrutinised against platform module alternatives first. And the **Govern and Recover functions remain chronically underinvested**: GRC, backup/recovery, and identity governance are the three areas where most enterprises have the largest gap between actual spend and strategic importance.
+
+Use this as a decision-support reference: jump to the category relevant to your immediate procurement decision, check the market trend note to assess whether standalone viability is declining, and use the spend estimates as negotiation anchors. Spend figures reflect enterprise list pricing; actual negotiated pricing is typically 20–40% lower.
+
 ---
 
 ## GOVERN

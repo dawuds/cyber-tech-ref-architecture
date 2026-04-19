@@ -9,6 +9,14 @@ Master mapping of security technology categories, vendor products, and reference
 - **Emerging categories** (AI/LLM security, supply chain security, DSPM) are the fastest-growing but have the most fragmented, immature vendor landscape
 - **Direction →** Over the next 3 years the effective category count will compress from ~36 to ~25–28 as platform absorption continues; the stable categories are those requiring deep specialist capability or regulatory depth — PAM, GRC, email security archiving, and backup/recovery
 
+## Summary
+
+This is the master reference for the security technology landscape — 36 categories mapped against NIST CSF 2.0 functions and cross-referenced to 9 platform vendors. It answers two questions: "which technology category covers which security outcome?" and "which platform vendor covers which category, and how deeply?"
+
+The **vendor coverage matrix** is the most-used section. It surfaces patterns not visible in vendor marketing: Microsoft covers the widest range of categories through the E5 bundle but at shallower depth than best-of-breed specialists; CrowdStrike is strongest in Detect and expanding rapidly; no single vendor meaningfully covers Govern or Recover. The matrix is most useful when evaluating consolidation — use it to identify which tools in your current estate could be replaced by a module you already licence.
+
+For per-category detail (spend estimates, vendor depth, market maturity, trend), use [CATEGORY-ANALYSIS.md](CATEGORY-ANALYSIS.md) alongside this file. This document is the breadth view; that document is the depth view.
+
 ## Navigation
 
 | Section | Contents |

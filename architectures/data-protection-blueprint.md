@@ -22,6 +22,14 @@
 - **DSPM** (Gartner 2023 category): continuous cloud data discovery and posture — key vendors: Wiz, Cyera, Varonis, BigID
 - **Regulatory shortcut**: GDPR → DSPM + DLP + BigID; PCI DSS → DAM + Tokenization + Imperva; HIPAA → IBM Guardium + Purview DLP
 
+## Summary
+
+Data protection fails most often not from inadequate controls but from an inadequate programme structure — organisations deploy DLP on endpoints while sensitive data leaks through exposed cloud storage buckets they did not know existed. This blueprint structures data protection as a seven-layer programme (Discover → Classify → Govern → Protect → Monitor → Respond → Retain) where each layer is a meaningful prerequisite for the one above it.
+
+The foundational insight is the sequence: you cannot classify what you have not discovered, and you cannot protect what you have not classified. Discovery and classification are the layers most organisations underinvest in or skip entirely — which is precisely why DSPM (Data Security Posture Management) has emerged as the fastest-growing data security category. Tools like Wiz, Cyera, and Varonis make cloud data discovery and classification operationally tractable at scale, turning what was a manual exercise into a continuous automated capability.
+
+The regulatory mapping section is the most immediately practical section for compliance-driven readers — it maps specific technology controls to the requirements of GDPR, HIPAA, PCI DSS, Malaysia PDPA, ISO 27001, and SOC 2. Use the tool decision matrix at the end as a first-cut shortlist for your specific context, whether you are M365-first, cloud-native, PCI-regulated, or focused on insider threat.
+
 ---
 
 ## Overview

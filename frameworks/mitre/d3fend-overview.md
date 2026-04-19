@@ -23,6 +23,14 @@
 - **D3FEND and Zero Trust**: Harden (Credential Hardening = MFA) + Isolate (Network Isolation = microsegmentation) map 1:1 to core ZT principles
 - **MITRE ATLAS** extends the framework to AI/ML attack surface: prompt injection → AI/LLM Security category; model poisoning → Supply Chain Security; training data exfiltration → DLP
 
+## Summary
+
+ATT&CK tells you what attackers do. D3FEND tells you what defenders should do about it. Without D3FEND, the gap between "we have an ATT&CK coverage gap in Credential Access" and "here is the specific technology purchase that closes it" requires manual expert knowledge to bridge. D3FEND formalises that bridge as a knowledge graph: for each ATT&CK offensive technique, D3FEND identifies the countermeasure technique, the digital artifact being protected, and the technology category that implements the countermeasure.
+
+The most direct use of this document is the 5-step programme design workflow: identify an ATT&CK gap with Navigator, find the D3FEND countermeasure, map to the technology category, select a product, then validate with CALDERA emulation. This creates a traceable, auditable chain from "threat" to "product purchase" to "validated detection" — the kind of evidence that both regulators and CFOs find credible.
+
+D3FEND also serves as the architectural bridge to Zero Trust. The Harden category maps directly to ZT's "verify explicitly" principle (Credential Hardening = MFA, Platform Hardening = device compliance). The Isolate category maps to "least privilege" and "assume breach" (Network Isolation = microsegmentation, Credential Isolation = PAM). Understanding D3FEND through the ZT lens makes security architecture decisions far more coherent — every control has both a threat-model justification (D3FEND) and an architecture justification (ZT).
+
 ---
 
 ## Overview

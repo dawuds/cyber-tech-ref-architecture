@@ -22,6 +22,14 @@
 - **Highest displacement risk**: standalone UEBA and CASB; **lowest**: PAM and specialist MDR
 - **2025–2027**: AI SOC Platform, Identity Security Platform, and CNAPP will drive the largest net-new platform decisions
 
+## Summary
+
+The cybersecurity industry is consolidating faster than at any point since the cloud transition of 2010–2015. This document tracks that consolidation: what has been absorbed, what is in progress, who the acquirers are, and where the market is heading by 2027.
+
+The consolidation is driven by two simultaneous forces: enterprise buyers exhausted by tool sprawl (average 45–75 tools) demanding fewer vendors and unified platforms, and platform vendors aggressively acquiring point solutions to expand their addressable market. The result is a bifurcating market — large platforms growing through acquisition while standalone point solutions either get acquired, pivot to deep specialisation, or face displacement by included modules.
+
+The most consequential finding for buyers: several categories currently purchased as standalone tools — UEBA, CASB, basic SOAR, container security — are now available as included modules in platforms you likely already licence. The question is no longer whether these tools have value; it is whether their marginal value over the platform module justifies the additional cost and operational overhead of running a separate tool.
+
 ---
 
 ## Overview

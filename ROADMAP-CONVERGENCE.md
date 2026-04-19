@@ -20,6 +20,14 @@
 - **3 structural gaps** no platform covers: GRC/TPRM, Backup/Recovery, and deep PAM — require dedicated budget regardless of platform choice
 - **3-year roadmap**: Year 1 Foundation (IdP + ZTNA + EDR + SIEM), Year 2 Depth (CNAPP + IGA + DSPM + SOAR), Year 3 Advanced (AI SOC + CTEM + Zero Trust Data)
 
+## Summary
+
+Seven platform vendors are independently converging on the same architectural destination: a unified platform covering Identity + Endpoint + Network + Cloud + SOC. CrowdStrike starts from endpoint and expands; Zscaler starts from network access; Microsoft starts from identity and the M365 productivity suite. The paths differ, but the destination is identical. This convergence creates a practical solutioning shortcut: the platform whose current coverage best matches your existing investment is typically the lowest-friction path forward.
+
+This document translates that market observation into actionable guidance. The five convergence themes section maps exactly where platform roadmaps overlap — AI SOC Platform, Identity Security, CNAPP, SSE/SASE, and Data Security are all converging toward 2–3 dominant platforms each. The recommended stacks section gives concrete product choices by organisation profile (SMB through to OT/ICS operator). The decision trees provide structured vendor selection logic for the four most common buying decisions: SIEM, Identity, CNAPP, and SSE/ZTNA.
+
+Critically, this document also identifies where vendor roadmaps do **not** converge. GRC/TPRM, backup/recovery, and deep PAM are structurally outside every platform strategy. These three areas require dedicated budget and specialist vendor relationships regardless of which platform you choose — no amount of platform consolidation eliminates this.
+
 ---
 
 ## The Central Thesis
