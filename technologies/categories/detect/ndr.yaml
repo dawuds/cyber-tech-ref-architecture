@@ -19,6 +19,8 @@ vendor_framework_coverage:
   cisa_ztmm: Networks (pillar) + Visibility & Analytics
   aws_sra: Detective Controls (GuardDuty VPC Flow Logs)
   cisco_security: Network Security (Secure Network Analytics)
+  checkpoint_infinity: null
+  fortinet_security_fabric: "Security Operations (FortiNDR — network detection and response)"
 
 products:
   - name: ExtraHop Reveal(x)

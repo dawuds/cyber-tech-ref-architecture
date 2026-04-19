@@ -1,0 +1,66 @@
+id: cyber-recovery
+name: Cyber Recovery
+full_name: Cyber Recovery Vault & Ransomware Recovery
+nist_primary: Recover
+nist_secondary: [Respond]
+description: >
+  Isolated, air-gapped or immutable recovery vaults designed specifically for
+  ransomware and destructive attack recovery — distinct from general backup platforms.
+  Provides clean-room restore environments, integrity verification of recovery copies,
+  and automated recovery orchestration. Addresses the scenario where primary backup
+  infrastructure is also compromised or encrypted. Key differentiator from
+  backup-recovery: these solutions assume the attacker has compromised or encrypted
+  backup infrastructure and provide a separate, hardened recovery chain.
+related_categories: [backup-recovery, bcp-dr, soar]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Recover (resilience and recovery planning)
+  aws_sra: null
+  cisco_security: null
+  checkpoint_infinity: null
+  fortinet_security_fabric: null
+
+products:
+  - name: Dell PowerProtect Cyber Recovery
+    vendor: Dell Technologies
+    type: on-prem|hybrid
+    notes: Air-gapped cyber vault with CyberSense AI for data integrity analysis; leader in isolated recovery vault market
+
+  - name: Cohesity FortKnox
+    vendor: Cohesity
+    type: SaaS
+    notes: Cloud-based cyber vault (SaaS); immutable snapshots replicated to Cohesity-managed cloud; integrated threat detection
+
+  - name: Rubrik Cyber Recovery
+    vendor: Rubrik
+    type: SaaS|on-prem
+    notes: Immutable backups with ransomware investigation; Rubrik Security Cloud provides threat hunting in backup data
+
+  - name: Zerto Cyber Resilience Vault
+    vendor: Zerto (HPE)
+    type: on-prem|SaaS
+    notes: Continuous data protection (CDP) with journal-based recovery; air-gapped vault option; acquired by HPE 2021
+
+  - name: Pure Storage SafeMode Snapshots
+    vendor: Pure Storage
+    type: on-prem|SaaS
+    notes: Immutable, eradicable snapshots requiring out-of-band verification; prevents ransomware from deleting backups
+
+  - name: Commvault Metallic Recovery Reserve
+    vendor: Commvault
+    type: SaaS
+    notes: Air-gapped cloud vault with clean room recovery; Commvault Cloud platform includes threat scan on restore
+
+  - name: IBM Storage Defender
+    vendor: IBM
+    type: hybrid
+    notes: Cyber resiliency platform integrating IBM FlashSystem SafeGuarded Copy with threat detection and recovery orchestration
+
+  - name: NetApp SnapLock Compliance
+    vendor: NetApp
+    type: on-prem
+    notes: WORM-locked immutable snapshots on NetApp ONTAP; compliance-grade tamper protection for backup copies

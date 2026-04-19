@@ -18,6 +18,8 @@ vendor_framework_coverage:
   cisa_ztmm: Visibility & Analytics
   aws_sra: null
   cisco_security: Security Operations (Talos)
+  checkpoint_infinity: "Infinity Platform (ThreatCloud AI — 50B+ events/day shared threat intelligence)"
+  fortinet_security_fabric: "Endpoint & OT (FortiGuard Labs — threat intelligence subscription service)"
 
 products:
   - name: Recorded Future

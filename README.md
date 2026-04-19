@@ -45,7 +45,7 @@ It is designed as a living reference — not a one-time assessment. Use it to ev
 | Where the industry is consolidating — M&A, PE, absorbed categories | [CONSOLIDATION.md](CONSOLIDATION.md) |
 | Where vendor roadmaps are converging — platform strategies, 2027 predictions | [ROADMAP-CONVERGENCE.md](ROADMAP-CONVERGENCE.md) |
 | Per-category spend, maturity ratings, and market trends | [CATEGORY-ANALYSIS.md](CATEGORY-ANALYSIS.md) |
-| All 36 categories mapped against the 9 major platform vendors | [TECH-STACK.md](TECH-STACK.md) |
+| All 39 categories mapped against the 10 major platform vendors | [TECH-STACK.md](TECH-STACK.md) |
 
 ### 2. Design Your Architecture
 

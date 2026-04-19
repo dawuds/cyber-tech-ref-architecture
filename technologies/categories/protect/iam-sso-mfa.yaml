@@ -18,6 +18,8 @@ vendor_framework_coverage:
   cisa_ztmm: Identity (pillar)
   aws_sra: IAM
   cisco_security: Identity & Zero Trust (Duo)
+  checkpoint_infinity: null
+  fortinet_security_fabric: "SASE & Zero Trust Access (FortiAuthenticator — MFA, certificate management)"
 
 products:
   - name: Microsoft Entra ID

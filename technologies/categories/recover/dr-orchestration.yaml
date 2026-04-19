@@ -1,0 +1,69 @@
+id: dr-orchestration
+name: DR Orchestration
+full_name: Disaster Recovery Orchestration & Failover Automation
+nist_primary: Recover
+nist_secondary: [Respond]
+description: >
+  Automates the orchestration, testing, and execution of disaster recovery failover
+  — distinct from backup platforms that store data. DR orchestration platforms
+  define recovery workflows, automate VM/workload failover between primary and DR
+  sites, track RTO/RPO compliance, and generate runbooks. Addresses the gap where
+  organizations have backup data but no tested, automated path to restore operations
+  within defined recovery time objectives. Increasingly cloud-native as organizations
+  use public cloud as the DR target.
+related_categories: [backup-recovery, bcp-dr, cyber-recovery]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Recover (recovery planning and improvement)
+  aws_sra: null
+  cisco_security: null
+  checkpoint_infinity: null
+  fortinet_security_fabric: null
+
+products:
+  - name: Zerto
+    vendor: Zerto (HPE, acquired 2021)
+    type: on-prem|SaaS
+    notes: Continuous data protection and DR orchestration; journal-based recovery for near-zero RPO; strong VMware and cloud support
+
+  - name: VMware Site Recovery (Live Recovery)
+    vendor: Broadcom (VMware)
+    type: on-prem|SaaS
+    notes: VMware-native DR orchestration; rebranded to Live Recovery post-Broadcom acquisition; tight vSphere integration
+
+  - name: Veeam Disaster Recovery Orchestrator
+    vendor: Veeam (Insight Partners)
+    type: on-prem|SaaS
+    notes: Automated DR runbooks, testing, and documentation; integrates with Veeam Backup & Replication
+
+  - name: AWS Elastic Disaster Recovery (DRS)
+    vendor: Amazon Web Services
+    platform: aws-sra
+    type: SaaS
+    notes: Continuous block-level replication to AWS; point-in-time recovery; replaces CloudEndure; low-cost cloud DR target
+
+  - name: Azure Site Recovery
+    vendor: Microsoft
+    platform: microsoft-security
+    type: SaaS
+    notes: Cloud-native DR orchestration; failover to Azure for on-prem workloads; tight integration with Azure Monitor and Backup
+
+  - name: Google Cloud Disaster Recovery
+    vendor: Google
+    platform: google-csa
+    type: SaaS
+    notes: DR to GCP using live migration and persistent disk replication; integrates with Google Cloud Backup
+
+  - name: Carbonite Recover (OpenText)
+    vendor: OpenText (acquired Carbonite 2022)
+    type: SaaS
+    notes: Cloud-based DR for physical and virtual servers; acquired by OpenText alongside Zix/AppRiver portfolio
+
+  - name: Arcserve UDP / Disaster Recovery
+    vendor: Arcserve
+    type: on-prem|SaaS
+    notes: Unified data protection platform with DR orchestration; strong in mid-market; MSP-friendly licensing

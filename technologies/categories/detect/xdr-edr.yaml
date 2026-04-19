@@ -24,6 +24,8 @@ vendor_framework_coverage:
   cisa_ztmm: Devices (pillar) + Visibility & Analytics
   aws_sra: null
   cisco_security: Security Operations (Cisco XDR)
+  checkpoint_infinity: "Infinity Platform (Horizon XDR/XPR — extended detection and prevention response)"
+  fortinet_security_fabric: "Security Operations (FortiEDR — endpoint detection and response)"
 
 products:
   - name: CrowdStrike Falcon Insight XDR

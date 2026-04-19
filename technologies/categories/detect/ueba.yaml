@@ -23,6 +23,8 @@ vendor_framework_coverage:
   cisa_ztmm: Visibility & Analytics
   aws_sra: Detective Controls (GuardDuty anomaly detection)
   cisco_security: null
+  checkpoint_infinity: null
+  fortinet_security_fabric: "Security Operations (FortiSIEM — built-in UEBA module)"
 
 products:
   - name: Exabeam Fusion SIEM (UEBA)

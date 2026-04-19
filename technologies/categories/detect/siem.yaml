@@ -23,6 +23,8 @@ vendor_framework_coverage:
   cisa_ztmm: Visibility & Analytics
   aws_sra: Detective Controls (Security Hub)
   cisco_security: Security Operations (XDR / SIEM integration)
+  checkpoint_infinity: "Infinity Platform (Horizon Events — SIEM/event management)"
+  fortinet_security_fabric: "Security Operations (FortiSIEM — SIEM + UEBA; FortiAnalyzer — log analytics)"
 
 products:
   - name: Microsoft Sentinel

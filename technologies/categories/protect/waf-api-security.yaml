@@ -18,6 +18,8 @@ vendor_framework_coverage:
   cisa_ztmm: Applications & Workloads (pillar)
   aws_sra: Infrastructure Protection (AWS WAF)
   cisco_security: null
+  checkpoint_infinity: "CloudGuard (CloudGuard AppSec — AI-based WAF and API security)"
+  fortinet_security_fabric: "Cloud Security (FortiWeb — web application firewall)"
 
 products:
   - name: Cloudflare WAF & API Shield

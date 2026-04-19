@@ -20,6 +20,8 @@ vendor_framework_coverage:
   cisa_ztmm: string|null
   aws_sra: string|null
   cisco_security: string|null
+  checkpoint_infinity: string|null
+  fortinet_security_fabric: string|null
 products:
   - name: string
     vendor: string
@@ -47,3 +49,5 @@ products:
 | cisa_ztmm | CISA Zero Trust Maturity Model v2.0 | cisa.gov/zero-trust-maturity-model |
 | aws_sra | AWS Security Reference Architecture | docs.aws.amazon.com/prescriptive-guidance/security-reference-architecture |
 | cisco_security | Cisco Security Reference Architecture | cisco.com/site/us/en/products/security/cisco-security-reference-architecture |
+| checkpoint_infinity | Check Point Infinity Architecture | checkpoint.com/infinity |
+| fortinet_security_fabric | Fortinet Security Fabric | fortinet.com/solutions/enterprise-midsize-business/security-fabric |

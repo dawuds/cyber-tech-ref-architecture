@@ -18,6 +18,8 @@ vendor_framework_coverage:
   cisa_ztmm: null
   aws_sra: null
   cisco_security: Email & Web (Cisco Secure Email)
+  checkpoint_infinity: "Harmony (Harmony Email & Collaboration — anti-phishing, BEC protection)"
+  fortinet_security_fabric: null
 
 products:
   - name: Microsoft Defender for Office 365

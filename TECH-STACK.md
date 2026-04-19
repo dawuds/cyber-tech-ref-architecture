@@ -3,15 +3,15 @@
 Master mapping of security technology categories, vendor products, and reference architectures — all organized against NIST CSF 2.0 as the canonical spine.
 
 ## At a Glance
-- **36 technology categories** mapped across 6 NIST CSF 2.0 functions — the stable layer beneath shifting vendor products
-- **9-vendor platform coverage matrix** shows Microsoft + Palo Alto + CrowdStrike have the widest individual coverage but each leaves critical gaps (GRC, Backup/Recovery, deep PAM)
+- **39 technology categories** mapped across 6 NIST CSF 2.0 functions — the stable layer beneath shifting vendor products
+- **10-vendor platform coverage matrix** shows Microsoft + Palo Alto + CrowdStrike have the widest individual coverage but each leaves critical gaps (GRC, Backup/Recovery, deep PAM)
 - **5 categories face high displacement risk** from platform bundles: UEBA, standalone CASB, standalone SOAR, basic container security, basic EASM
 - **Emerging categories** (AI/LLM security, supply chain security, DSPM) are the fastest-growing but have the most fragmented, immature vendor landscape
 - **Direction →** Over the next 3 years the effective category count will compress from ~36 to ~25–28 as platform absorption continues; the stable categories are those requiring deep specialist capability or regulatory depth — PAM, GRC, email security archiving, and backup/recovery
 
 ## Summary
 
-This is the master reference for the security technology landscape — 36 categories mapped against NIST CSF 2.0 functions and cross-referenced to 9 platform vendors. It answers two questions: "which technology category covers which security outcome?" and "which platform vendor covers which category, and how deeply?"
+This is the master reference for the security technology landscape — 39 categories mapped against NIST CSF 2.0 functions and cross-referenced to 10 platform vendors. It answers two questions: "which technology category covers which security outcome?" and "which platform vendor covers which category, and how deeply?"
 
 The **vendor coverage matrix** is the most-used section. It surfaces patterns not visible in vendor marketing: Microsoft covers the widest range of categories through the E5 bundle but at shallower depth than best-of-breed specialists; CrowdStrike is strongest in Detect and expanding rapidly; no single vendor meaningfully covers Govern or Recover. The matrix is most useful when evaluating consolidation — use it to identify which tools in your current estate could be replaced by a module you already licence.
 
@@ -21,7 +21,7 @@ For per-category detail (spend estimates, vendor depth, market maturity, trend),
 
 | Section | Contents |
 |---------|----------|
-| [NIST Function → Category Map](#nist-csf-20-function--category-map) | All 36 categories by function |
+| [NIST Function → Category Map](#nist-csf-20-function--category-map) | All 39 categories by function |
 | [Vendor Platform Coverage Matrix](#vendor-platform-coverage-matrix) | Which platform vendors cover which categories |
 | [Attack Surface Management](#attack-surface-management-vendor-landscape) | ASM vendor landscape (dedicated) |
 | [Reference Architectures](#vendor-reference-architectures) | All 10 vendor reference frameworks |
@@ -69,8 +69,11 @@ For per-category detail (spend estimates, vendor depth, market maturity, trend),
 | **Respond** | SOAR | soar | [→](technologies/categories/respond/soar.yaml) |
 | **Respond** | IR Case Management | case-management | [→](technologies/categories/respond/case-management.yaml) |
 | **Respond** | Digital Forensics & IR (DFIR) | dfir | [→](technologies/categories/respond/dfir.yaml) |
+| **Respond** | IR Communications & Notification | ir-communications | [→](technologies/categories/respond/ir-communications.yaml) |
 | **Recover** | Backup & Recovery | backup-recovery | [→](technologies/categories/recover/backup-recovery.yaml) |
 | **Recover** | BCP / Disaster Recovery | bcp-dr | [→](technologies/categories/recover/bcp-dr.yaml) |
+| **Recover** | Cyber Recovery Vault | cyber-recovery | [→](technologies/categories/recover/cyber-recovery.yaml) |
+| **Recover** | DR Orchestration | dr-orchestration | [→](technologies/categories/recover/dr-orchestration.yaml) |
 
 ---
 
@@ -79,51 +82,54 @@ For per-category detail (spend estimates, vendor depth, market maturity, trend),
 Platform vendors covering multiple NIST functions. Cells show the specific product (abbreviated).  
 `—` = not covered natively. Specialist leaders listed separately below.
 
-| Category | Microsoft | CrowdStrike | Palo Alto | Google | Zscaler | Cisco | SentinelOne | Fortinet | AWS |
-|----------|-----------|-------------|-----------|--------|---------|-------|-------------|----------|-----|
-| **GOVERN** | | | | | | | | | |
-| GRC | Purview Compliance Mgr | — | — | — | — | — | — | — | — |
-| TPRM | — | — | — | — | — | — | — | — | — |
-| Security Awareness | Defender Attack Sim | — | — | — | — | — | — | — | — |
-| Policy Management | Purview Compliance Mgr | — | — | — | — | — | — | — | — |
-| Supply Chain Security | GitHub Adv Security | — | Prisma Cloud (code) | — | — | — | — | — | CodeArtifact |
-| **IDENTIFY** | | | | | | | | | |
-| Asset Management | Defender for Endpoint | Falcon Discover | — | — | ZDX (partial) | — | Singularity Ranger | FortiEMS | AWS Config |
-| Vulnerability Management | Defender VM | Falcon Spotlight | Prisma Cloud (VM) | SCC (GCP) | — | — | — | FortiGuard PSIRT | AWS Inspector |
-| Attack Surface Management | **Defender EASM** | **Falcon Surface** | **Cortex Xpanse** | **Mandiant ASM** | — | — | — | FortiRecon | — |
-| Threat Intelligence | Defender TI | Falcon Intelligence | Unit 42 TI | Mandiant TI | — | Talos | — | FortiGuard TI | GuardDuty (partial) |
-| Identity Governance (IGA) | Entra ID Governance | — | — | — | — | — | — | — | IAM Identity Center |
-| CIEM | Entra Permissions Mgmt | Falcon CIEM | Prisma Cloud CIEM | — | — | — | — | — | IAM Access Analyzer |
-| **PROTECT** | | | | | | | | | |
-| IAM / SSO / MFA | Entra ID | Falcon Identity Protect | — | Cloud Identity | — | Duo | — | FortiAuthenticator | AWS IAM + SSO |
-| PAM | Entra PIM | Falcon Privileged Access | — | — | — | — | — | FortiPAM | — |
-| Secrets Management | Azure Key Vault | — | — | Cloud Secret Manager | — | — | — | — | Secrets Manager + KMS |
-| NGFW / IPS | Azure Firewall | — | PA NGFW | Cloud IDS | — | Secure Firewall | — | FortiGate | Network Firewall |
-| ZTNA / SSE / SASE | Global Secure Access | — | Prisma Access | BeyondCorp Enterprise | ZIA + ZPA | Cisco+ Secure Connect | — | FortiSASE | — |
-| CASB | Defender for Cloud Apps | — | Prisma Access (CASB) | — | ZIA CASB | Umbrella CASB | — | — | — |
-| DLP | Purview DLP | — | Enterprise DLP | Cloud DLP | ZIA DLP | — | — | FortiDLP | Macie |
-| Email Security | Defender for O365 | — | — | Google Workspace | — | Secure Email Gateway | — | FortiMail | — |
-| Endpoint Protection (EPP) | Defender Antivirus | Falcon Prevent | Cortex XDR (NGAV) | — | — | — | Singularity Core | FortiClient | — |
-| Application Security | GitHub Adv Security | — | Prisma Cloud Code | — | — | — | — | — | Amazon Inspector |
-| WAF / API Security | Azure WAF | — | Prisma Cloud WAAS | Cloud Armor | — | — | — | FortiWeb | AWS WAF |
-| CNAPP | Defender for Cloud | Falcon Cloud Security | Prisma Cloud | Security Command Center | Posture Control | Panoptica | — | Fortinet Lacework | Security Hub |
-| MDM / UEM | Microsoft Intune | — | — | Google Endpoint Mgmt | — | — | — | — | — |
-| OT / ICS / IoT | Defender for IoT | — | Industrial OT Security | — | — | Cisco Cyber Vision | — | FortiNAC + FortiOT | — |
-| **DETECT** | | | | | | | | | |
-| SIEM | Microsoft Sentinel | Falcon LogScale | — *(QRadar SaaS acq.)* | Chronicle SIEM | — | Cisco XDR (partial) | — | FortiSIEM | Security Hub (partial) |
-| XDR / EDR | Defender XDR | Falcon Insight XDR | Cortex XDR | Chronicle + Mandiant | — | Cisco XDR | Singularity XDR | FortiEDR | — |
-| NDR | — | — | Cortex NDR | — | — | Secure Network Analytics | — | FortiNDR | GuardDuty (VPC Flow) |
-| UEBA | Sentinel UEBA | — | — | Chronicle ML detection | — | — | — | FortiInsight | — |
-| Deception | — | — | — | — | Zscaler Deception | — | Ranger Deception | FortiDeceptor | — |
-| **RESPOND** | | | | | | | | | |
-| SOAR | Sentinel SOAR | Falcon Fusion SOAR | Cortex XSOAR | Chronicle SOAR | — | XDR automation | — | FortiSOAR | EventBridge + Step Functions |
-| IR Case Management | Sentinel (partial) | — | Cortex XSOAR | — | — | — | — | FortiSOAR (partial) | — |
-| DFIR | — | Falcon Complete / OverWatch | Unit 42 (services) | Mandiant (services) | — | — | — | — | — |
-| **RECOVER** | | | | | | | | | |
-| Backup & Recovery | Azure Backup | — | — | Cloud Backup & DR | — | — | — | — | AWS Backup |
-| BCP / DR | — | — | — | — | — | — | — | — | — |
+| Category | Microsoft | CrowdStrike | Palo Alto | Google | Zscaler | Cisco | SentinelOne | Fortinet | Check Point | AWS |
+|----------|-----------|-------------|-----------|--------|---------|-------|-------------|----------|-------------|-----|
+| **GOVERN** | | | | | | | | | | |
+| GRC | Purview Compliance Mgr | — | — | — | — | — | — | — | — | — |
+| TPRM | — | — | — | — | — | — | — | — | — | — |
+| Security Awareness | Defender Attack Sim | — | — | — | — | — | — | — | — | — |
+| Policy Management | Purview Compliance Mgr | — | — | — | — | — | — | FortiManager | Infinity Portal | — |
+| Supply Chain Security | GitHub Adv Security | — | Prisma Cloud (code) | — | — | — | — | — | — | CodeArtifact |
+| **IDENTIFY** | | | | | | | | | | |
+| Asset Management | Defender for Endpoint | Falcon Discover | — | — | ZDX (partial) | — | Singularity Ranger | FortiMonitor | — | AWS Config |
+| Vulnerability Management | Defender VM | Falcon Spotlight | Prisma Cloud (VM) | SCC (GCP) | — | — | — | FortiGuard PSIRT | — | AWS Inspector |
+| Attack Surface Management | **Defender EASM** | **Falcon Surface** | **Cortex Xpanse** | **Mandiant ASM** | — | — | — | FortiRecon | — | — |
+| Threat Intelligence | Defender TI | Falcon Intelligence | Unit 42 TI | Mandiant TI | — | Talos | — | FortiGuard TI | ThreatCloud AI | GuardDuty (partial) |
+| Identity Governance (IGA) | Entra ID Governance | — | — | — | — | — | — | — | — | IAM Identity Center |
+| CIEM | Entra Permissions Mgmt | Falcon CIEM | Prisma Cloud CIEM | — | — | — | — | FortiCWP | CloudGuard Posture | IAM Access Analyzer |
+| **PROTECT** | | | | | | | | | | |
+| IAM / SSO / MFA | Entra ID | Falcon Identity Protect | — | Cloud Identity | — | Duo | — | FortiAuthenticator | — | AWS IAM + SSO |
+| PAM | Entra PIM | Falcon Privileged Access | — | — | — | — | — | — | — | — |
+| Secrets Management | Azure Key Vault | — | — | Cloud Secret Manager | — | — | — | — | — | Secrets Manager + KMS |
+| NGFW / IPS | Azure Firewall | — | PA NGFW | Cloud IDS | — | Secure Firewall | — | FortiGate | Quantum NGFW | Network Firewall |
+| ZTNA / SSE / SASE | Global Secure Access | — | Prisma Access | BeyondCorp Enterprise | ZIA + ZPA | Cisco+ Secure Connect | — | FortiSASE | Harmony Connect | — |
+| CASB | Defender for Cloud Apps | — | Prisma Access (CASB) | — | ZIA CASB | Umbrella CASB | — | FortiCASB | Harmony Browse | — |
+| DLP | Purview DLP | — | Enterprise DLP | Cloud DLP | ZIA DLP | — | — | — | — | Macie |
+| Email Security | Defender for O365 | — | — | Google Workspace | — | Secure Email Gateway | — | — | Harmony Email | — |
+| Endpoint Protection (EPP) | Defender Antivirus | Falcon Prevent | Cortex XDR (NGAV) | — | — | — | Singularity Core | FortiClient | Harmony Endpoint | — |
+| Application Security | GitHub Adv Security | — | Prisma Cloud Code | — | — | — | — | — | CloudGuard AppSec | Amazon Inspector |
+| WAF / API Security | Azure WAF | — | Prisma Cloud WAAS | Cloud Armor | — | — | — | FortiWeb | CloudGuard AppSec | AWS WAF |
+| CNAPP | Defender for Cloud | Falcon Cloud Security | Prisma Cloud | Security Command Center | Posture Control | Panoptica | — | Lacework | CloudGuard CNAPP | Security Hub |
+| MDM / UEM | Microsoft Intune | — | — | Google Endpoint Mgmt | — | — | — | — | Harmony Mobile | — |
+| OT / ICS / IoT | Defender for IoT | — | Industrial OT Security | — | — | Cisco Cyber Vision | — | FortiNAC + FortiOT | Quantum IoT | — |
+| **DETECT** | | | | | | | | | | |
+| SIEM | Microsoft Sentinel | Falcon LogScale | — *(QRadar SaaS acq.)* | Chronicle SIEM | — | Cisco XDR (partial) | — | FortiSIEM | Horizon Events | Security Hub (partial) |
+| XDR / EDR | Defender XDR | Falcon Insight XDR | Cortex XDR | Chronicle + Mandiant | — | Cisco XDR | Singularity XDR | FortiEDR | Horizon XDR | — |
+| NDR | — | — | Cortex NDR | — | — | Secure Network Analytics | — | FortiNDR | — | GuardDuty (VPC Flow) |
+| UEBA | Sentinel UEBA | — | — | Chronicle ML detection | — | — | — | FortiSIEM (UEBA) | — | — |
+| Deception | — | — | — | — | Zscaler Deception | — | Ranger Deception | FortiDeceptor | — | — |
+| **RESPOND** | | | | | | | | | | |
+| SOAR | Sentinel SOAR | Falcon Fusion SOAR | Cortex XSOAR | Chronicle SOAR | — | XDR automation | — | FortiSOAR | Horizon Playbooks | EventBridge + Step Functions |
+| IR Case Management | Sentinel (partial) | — | Cortex XSOAR | — | — | — | — | FortiSOAR (partial) | Infinity SOC | — |
+| DFIR | — | Falcon Complete / OverWatch | Unit 42 (services) | Mandiant (services) | — | — | — | — | Infinity MDR | — |
+| IR Communications | — | — | — | — | — | — | — | — | — | — |
+| **RECOVER** | | | | | | | | | | |
+| Backup & Recovery | Azure Backup | — | — | Cloud Backup & DR | — | — | — | — | — | AWS Backup |
+| BCP / DR | — | — | — | — | — | — | — | — | — | — |
+| Cyber Recovery | — | — | — | — | — | — | — | — | — | — |
+| DR Orchestration | — | — | — | — | — | — | — | — | — | AWS Elastic DR |
 
-> **Coverage gaps visible across all vendors:** Govern (GRC, TPRM) and Recover (BCP/DR) are structurally underserved by security platform vendors — these require dedicated specialist products.
+> **Coverage gaps visible across all vendors:** Govern (GRC, TPRM), Respond (IR Communications), and Recover (Cyber Recovery, DR Orchestration) are structurally underserved by security platform vendors — these require dedicated specialist products.
 
 ---
 
@@ -213,6 +219,9 @@ For categories where platform vendors are secondary and specialist vendors lead:
 | Backup & Recovery | Veeam, Rubrik, Cohesity, Commvault | Platform vendors play minimally |
 | OT / ICS Security | Claroty, Dragos, Nozomi Networks | Specialist-only |
 | Vulnerability Management | Tenable, Qualys, Rapid7 | Specialists; platforms adding VM modules |
+| IR Communications | PagerDuty, Everbridge, Atlassian Opsgenie | Standalone market; ITSM platforms (ServiceNow) compete |
+| Cyber Recovery | Dell PowerProtect, Cohesity FortKnox, Rubrik, Zerto | Specialist market; backup vendors adding cyber vault modules |
+| DR Orchestration | Zerto, Veeam DRO, VMware Site Recovery | Specialist; hyperscalers (AWS DRS, Azure Site Recovery) competing |
 
 ---
 

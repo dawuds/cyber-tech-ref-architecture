@@ -12,12 +12,12 @@ Deep-dive per category: purpose, core functions, vendor landscape, spend estimat
 - [IDENTIFY](#identify) — Asset Management, Vulnerability Management, ASM, Threat Intelligence, IGA, CIEM
 - [PROTECT](#protect) — IAM, PAM, Secrets, NGFW, ZTNA/SSE/SASE, CASB, DLP, Email, Endpoint, AppSec, WAF, CNAPP, MDM, OT/ICS
 - [DETECT](#detect) — SIEM, XDR/EDR, NDR, UEBA, Deception
-- [RESPOND](#respond) — SOAR, Case Management, DFIR
-- [RECOVER](#recover) — Backup & Recovery, BCP/DR
+- [RESPOND](#respond) — SOAR, Case Management, DFIR, IR Communications
+- [RECOVER](#recover) — Backup & Recovery, BCP/DR, Cyber Recovery, DR Orchestration
 - [EMERGING](#emerging) — AI/LLM Security, Supply Chain Security
 
 ## At a Glance
-- **30+ categories** analysed with purpose, vendor landscape, annual spend ranges, maturity rating, and market trend per category
+- **39 categories** analysed with purpose, vendor landscape, annual spend ranges, maturity rating, and market trend per category
 - **Highest-spend categories**: EDR/XDR ($800K–$2M), SIEM ($600K–$1.5M), NGFW ($400K–$1M), IAM ($300K–$800K) — these 4 represent ~40% of total security spend for a 5,000-person enterprise
 - **Fastest-growing**: CNAPP, DSPM, AI/LLM security — all Gartner emerging or innovation categories 2022–2025; CNAPP growing 35%+ CAGR
 - **Most resistant to consolidation**: PAM (deep regulatory compliance requirement), GRC (enterprise governance discipline), email archiving (compliance + eDiscovery), backup/recovery (board-level requirement)
@@ -1015,6 +1015,35 @@ Services-heavy. Traditional disk forensics mature. Cloud DFIR (Cado Security) gr
 
 ---
 
+### IR Communications & Notification
+
+**Purpose:** Coordinates incident notification and crisis communication during cybersecurity events — alerting the right people, at the right time, through the right channel. Covers on-call scheduling, escalation routing, multi-channel alerting, and post-incident reporting. Addresses NIST CSF RS.CO: notifying personnel, law enforcement, customers, and regulators per the incident response plan.
+
+**Core Modules / Functions:**
+- On-call scheduling and rotation management
+- Multi-channel alerting (SMS, voice, push notification, email, chat)
+- Escalation policies and acknowledgment tracking
+- Incident timeline and stakeholder status pages
+- Customer and public-facing incident communications
+- Regulatory breach notification workflows (GDPR 72hr, SEC 4-day, DORA)
+- Post-incident review and lessons-learned documentation
+
+**Key Vendors:**
+PagerDuty, Atlassian Opsgenie, Everbridge, xMatters (Atlassian), Splunk On-Call (VictorOps), ServiceNow Major Incident Management, Statuspage, OnSolve
+
+**Market Maturity:** Mature  
+PagerDuty dominates the on-call market. Atlassian consolidating (Opsgenie + xMatters + Statuspage). Regulatory pressure (GDPR, DORA, NIS2, SEC rules) increasing demand for documented breach notification workflows.
+
+**Estimated Annual Spend:** $15K–$80K  
+- PagerDuty Business/Enterprise: $20–$40/user/month (≈$15K–$50K for incident responders)  
+- Everbridge enterprise: $50K–$150K+ (includes mass notification for physical/cyber convergence)
+
+**Consolidation Signal:** Moderate. Atlassian is consolidating on-call + status + incident tracking under one platform. ServiceNow Major Incident Management absorbing some of this workflow in ITSM-heavy organizations.
+
+**2025 Market Trend:** Regulatory breach disclosure timelines tightening (DORA 2-hour initial report, SEC 4-business-day 8-K). Demand for automated, auditable notification workflows — not just alerting humans but generating regulatorily compliant disclosures.
+
+---
+
 ## RECOVER
 
 ### Backup & Recovery
@@ -1074,6 +1103,68 @@ Niche but regulated market. DORA (EU Digital Operational Resilience Act) and FCA
 **Estimated Annual Spend:** $30K–$150K
 
 **Consolidation Signal:** BCP absorbing into GRC platforms (Archer, ServiceNow). Operational resilience regulations creating new demand for dedicated platforms (Fusion Risk).
+
+---
+
+### Cyber Recovery Vault
+
+**Purpose:** Provides isolated, air-gapped or immutable recovery environments specifically designed for ransomware and destructive attack scenarios — distinct from general backup. The defining characteristic is a separate, hardened recovery chain that survives even if primary backup infrastructure is compromised or encrypted by an attacker. Includes integrity verification of recovery copies and clean-room restore environments.
+
+**Core Modules / Functions:**
+- Air-gapped or logically isolated vault (out-of-band management plane)
+- Immutable snapshots (WORM — write once, read many)
+- Data integrity analysis (AI/ML entropy detection for encrypted/corrupted files)
+- Clean-room recovery orchestration (isolated network segment for safe restore)
+- Automated recovery testing and validation
+- Chain of custody and forensic evidence preservation
+- Integration with incident response workflows (SOAR trigger → vault restore)
+
+**Key Vendors:**
+Dell PowerProtect Cyber Recovery, Cohesity FortKnox, Rubrik Cyber Recovery, Zerto Cyber Resilience Vault, Pure Storage SafeMode, Commvault Metallic Recovery Reserve, IBM Storage Defender, NetApp SnapLock
+
+**Gartner:** No dedicated MQ; covered in Enterprise Backup and Recovery Solutions MQ — "cyber vault" criteria emerging as differentiator within that market.
+
+**Market Maturity:** Growth  
+Post-2021 ransomware surge made isolated recovery vaults a board-level requirement. All major backup vendors have added cyber vault features; Dell and Cohesity have the most mature standalone vault offerings. Converging with backup-recovery but distinct in air-gap architecture.
+
+**Estimated Annual Spend:** $80K–$300K (incremental to existing backup investment)  
+- Dell PowerProtect Cyber Recovery: $100K–$400K (hardware + software)  
+- Cohesity FortKnox (SaaS vault): $30K–$150K/year  
+- Rubrik Cyber Recovery module: bundled with Rubrik Security Cloud ($100K–$300K)
+
+**Consolidation Signal:** High. Backup-recovery vendors are absorbing cyber vault capabilities — the standalone cyber vault market will compress into the backup platform market over 3–5 years. Near-term the specialized vault architectures (Dell, Cohesity) remain differentiated.
+
+**2025 Market Trend:** Regulators (FCA, PRA, DORA) requiring organizations to demonstrate recovery capability under adversarial conditions — not just backup existence. Tabletop ransomware recovery exercises becoming a standard board requirement. Air-gapped vault + clean room is the target state.
+
+---
+
+### DR Orchestration
+
+**Purpose:** Automates the orchestration, testing, and execution of disaster recovery failover — distinct from platforms that store backup data. DR orchestration manages *how* and *when* systems fail over: defining the recovery sequence, automating VM/workload failover, tracking RTO/RPO compliance, and generating tested runbooks. As organizations adopt cloud as a DR target, cloud-native DR orchestration is growing rapidly.
+
+**Core Modules / Functions:**
+- Recovery workflow definition and automation (failover sequences, dependencies)
+- Continuous data replication (CDP — near-zero RPO)
+- Automated failover and failback testing (non-disruptive)
+- RTO/RPO monitoring and SLA reporting
+- Runbook generation and documentation
+- Multi-site and cloud-target orchestration (on-prem → AWS, Azure, GCP)
+- Integration with incident response (automated DR trigger from SOAR)
+
+**Key Vendors:**
+Zerto (HPE), VMware Site Recovery / Live Recovery (Broadcom), Veeam Disaster Recovery Orchestrator, AWS Elastic Disaster Recovery (DRS), Azure Site Recovery, Google Cloud DR, Carbonite Recover (OpenText), Arcserve UDP
+
+**Market Maturity:** Mature (on-prem); Growth (cloud-native DR)  
+Zerto pioneered journal-based CDP and remains the DR orchestration specialist. VMware SRM dominant in vSphere environments (transition to Broadcom Live Recovery ongoing). Cloud hyperscalers (AWS DRS, Azure Site Recovery) commoditising cloud-target DR, reducing Zerto's addressable market.
+
+**Estimated Annual Spend:** $50K–$200K  
+- Zerto: $50K–$150K/year (per workload licensing)  
+- AWS Elastic DR: $0.028/hour/server (≈$25K–$75K for 50 servers)  
+- Veeam DRO: add-on to Veeam Data Platform ($20K–$80K incremental)
+
+**Consolidation Signal:** High. Hyperscalers are commoditising cloud-target DR. Backup vendors (Veeam, Commvault) are absorbing DR orchestration. The standalone DR orchestration market is contracting; Zerto's moat is CDP (near-zero RPO) for Tier-1 workloads.
+
+**2025 Market Trend:** DORA and operational resilience regulations mandating tested, documented DR for critical financial functions. Shift from "DR plan exists" to "DR was tested successfully last quarter" as the regulatory standard. Automated, audit-ready DR evidence is the key differentiator.
 
 ---
 

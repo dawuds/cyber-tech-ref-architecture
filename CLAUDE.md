@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Purpose
 
-Maps best-practice cybersecurity frameworks (NIST CSF 2.0 as the primary spine) to technology categories and vendor products. Also maps vendor reference architectures (Microsoft MCRA, Palo Alto ZTA, Zscaler ZTE, Google CSA, CrowdStrike Falcon, CISA ZTMM, AWS SRA, Cisco) back into NIST CSF functions for cross-vendor comparison.
+Maps best-practice cybersecurity frameworks (NIST CSF 2.0 as the primary spine) to technology categories and vendor products. Also maps vendor reference architectures (Microsoft MCRA, Palo Alto ZTA, Zscaler ZTE, Google CSA, CrowdStrike Falcon, CISA ZTMM, AWS SRA, Cisco, Check Point Infinity, Fortinet Security Fabric) back into NIST CSF functions for cross-vendor comparison.
 
 ## Repository Structure
 

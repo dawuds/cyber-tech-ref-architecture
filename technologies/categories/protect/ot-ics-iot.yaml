@@ -19,6 +19,8 @@ vendor_framework_coverage:
   cisa_ztmm: null
   aws_sra: null
   cisco_security: null
+  checkpoint_infinity: "Quantum (Quantum IoT Protect — embedded IoT firmware security)"
+  fortinet_security_fabric: "Endpoint & OT (FortiGate ruggedized OT + FortiNAC OT — dedicated OT/ICS platform)"
 
 products:
   - name: Claroty

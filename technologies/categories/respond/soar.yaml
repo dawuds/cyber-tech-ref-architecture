@@ -23,6 +23,8 @@ vendor_framework_coverage:
   cisa_ztmm: Automation & Orchestration
   aws_sra: Incident Response (EventBridge / Step Functions)
   cisco_security: Security Operations (XDR automation)
+  checkpoint_infinity: "Infinity Platform (Horizon Playbooks — SOAR)"
+  fortinet_security_fabric: "Security Operations (FortiSOAR — security orchestration, automation, response)"
 
 products:
   - name: Microsoft Sentinel (SOAR)

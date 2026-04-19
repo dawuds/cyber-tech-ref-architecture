@@ -23,6 +23,8 @@ vendor_framework_coverage:
   cisa_ztmm: Applications & Workloads (pillar)
   aws_sra: null
   cisco_security: SASE (Umbrella CASB)
+  checkpoint_infinity: "Harmony (Harmony Browse — secure web gateway, browser isolation)"
+  fortinet_security_fabric: "Cloud Security (FortiCASB — cloud access security broker)"
 
 products:
   - name: Microsoft Defender for Cloud Apps

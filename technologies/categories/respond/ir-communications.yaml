@@ -1,0 +1,67 @@
+id: ir-communications
+name: IR Communications
+full_name: Incident Response Communications & Notification
+nist_primary: Respond
+nist_secondary: [Govern]
+description: >
+  Platforms for incident notification, crisis communication, and stakeholder
+  alerting during cybersecurity incidents. Covers on-call scheduling, escalation
+  routing, multi-channel alerting (SMS, voice, push, email), and post-incident
+  reporting. Addresses the NIST CSF RS.CO (Communications) subcategory — notifying
+  personnel, law enforcement, customers, and regulators in accordance with incident
+  response plans.
+related_categories: [soar, case-management, dfir]
+vendor_framework_coverage:
+  microsoft_mcra: null
+  palo_alto_zta: null
+  zscaler_zte: null
+  google_csa: null
+  crowdstrike_falcon: null
+  cisa_ztmm: Respond (communications and disclosure obligations)
+  aws_sra: null
+  cisco_security: null
+  checkpoint_infinity: null
+  fortinet_security_fabric: null
+
+products:
+  - name: PagerDuty
+    vendor: PagerDuty
+    type: SaaS
+    notes: Market-leading on-call management and incident notification; AIOps for alert noise reduction
+
+  - name: Atlassian Opsgenie
+    vendor: Atlassian
+    type: SaaS
+    notes: On-call scheduling, escalation policies, and incident communication; integrates with Jira Service Management
+
+  - name: Everbridge
+    vendor: Everbridge
+    type: SaaS
+    notes: Enterprise mass notification and critical event management; regulatory breach notification use cases
+
+  - name: xMatters
+    vendor: Atlassian (acquired 2021)
+    platform: microsoft-security
+    type: SaaS
+    notes: Workflow-driven notification platform; acquired by Atlassian 2021; integrates with ServiceNow and Jira
+
+  - name: Splunk On-Call (VictorOps)
+    vendor: Splunk (Cisco, acquired 2024)
+    platform: cisco-security
+    type: SaaS
+    notes: On-call collaboration platform; natively integrated with Splunk alerting; rebranded from VictorOps
+
+  - name: ServiceNow Major Incident Management
+    vendor: ServiceNow
+    type: SaaS
+    notes: ITIL-aligned major incident workflow; stakeholder communication and executive dashboards
+
+  - name: Statuspage (Atlassian)
+    vendor: Atlassian
+    type: SaaS
+    notes: Customer-facing incident communication page; widely used for public breach/outage disclosure
+
+  - name: Opsgenie + Jira Incident Management
+    vendor: Atlassian
+    type: SaaS
+    notes: Integrated IR comms and ticketing within Atlassian cloud; no additional licencing for Jira Software customers

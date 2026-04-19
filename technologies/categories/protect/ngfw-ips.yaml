@@ -18,6 +18,8 @@ vendor_framework_coverage:
   cisa_ztmm: Networks (pillar)
   aws_sra: Infrastructure Protection (AWS Network Firewall)
   cisco_security: Network Security (Secure Firewall)
+  checkpoint_infinity: "Quantum (Quantum Security Gateways — enterprise NGFW, all form factors)"
+  fortinet_security_fabric: "Network Security (FortiGate NGFW — high-throughput, SD-WAN integrated)"
 
 products:
   - name: Palo Alto Networks NGFW (PA / VM / CN Series)

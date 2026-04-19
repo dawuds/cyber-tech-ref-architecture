@@ -24,6 +24,8 @@ vendor_framework_coverage:
   cisa_ztmm: Applications & Workloads (pillar)
   aws_sra: Detective Controls (Security Hub / Inspector)
   cisco_security: Cloud (Panoptica)
+  checkpoint_infinity: "CloudGuard (CloudGuard CNAPP — CSPM + workload protection)"
+  fortinet_security_fabric: "Cloud Security (Lacework — CNAPP, acquired Aug 2024)"
 
 products:
   - name: Wiz
