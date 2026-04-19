@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — multi-account architecture as the security foundation
+- [Multi-Account Architecture](#multi-account-architecture) — Management Account, Security OU, Workload OUs
+- [Security Service Domains](#security-service-domains) — IAM, Detective Controls, Infrastructure Security, Data Protection, Incident Response
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Key Architecture Decisions](#key-architecture-decisions) — SCPs, immutable logging, delegated admin
+- [Coverage Gaps](#coverage-gaps) — what AWS SRA does not address
+- [AWS Security Services Summary Table](#aws-security-services-summary-table) — full product reference
+
+## At a Glance
+- **Multi-account is foundational**: Management Account + Security OU (Security Tooling + Log Archive) + Workload OUs — account boundaries enforced by SCPs are the primary isolation mechanism
+- **Five service domains**: IAM (identity + federation), Detective Controls (CloudTrail + Config + GuardDuty + Security Hub), Infrastructure Security (WAF + Shield + VPC Flow), Data Protection (KMS + Secrets Manager + Macie), Incident Response (native playbooks)
+- **Amazon Security Lake + OCSF** (2023): cross-cloud log normalisation — ingests AWS, Azure, GCP, CrowdStrike, Okta into a common OpenCybersecurity Schema Framework, enabling third-party SIEM queries across all sources
+- **Gaps**: No EDR, no SIEM, no email security, no NDR — AWS provides security primitives and infrastructure; customers build multi-vendor stacks around them; this is intentional
+- **Direction →** AWS stays deliberately in its lane as cloud infrastructure provider; Amazon Security Lake + OCSF is the 2024–2025 telemetry normalisation bet — positioning AWS as the data fabric for third-party SIEMs (Splunk, Sentinel, Chronicle); the AWS-native security play is cheapest for AWS-first shops but is never a complete stack on its own
+
+---
+
 ## Overview
 
 The AWS Security Reference Architecture (AWS SRA) is Amazon's prescriptive guidance for organizing AWS security services across a multi-account AWS Organizations structure. It defines which security services to deploy, in which accounts, and how they interact — providing a security baseline for AWS environments.

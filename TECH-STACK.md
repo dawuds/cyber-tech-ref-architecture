@@ -2,6 +2,13 @@
 
 Master mapping of security technology categories, vendor products, and reference architectures — all organized against NIST CSF 2.0 as the canonical spine.
 
+## At a Glance
+- **36 technology categories** mapped across 6 NIST CSF 2.0 functions — the stable layer beneath shifting vendor products
+- **9-vendor platform coverage matrix** shows Microsoft + Palo Alto + CrowdStrike have the widest individual coverage but each leaves critical gaps (GRC, Backup/Recovery, deep PAM)
+- **5 categories face high displacement risk** from platform bundles: UEBA, standalone CASB, standalone SOAR, basic container security, basic EASM
+- **Emerging categories** (AI/LLM security, supply chain security, DSPM) are the fastest-growing but have the most fragmented, immature vendor landscape
+- **Direction →** Over the next 3 years the effective category count will compress from ~36 to ~25–28 as platform absorption continues; the stable categories are those requiring deep specialist capability or regulatory depth — PAM, GRC, email security archiving, and backup/recovery
+
 ## Navigation
 
 | Section | Contents |

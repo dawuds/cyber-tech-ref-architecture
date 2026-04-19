@@ -6,6 +6,23 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and positioning
+- [Architecture Domains](#architecture-domains) — 6 domains with product mapping
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what MCRA does not address
+- [Licensing Architecture](#licensing-architecture) — E3 vs E5 vs add-ons
+- [Key Architecture Principles](#key-architecture-principles) — design decisions
+
+## At a Glance
+- **6 domains**: Security Operations (Sentinel + Defender XDR), Identity & Access (Entra), Information Protection (Purview), Device Security (Defender for Endpoint), Cloud Infrastructure (Defender for Cloud), AI Security
+- **E5 bundle strategy**: Microsoft makes security near-zero marginal cost for M365 customers — E5 bundles ~20 security capabilities at 30–40% of equivalent best-of-breed stack cost
+- **Gaps**: No native PAM depth (Entra PIM is Azure/cloud only), no backup/recovery, limited NDR compared to dedicated vendors
+- **Copilot for Security** (2024) + Security Exposure Management are the current strategic investments — AI-assisted SOC triage and unified attack surface visibility across all Microsoft signals
+- **Direction →** Microsoft security revenue exceeds $20B/year and is growing fastest in E5 upsell; the platform dominates SMB and mid-market; enterprises typically use Microsoft as the baseline and add CyberArk (PAM depth) + CrowdStrike (behavioural EDR) for regulated environments
+
+---
+
 ## Overview
 
 The Microsoft Cybersecurity Reference Architecture (MCRA) is Microsoft's prescriptive guidance for building a security architecture using Microsoft and partner products. It is the most widely referenced vendor security architecture in enterprise, driven by M365 and Azure ubiquity. MCRA frames security across six domains and positions Microsoft 365 Defender, Microsoft Sentinel, Entra ID, and Defender for Cloud as the core pillars.

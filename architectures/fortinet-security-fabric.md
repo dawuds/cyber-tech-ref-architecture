@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and FortiOS common OS advantage
+- [Architecture Overview](#architecture-overview) — Security Fabric diagram
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [FortiGuard Labs — Threat Intelligence](#fortiguard-labs--threat-intelligence) — 100B+ daily events, AI-driven TI
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what Security Fabric does not address
+- [OT/ICS Differentiation](#otics-differentiation) — why Fortinet leads in IT/OT convergence
+
+## At a Glance
+- **Six domains**: Network Security (FortiGate NGFW), SASE/Zero Trust (FortiSASE + FortiClient ZTNA), Security Operations (FortiSIEM + FortiSOAR), Cloud Security (Lacework CNAPP — acquired Aug 2024), Endpoint/OT (FortiEDR + FortiNAC), Management Fabric (FortiManager + FortiAnalyzer)
+- **FortiOS common OS**: single operating system across all Fortinet hardware and virtual appliances — consistent policy management from data centre NGFW to remote access client to OT firewall; reduces management complexity in hybrid environments
+- **OT/ICS market leader**: IEC 62443-certified hardware, passive OT protocol inspection (Modbus, DNP3, IEC 61850, BACnet, PROFINET), ruggedised hardware for industrial environments — strongest IT/OT convergence platform
+- **Gaps**: FortiSIEM and FortiSOAR lack depth vs. Splunk ES or Sentinel for enterprise SOC; Lacework CNAPP (post-acquisition) is growing but behind Wiz/Prisma in feature breadth
+- **Direction →** Fortinet's OT/ICS strength is its sustainable moat — no other platform vendor offers equivalent Purdue Model segmentation + IEC 62443 hardware + unified IT/OT management; for IT/OT converged environments (energy, manufacturing, utilities), Fortinet is the default platform; Lacework CNAPP acquisition signals intent to compete in cloud security for these same customers
+
+---
+
 ## Overview
 
 Fortinet Security Fabric is a broad, integrated security platform anchored by **FortiGate NGFW** as the cornerstone device. Unlike cloud-native or agent-first platforms, Fortinet's architecture is hardware-rooted: custom ASIC chips (NP7, SP5, NP6) power FortiGate, delivering hardware-accelerated threat inspection that can outperform software-only alternatives by 10-30x on throughput benchmarks.

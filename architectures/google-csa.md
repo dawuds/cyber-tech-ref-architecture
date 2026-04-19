@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and cloud-native security approach
+- [Architecture Domains](#architecture-domains) — 5 domains
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [BeyondCorp: Google's Zero Trust Origin Story](#beyondcorp-googles-zero-trust-origin-story) — the 2010 Operation Aurora origin of enterprise ZT
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what the architecture does not address
+- [The Mandiant Integration Advantage](#the-mandiant-integration-advantage) — how Mandiant TI flows into Chronicle and SecOps
+
+## At a Glance
+- **Five domains**: Security Operations (Chronicle SIEM + Mandiant MDR + Gemini AI), Infrastructure Security (Security Command Center + Binary Authorization), Identity & Access (BeyondCorp + Cloud IAM), Data Security (Sensitive Data Protection + DSPM), AI Security (Responsible AI + AI Platform guardrails)
+- **BeyondCorp** (2010, post-Operation Aurora breach): Google is the original Zero Trust practitioner — enterprise BeyondCorp Enterprise is the production ZTNA offering; Google eliminated its internal perimeter in 2011
+- **Wiz acquisition** ($23B pending, 2025): will make Google the dominant force in multi-cloud CNAPP — Wiz + Chronicle + Mandiant + SCC = the most complete cloud security stack available
+- **Gaps**: GCP-centric infrastructure security; Chronicle is best-in-class for flat-cost high-volume SIEM but benefits from GCP commitment; email security is Google Workspace only
+- **Direction →** The Wiz acquisition is the defining move in cloud security; if completed, Google has the best combined cloud security + SOC platform; Chronicle flat-cost SIEM + Mandiant intelligence is the strongest value proposition for high-volume, budget-constrained SOC operations; Gemini AI integration is the 2025 AI-SOC differentiator
+
+---
+
 ## Overview
 
 Google's security architecture spans two overlapping product lines: **Google Cloud security-native controls** (IAM, VPC, Chronicle, Security Command Center) and **Google Mandiant** (threat intelligence, IR services, and SecOps platform). The 2023 Mandiant integration transformed Google from a cloud security vendor into a full-spectrum security platform with the industry's deepest threat intelligence capability.

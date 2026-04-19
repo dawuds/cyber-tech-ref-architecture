@@ -6,6 +6,23 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and platformization strategy
+- [Architecture Pillars](#architecture-pillars) — 5 ZT pillars with Palo Alto products
+- [Platform Products by Domain](#platform-products-by-domain) — Strata, Prisma, Cortex product mapping
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what the architecture does not address
+- [The XSIAM Bet](#the-xsiam-bet) — AI SOC platform strategy analysis
+
+## At a Glance
+- **Three platform families**: Strata (network security — NGFW, SASE, SD-WAN), Prisma (cloud + access — CNAPP, ZTNA, SaaS security), Cortex (AI SecOps — XDR, XSIAM, XSOAR, Xpanse ASM)
+- **Platformization strategy**: replace 5–10 point tools with Palo Alto platforms — customers consolidating onto 3+ platforms receive 30–50% discounts; $2.7B+ in platformization deals in FY2025
+- **IBM QRadar SaaS** acquisition (Aug 2024): accelerates SIEM market share; QRadar customers migrated to Cortex XSIAM
+- **Gaps**: No native email security, no backup/recovery, no IGA — strongest in Protect (network) and Detect (AI SOC)
+- **Direction →** Palo Alto is the platform-consolidation play for large enterprise and government; XSIAM ($1B+ ARR) is the fastest-growing product; the rumoured CyberArk acquisition (~$25B) would close the PAM and IGA gap, completing the identity → network → cloud → SOC platform
+
+---
+
 ## Overview
 
 Palo Alto Networks' Zero Trust Architecture (ZTA) is organized around five pillars — Identity, Devices, Networks, Applications & Workloads, and Data — drawn from NIST SP 800-207 and the DoD Zero Trust Strategy. The architecture is backed by three product platforms: **Strata** (network security / NGFW), **Prisma** (cloud/SASE), and **Cortex** (XDR/AI-driven security operations), now supplemented by an AI-powered operations layer called **Cortex XSIAM** (AI-driven SOC platform).

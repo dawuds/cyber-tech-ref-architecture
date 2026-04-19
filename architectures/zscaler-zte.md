@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — proxy-based architecture and "users connect to apps" thesis
+- [Architecture Domains](#architecture-domains) — ZIA, ZPA, ZDX, ZCP
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Architecture Principles](#architecture-principles) — key design decisions
+- [Coverage Gaps](#coverage-gaps) — what ZTE does not address
+- [Integration Architecture](#integration-architecture) — how ZTE pairs with EDR, SIEM, and identity
+
+## At a Glance
+- **Proxy-first architecture**: all traffic (user-to-internet and user-to-app) routes through Zscaler's global cloud — zero implicit network trust, every connection brokered by policy
+- **Four domains**: ZIA (internet access / SWG / inline DLP / CASB), ZPA (private access / ZTNA), ZDX (digital experience monitoring / application performance), ZCP (cloud protection / CSPM / posture)
+- **Avalor acquisition** ($350M, 2023): adds data fabric and risk quantification — expanding Zscaler from network access layer into security posture and risk intelligence
+- **Gaps**: No EDR, no SIEM/SOAR, no email security, no OT/ICS — Zscaler is network/access-layer only; must pair with CrowdStrike/SentinelOne (endpoint) + Sentinel/Splunk (SIEM)
+- **Direction →** Zscaler is the network security default for cloud-first organisations abandoning on-prem NGFW at branch/remote; ZDX and ZCP signal expansion beyond SSE into observability and cloud posture; the SASE market (Zscaler vs Palo Alto Prisma vs Cloudflare) will consolidate around these three platforms
+
+---
+
 ## Overview
 
 The Zscaler Zero Trust Exchange (ZTE) is a cloud-native, proxy-based security platform built on the principle that **no user, device, or workload is inherently trusted**. Unlike NGFW-based architectures that use perimeter security, ZTE routes all traffic through Zscaler's 150+ globally distributed PoP (points of presence) cloud fabric, where policy is enforced inline.

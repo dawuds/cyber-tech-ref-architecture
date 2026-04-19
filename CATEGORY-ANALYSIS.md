@@ -7,6 +7,24 @@ Deep-dive per category: purpose, core functions, vendor landscape, spend estimat
 
 ---
 
+## On This Page
+- [GOVERN](#govern) — GRC, TPRM, Security Awareness, Policy Management
+- [IDENTIFY](#identify) — Asset Management, Vulnerability Management, ASM, Threat Intelligence, IGA, CIEM
+- [PROTECT](#protect) — IAM, PAM, Secrets, NGFW, ZTNA/SSE/SASE, CASB, DLP, Email, Endpoint, AppSec, WAF, CNAPP, MDM, OT/ICS
+- [DETECT](#detect) — SIEM, XDR/EDR, NDR, UEBA, Deception
+- [RESPOND](#respond) — SOAR, Case Management, DFIR
+- [RECOVER](#recover) — Backup & Recovery, BCP/DR
+- [EMERGING](#emerging) — AI/LLM Security, Supply Chain Security
+
+## At a Glance
+- **30+ categories** analysed with purpose, vendor landscape, annual spend ranges, maturity rating, and market trend per category
+- **Highest-spend categories**: EDR/XDR ($800K–$2M), SIEM ($600K–$1.5M), NGFW ($400K–$1M), IAM ($300K–$800K) — these 4 represent ~40% of total security spend for a 5,000-person enterprise
+- **Fastest-growing**: CNAPP, DSPM, AI/LLM security — all Gartner emerging or innovation categories 2022–2025; CNAPP growing 35%+ CAGR
+- **Most resistant to consolidation**: PAM (deep regulatory compliance requirement), GRC (enterprise governance discipline), email archiving (compliance + eDiscovery), backup/recovery (board-level requirement)
+- **Direction →** Platform bundling is compressing margins and eliminating standalone viability in commoditising categories (basic SWG, CASB, standalone UEBA); categories with mandatory depth requirements (PAM for PCI/SOX, DAM for HIPAA, GRC for MAS/DORA) are structurally protected from displacement
+
+---
+
 ## GOVERN
 
 ### GRC — Governance, Risk & Compliance

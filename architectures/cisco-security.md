@@ -6,6 +6,25 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and Splunk acquisition impact
+- [Architecture Domains](#architecture-domains) — 6 domains
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [The Splunk Acquisition Impact](#the-splunk-acquisition-impact) — what the $28B deal changes
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what the architecture does not address
+- [Network Telemetry Advantage](#network-telemetry-advantage) — why network-native context differentiates
+- [Talos Threat Intelligence](#talos-threat-intelligence) — the world's largest commercial TI operation
+
+## At a Glance
+- **Six domains**: Network Security (Firepower/Secure Firewall), SASE/Zero Trust (Secure Connect + Duo + Umbrella), Identity (Duo MFA + ISE NAC), Cloud/App Security (Panoptica CNAPP + WAF), Email/Web (Secure Email Cloud + Talos), SOC Operations (Splunk ES + SOAR + XDR)
+- **Splunk acquisition** ($28B, March 2024): Cisco went from network security specialist to full-stack SOC platform — Splunk ES + SOAR + Cisco XDR + Talos = the most complete network-to-detection-to-response stack at scale
+- **Talos**: world's largest commercial threat intelligence operation — 250+ researchers, 200B+ events/day — feeds Splunk ES, Cisco XDR, and Umbrella with unique network-level threat intelligence
+- **Gaps**: Splunk integration roadmap (18–36 months) creates platform transition uncertainty; Panoptica CNAPP is less mature than Wiz/Prisma; no native PAM
+- **Direction →** Cisco's platform credibility hinges on the Splunk integration executing well; if Talos intelligence flows seamlessly into Splunk ES + XDR, Cisco becomes the default platform for enterprises with significant existing Cisco network infrastructure; the network-to-SOC telemetry advantage is unique
+
+---
+
 ## Overview
 
 Cisco's security architecture is built around **network-first security** — Cisco's foundational strength is the network (routers, switches, firewalls, SD-WAN), and security is layered on top via embedded intelligence and dedicated security products. Cisco XDR (launched 2023) is the unifying SOC platform, replacing the older SecureX integration layer.

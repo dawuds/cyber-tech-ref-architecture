@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — what ZTMM is and why it matters beyond federal
+- [Maturity Stages](#maturity-stages) — Traditional → Initial → Advanced → Optimal defined
+- [Five Pillars](#five-pillars) — Identity, Devices, Networks, Applications, Data with stage-by-stage technology requirements
+- [Three Cross-Cutting Capabilities](#three-cross-cutting-capabilities) — Visibility & Analytics, Automation & Orchestration, Governance
+- [NIST CSF 2.0 / ZTMM Crosswalk](#nist-csf-20--ztmm-crosswalk) — function-to-pillar alignment
+- [Implementation Roadmap](#implementation-roadmap-federal-agency-pattern) — federal agency pattern with Year 1/2/3+ milestones
+- [Applicability Beyond Federal](#applicability-beyond-federal) — how regulated industries use ZTMM
+
+## At a Glance
+- **US Federal mandate**: OMB M-22-09 requires all federal agencies to achieve specific ZTMM targets; CISA ZTMM v2.0 (April 2023) is the official implementation guide with 4 maturity stages per pillar
+- **4 stages per pillar**: Traditional (implicit trust, perimeter-based) → Initial (identity-aware, basic automation) → Advanced (dynamic policy, integrated visibility) → Optimal (continuous validation, fully automated response)
+- **5 independent pillars**: Identity, Devices, Networks, Applications, Data — each progresses independently; most organisations are at Traditional–Initial overall
+- **3 cross-cutting capabilities** apply across all pillars: Visibility & Analytics, Automation & Orchestration, Governance — these are the multipliers that accelerate maturity across all pillars simultaneously
+- **Direction →** CISA ZTMM is rapidly becoming the de facto ZT maturity benchmark beyond US federal — financial services (MAS TRM), healthcare, and critical infrastructure operators increasingly use it as their ZT programme scorecard; v3.0 is expected to add AI/LLM security as a new cross-cutting capability
+
+---
+
 ## Overview
 
 The CISA Zero Trust Maturity Model (ZTMM) v2.0 is the US Federal Government's authoritative guidance on implementing Zero Trust Architecture (ZTA) aligned with Executive Order 14028 (May 2021, "Improving the Nation's Cybersecurity"). It provides a **maturity progression model** across five pillars and three cross-cutting capabilities, with four maturity stages.

@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and prevention-first philosophy
+- [Architecture Overview](#architecture-overview) — Quantum, CloudGuard, Harmony product families
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [ThreatCloud AI — Intelligence Backbone](#threatcloud-ai--intelligence-backbone) — 150K+ gateways, collaborative intelligence
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage table
+- [Coverage Gaps](#coverage-gaps) — what Infinity does not address
+- [Prevention-First Philosophy](#prevention-first-philosophy) — how Check Point differs from detection-first vendors
+
+## At a Glance
+- **Three product lines**: Quantum (network — NGFW, SD-WAN, IoT security), CloudGuard (cloud — CSPM, CNAPP, serverless security), Harmony (endpoint and access — EDR, ZTNA, email security)
+- **ThreatCloud AI**: 150,000+ connected gateways share threat intelligence in real time — 3B+ daily transactions analysed; collaborative prevention means a threat seen at one gateway is blocked at all gateways within minutes
+- **Prevention-first**: Horizon XPR (Extended Prevention & Response) automatically blocks threats rather than generating alerts — fundamentally different from detection-first vendors; reduces SOC alert volume at the cost of some investigation visibility
+- **Gaps**: Horizon XPR EDR is less mature than CrowdStrike/SentinelOne for deep behavioural analysis; limited SIEM/SOAR capabilities; smaller partner ecosystem than Microsoft/Palo Alto
+- **Direction →** Check Point is the strongest prevention-first platform for organisations that want to reduce SOC alert volume rather than increase analyst headcount; ThreatCloud AI's collaborative model is unique at scale; enterprise consumption is typically via MSSP/channel rather than direct — Check Point rarely wins as a primary AI SOC platform but remains the dominant gateway security vendor
+
+---
+
 ## Overview
 
 Check Point Infinity is a consolidated cybersecurity architecture spanning network, cloud, endpoint, mobile, and IoT — backed by **ThreatCloud AI** as the intelligence backbone. The architecture is organized around three product lines: **Quantum** (network security), **CloudGuard** (cloud security), and **Harmony** (endpoint and access security), managed through the **Infinity Portal** and **Infinity AI Copilot**.

@@ -6,6 +6,24 @@
 
 ---
 
+## On This Page
+- [Overview](#overview) — platform scope and single-agent architecture
+- [Architecture Domains](#architecture-domains) — domain map
+- [Platform Domains](#platform-domains) — products by domain with category links
+- [NIST CSF 2.0 Mapping](#nist-csf-20-mapping) — function coverage
+- [Coverage Gaps](#coverage-gaps) — what Falcon does not address
+- [The Single-Agent Advantage (and Risk)](#the-single-agent-advantage-and-risk) — architectural analysis
+- [Licensing Model](#licensing-model) — Falcon Flex pricing tiers
+
+## At a Glance
+- **Single-agent architecture**: one lightweight Falcon sensor on every endpoint expands to EDR, XDR, SIEM (LogScale), SOAR (Fusion), identity protection (Singularity Identity), and cloud workload security — no tool sprawl
+- **Charlotte AI** (agentic defense, 2024): AI-assisted triage, automated investigation, and self-healing response — the differentiation play against Microsoft Copilot for Security
+- **July 2024 global outage**: faulty content update affected 8.5M Windows devices — the largest IT incident in history; Falcon Flex ARR continued growing, confirming high customer stickiness despite the event
+- **Gaps**: No native email security, no GRC/compliance platform, no backup/recovery
+- **Direction →** CrowdStrike's single-agent + AI-SIEM (LogScale) play positions it as the default security platform for organisations starting with EDR and expanding to full XDR; Falcon Flex (all-modules subscription) is the primary consolidation vehicle; Charlotte AI's agentic capabilities are the 2025–2026 competitive differentiator
+
+---
+
 ## Overview
 
 CrowdStrike Falcon is a cloud-native, single-agent, single-platform architecture. Every capability is delivered from one lightweight agent (Falcon sensor) and one cloud platform (Falcon Cloud). This eliminates the multi-agent, multi-console complexity of legacy security stacks.
