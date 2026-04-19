@@ -6,13 +6,13 @@ A structured knowledge base mapping cybersecurity frameworks, technology categor
 
 ## On This Page
 - [Purpose](#purpose) — what this repo is and who it's for
-- [Quick Navigation](#quick-navigation) — find the right file by use case
-- [Repository Structure](#repository-structure) — full directory map
-- [Core Frameworks](#core-frameworks) — NIST CSF 2.0, Zero Trust, MITRE
-- [Vendor Coverage](#vendor-coverage) — 10 reference architectures, 17 profiles
-- [Cross-Referenced Repositories](#cross-referenced-repositories) — OT, AI Governance, GRC
-- [M&A Tracker](#ma-tracker-20242025) — 2024–2025 acquisitions affecting product names
-- [Schema Reference](#schema-reference) — YAML structure for category files
+- [Quick Navigation](#quick-navigation) — five themed sections: landscape → architecture → technology selection → consolidation → regulatory
+- [Repository Structure](#repository-structure) — full directory map with annotations
+- [Core Frameworks](#core-frameworks) — NIST CSF 2.0, Zero Trust pillars, MITRE frameworks
+- [Vendor Coverage](#vendor-coverage) — 10 reference architectures + 17 vendor profiles
+- [Cross-Referenced Repositories](#cross-referenced-repositories) — OT-Security, AI-Governance, GRC Portfolio
+- [M&A Tracker](#ma-tracker-20242025) — 2024–2025 acquisitions affecting product naming
+- [Schema Reference](#schema-reference) — YAML structure for technology category files
 
 ## At a Glance
 - **30+ technology categories** organised against NIST CSF 2.0 functions and Zero Trust pillars
@@ -38,19 +38,52 @@ It is designed as a living reference — not a one-time assessment. Use it to ev
 
 ## Quick Navigation
 
+### 1. Understand the Market Landscape
+
 | What you need | Where to go |
 |--------------|------------|
-| Which tools cover a specific threat/tactic | [MITRE ATT&CK → Technology mapping](frameworks/mitre/attack-enterprise.md) |
-| How to structure a security tool estate | [TECH-STACK.md](TECH-STACK.md) — master category × vendor matrix |
-| Evaluate a specific vendor | [technologies/vendors/](technologies/vendors/) — 17 vendor profiles |
-| Design a Zero Trust programme | [Zero Trust Blueprint](architectures/zero-trust-blueprint.md) |
-| Consolidate your tool estate | [consolidation/](consolidation/) — full methodology + worked example |
-| Where vendor roadmaps converge | [ROADMAP-CONVERGENCE.md](ROADMAP-CONVERGENCE.md) — stack recommendations by org profile |
-| Cloud-native security patterns | [Cloud-Native Patterns](architectures/cloud-native-patterns.md) |
-| Data protection architecture | [Data Protection Blueprint](architectures/data-protection-blueprint.md) |
-| Map OT/ICS controls to NIST CSF | [IEC 62443 ↔ NIST CSF](cross-references/iec62443-nist-mapping.md) |
-| Map AI governance to security controls | [AI Governance ↔ Security](cross-references/ai-governance-security-mapping.md) |
-| Industry M&A and platform consolidation trends | [CONSOLIDATION.md](CONSOLIDATION.md) |
+| Where the industry is consolidating — M&A, PE, absorbed categories | [CONSOLIDATION.md](CONSOLIDATION.md) |
+| Where vendor roadmaps are converging — platform strategies, 2027 predictions | [ROADMAP-CONVERGENCE.md](ROADMAP-CONVERGENCE.md) |
+| Per-category spend, maturity ratings, and market trends | [CATEGORY-ANALYSIS.md](CATEGORY-ANALYSIS.md) |
+| All 36 categories mapped against the 9 major platform vendors | [TECH-STACK.md](TECH-STACK.md) |
+
+### 2. Design Your Architecture
+
+| What you need | Where to go |
+|--------------|------------|
+| Design a Zero Trust programme from first principles | [Zero Trust Blueprint](architectures/zero-trust-blueprint.md) — NIST 800-207 model, 5 pillars, maturity stages |
+| Cloud-native security patterns (landing zones, workload identity, eBPF, service mesh) | [Cloud-Native Patterns](architectures/cloud-native-patterns.md) |
+| Data protection end-to-end (discover → classify → protect → monitor → retain) | [Data Protection Blueprint](architectures/data-protection-blueprint.md) |
+| See how a specific vendor structures their reference architecture | [architectures/](architectures/) — 10 deep-dive markdowns |
+
+### 3. Select and Evaluate Technologies
+
+| What you need | Where to go |
+|--------------|------------|
+| Which technology categories defend against a specific ATT&CK tactic | [MITRE ATT&CK → Technology mapping](frameworks/mitre/attack-enterprise.md) |
+| Which defensive technique counters a specific attack | [MITRE D3FEND Countermeasures](frameworks/mitre/d3fend-overview.md) |
+| Evaluate a specific vendor — strategy, gaps, pricing, direction | [technologies/vendors/](technologies/vendors/) — 17 vendor profiles |
+| Compare platforms side-by-side across all categories | [TECH-STACK.md — Vendor Coverage Matrix](TECH-STACK.md#vendor-platform-coverage-matrix) |
+| Recommended stack by org size and profile | [ROADMAP-CONVERGENCE.md — Recommended Stacks](ROADMAP-CONVERGENCE.md#recommended-stacks-by-organization-profile) |
+
+### 4. Consolidate Your Tool Estate
+
+| What you need | Where to go |
+|--------------|------------|
+| **Principles driving consolidation** — cost optimisation, ZT advancement, platform absorption, operational efficiency | [Outcome Themes](consolidation/scoring-methodology.md#outcome-themes-the-why) |
+| How to run a consolidation exercise end-to-end | [consolidation/README.md](consolidation/README.md) |
+| Scoring model — 6 dimensions, priority bands, presenting to stakeholders | [Scoring Methodology](consolidation/scoring-methodology.md) |
+| **Sample artifact: Tool inventory template** (CSV — fill in your estate) | [tool-inventory-template.csv](consolidation/tool-inventory-template.csv) |
+| **Sample artifact: Worked example** — 22 tools, 3 scenarios, ZTA delta, contract plan | [example-analysis.md](consolidation/example-analysis.md) |
+| **Sample artifact: Executive slide deck** — 12-slide narrative with speaker notes | [slide-deck-approach.md](consolidation/slide-deck-approach.md) |
+
+### 5. Map to Regulatory Frameworks
+
+| What you need | Where to go |
+|--------------|------------|
+| OT/ICS security — IEC 62443-3-3 (51 SRs) mapped to NIST CSF and technology categories | [IEC 62443 ↔ NIST CSF](cross-references/iec62443-nist-mapping.md) |
+| AI governance — EU AI Act, NIST AI RMF, ISO 42001, Malaysia NGAIGE → security controls | [AI Governance ↔ Security](cross-references/ai-governance-security-mapping.md) |
+| GRC frameworks — CSA CCM, BNM RMIT, Malaysia PDPA, NACSA Act 854 → tech categories | [GRC Portfolio Mapping](cross-references/grc-portfolio-mapping.md) |
 
 ---
 
